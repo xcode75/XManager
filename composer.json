@@ -1,0 +1,54 @@
+{
+    "require": {
+        "slim/slim": "~3.0",
+        "smarty/smarty": "3.*",
+        "guzzlehttp/guzzle": "*",
+        "mailgun/mailgun-php": "^2.6.0",
+        "predis/predis": "~1.0",
+        "phpmailer/phpmailer": "~6.1",
+        "zeuxisoo/slim-whoops": "0.5.*",
+        "firebase/php-jwt": "~3.0",
+        "gregwar/captcha": "1.*",
+        "voku/anti-xss": "^1.2",
+        "telegram-bot/api": "^2.2",
+        "illuminate/pagination": "6.20.26",
+        "illuminate/contracts": "6.0.*",
+        "illuminate/support": "6.0.*",
+        "illuminate/database": "6.20.26",
+        "sendgrid/sendgrid": "~7",
+        "esdeathlove/datatables": "^1.6",
+        "ramsey/uuid": "*",
+        "khanamiryan/qrcode-detector-decoder": "*",
+        "symfony/yaml": "*",
+        "endroid/qr-code": "^2.5",
+        "kokspflanze/alpha-vantage-api":"^0.10.0",
+        "paypal/paypal-checkout-sdk": "1.0.1",
+        "twilio/sdk": "*",
+        "plisio/plisio-api-php": "^1.0",
+        "stripe/stripe-php": "7.0.0",
+        "aws/aws-sdk-php":"*",
+        "irazasyed/telegram-bot-sdk": "^2.0",
+        "longman/telegram-bot": "*",
+		"ipip/db": "*",
+		"itbdw/ip-database": "^3.0",
+        "league/omnipay": "^3",
+		"ip2location/ip2location-php": "*",
+		"geoip2/geoip2": "*",
+		"geoip/geoip": "*",
+        "lokielse/omnipay-alipay": "*"
+    },
+    "require-dev": {
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "squizlabs/php_codesniffer": "^3.5"
+    },	
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "check-code": [
+            "\"vendor/bin/phpcs\""
+        ]
+    }
+}

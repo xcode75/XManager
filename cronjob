@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+use App\Provider\Service\Boot;
+
+define('BASE_PATH', __DIR__);
+require BASE_PATH."/vendor/autoload.php";
+require BASE_PATH. "/config/config.php";
+require BASE_PATH."/config/profile.php";
+require BASE_PATH."/config/lang.php";
+
+Boot::setTime();
+Boot::bootDb();
+
+require BASE_PATH."/config/web.php";
+
+use App\Provider\Command\XCat;
+
+$cat = new XCat($argv);
+$cat->boot();

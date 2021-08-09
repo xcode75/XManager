@@ -1,0 +1,43 @@
+.misc-wrapper {
+  display : -webkit-box;
+  display : -webkit-flex;
+  display : -ms-flexbox;
+  display :         flex;
+  -webkit-flex-basis : 100%;
+  -ms-flex-preferred-size : 100%;
+          flex-basis : 100%;
+  min-height : 100vh;
+  width : 100%;
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -ms-flex-align : center;
+          align-items : center;
+  -webkit-box-pack : center;
+  -webkit-justify-content : center;
+  -ms-flex-pack : center;
+          justify-content : center;
+}
+
+.misc-wrapper .misc-inner {
+  position : relative;
+  max-width : 750px;
+}
+
+.misc-wrapper .brand-logo {
+  display : -webkit-box;
+  display : -webkit-flex;
+  display : -ms-flexbox;
+  display :         flex;
+  -webkit-box-pack : center;
+  -webkit-justify-content : center;
+  -ms-flex-pack : center;
+          justify-content : center;
+  position : absolute;
+  top : 2rem;
+  left : 2rem;
+  margin : 0;
+}
+
+.misc-wrapper .brand-logo .brand-text {
+  font-weight : 600;
+}

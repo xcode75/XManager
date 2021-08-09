@@ -1,0 +1,98 @@
+.swal2-container .swal2-popup {
+  border-radius : 0.428rem;
+  padding : 2rem;
+}
+
+.swal2-container .swal2-popup .swal2-close:focus {
+  outline : none;
+  box-shadow : none;
+}
+
+.swal2-container .swal2-popup .swal2-content {
+  color : #6E6B7B;
+}
+
+.swal2-container .swal2-popup .swal2-title {
+  font-size : 1.5rem;
+  font-weight : inherit;
+  color : #5E5873;
+}
+
+.swal2-container .swal2-popup button.swal2-confirm:focus {
+  box-shadow : none;
+}
+
+.swal2-container .swal2-popup input.swal2-input {
+  height : 2.714rem;
+  font-size : 1rem;
+  padding : 0.438rem 1rem;
+  color : #6E6B7B;
+  border-color : #D8D6DE;
+  border-radius : 0.357rem;
+  line-height : 1.45;
+}
+
+.swal2-container .swal2-popup input.swal2-input:focus {
+  border-color : #7367F0 !important;
+  box-shadow : 0 3px 10px 0 rgba(34, 41, 47, 0.1);
+}
+
+.swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step {
+  background-color : #7367F0;
+}
+
+.swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step-line, .swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step.swal2-active-progress-step ~ .swal2-progress-step {
+  background-color : #B3ADF7;
+}
+
+.swal2-container .swal2-popup .swal2-progress-steps .swal2-progress-step-line {
+  background-color : #7367F0;
+}
+
+.swal2-container .swal2-popup pre {
+  min-height : 1.35rem;
+  margin-top : 0.5rem;
+}
+
+.swal2-container .swal2-popup .swal2-footer {
+  border-color : #EBE9F1;
+  color : #6E6B7B;
+}
+
+.dark-layout .swal2-container .swal2-modal {
+  background-color : #283046;
+}
+
+.dark-layout .swal2-container .swal2-modal .swal2-header .swal2-title {
+  color : #D0D2D6;
+}
+
+.dark-layout .swal2-container .swal2-modal .swal2-header .swal2-icon-text {
+  color : inherit;
+}
+
+.dark-layout .swal2-container .swal2-modal .swal2-header .swal2-success-circular-line-left, .dark-layout .swal2-container .swal2-modal .swal2-header .swal2-success-circular-line-right, .dark-layout .swal2-container .swal2-modal .swal2-header .swal2-success-fix, .dark-layout .swal2-container .swal2-modal .swal2-header .swal2-animate-success-icon {
+  background-color : #283046 !important;
+}
+
+.dark-layout .swal2-container .swal2-modal input.swal2-input {
+  border-color : #3B4253;
+  color : #B4B7BD;
+}
+
+.dark-layout .swal2-container .swal2-modal .swal2-content {
+  color : #B4B7BD;
+}
+
+.dark-layout .swal2-container .swal2-modal pre, .dark-layout .swal2-container .swal2-modal code {
+  color : #B4B7BD;
+}
+
+.dark-layout .swal2-container .swal2-modal .swal2-input {
+  background-color : #283046;
+}
+
+.dark-layout .swal2-container .swal2-modal .swal2-footer {
+  border-color : #3B4253;
+  color : #B4B7BD;
+}

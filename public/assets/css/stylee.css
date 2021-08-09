@@ -1,0 +1,48 @@
+div.dataTables_wrapper div.dataTables_paginate {
+  margin: 0;
+  white-space: nowrap;
+  text-align: right;
+  display: inline-block; }
+.float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:100px;
+	right:50px;
+	background-color:#1572e8;
+	color:#FFFFFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	font-size:20px;
+	margin-top:-70px;
+}
+a.float + div.label-container{
+  visibility: hidden;
+  opacity: 100;
+  transition: visibility 5s, opacity 10.5s ease;
+}
+.float:hover{
+	color:#FFFFFF;
+}
+
+.main-menu.menu-light .navigation > li.active > a {
+    background: linear-gradient(118deg,#1572e8,#1572e8);
+	background-color: #1572e8;
+    box-shadow: 0 0 10px 1px #1572e8;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.main-menu.menu-light .navigation > li ul li.active > a {
+    background: linear-gradient(118deg,#1572e8,#1572e8);
+	background-color: #1572e8;
+    box-shadow: 0 0 10px 1px #1572e8;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 4px;
+}

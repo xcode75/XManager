@@ -1,0 +1,85 @@
+.pricing-card .card.popular {
+  border : 1px solid #7367F0;
+}
+
+.pricing-card .list-group-circle {
+  font-weight : 500;
+  color : #5E5873;
+}
+
+.pricing-card .annual-plan {
+  margin-bottom : 1.7rem;
+}
+
+.pricing-card .annual-plan .plan-price sup {
+  top : -1.5rem;
+  left : 0.2rem;
+}
+
+.pricing-card .annual-plan .plan-price span {
+  font-size : 3.5rem;
+  line-height : 0.8;
+}
+
+.pricing-card .annual-plan .plan-price sub {
+  bottom : 0;
+  right : 0.14rem;
+}
+
+.pricing-card .annual-plan .annual-pricing {
+  position : absolute;
+  margin : auto;
+  left : 0;
+  right : 0;
+}
+
+.pricing-free-trial {
+  height : 16.71rem;
+  background-color : rgba(186, 191, 199, 0.12);
+  margin-right : -2rem;
+  margin-left : -2rem;
+  margin-top : 7.5rem;
+  margin-bottom : 6.3rem;
+}
+
+.pricing-free-trial .row {
+  margin : 0;
+}
+
+.pricing-free-trial .pricing-trial-content {
+  padding : 0 1rem;
+}
+
+.pricing-free-trial .pricing-trial-content img {
+  position : relative;
+  top : -3.1rem;
+}
+
+@media (max-width: 767.98px) {
+  .pricing-free-trial {
+    height : auto;
+  }
+  .pricing-free-trial .pricing-trial-content {
+    -webkit-box-orient : vertical;
+    -webkit-box-direction : normal;
+    -webkit-flex-direction : column;
+        -ms-flex-direction : column;
+            flex-direction : column;
+    -webkit-box-align : center;
+    -webkit-align-items : center;
+    -ms-flex-align : center;
+            align-items : center;
+  }
+  .pricing-free-trial .pricing-trial-content .pricing-trial-img {
+    top : 0;
+    margin-top : 2rem;
+    height : 150px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .pricing-free-trial {
+    margin-right : -1.2rem;
+    margin-left : -1.2rem;
+  }
+}

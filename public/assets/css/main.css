@@ -1,0 +1,373 @@
+
+.vertical-layout.vertical-menu-modern .main-menu {
+  -webkit-transition : 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0s;
+          transition : 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background 0s;
+  -webkit-transform : translate3d(0, 0, 0);
+          transform : translate3d(0, 0, 0);
+  -webkit-backface-visibility : hidden;
+          backface-visibility : hidden;
+}
+
+.vertical-layout.vertical-menu-modern .main-menu .navigation li a {
+  -webkit-box-align : center;
+  -webkit-align-items : center;
+  -ms-flex-align : center;
+          align-items : center;
+}
+
+.vertical-layout.vertical-menu-modern .main-menu .navigation > li > a svg, .vertical-layout.vertical-menu-modern .main-menu .navigation > li > a i {
+  height : 1.4285rem;
+  width : 1.4285rem;
+  font-size : 1.45rem;
+  margin-right : 1.1rem;
+  -webkit-flex-shrink : 0;
+  -ms-flex-negative : 0;
+          flex-shrink : 0;
+}
+
+.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content > li > a svg, .vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content > li > a i {
+  margin-right : 1.45rem;
+  font-size : 11px;
+  height : 11px;
+  width : 11px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
+  width : 260px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation .navigation-header .feather-more-horizontal {
+  display : none;
+}
+
+.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i:before, .vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > svg:before {
+  height : 1.4285rem;
+  width : 1.4285rem;
+  font-size : 1.45rem;
+}
+
+.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:after {
+  content : '';
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%236e6b7b\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : 1.1rem;
+  height : 1.1rem;
+  width : 1.1rem;
+  display : inline-block;
+  position : absolute;
+  right : 20px;
+  top : 14px;
+  -webkit-transform : rotate(0deg);
+      -ms-transform : rotate(0deg);
+          transform : rotate(0deg);
+  -webkit-transition : all 0.2s ease-out;
+          transition : all 0.2s ease-out;
+}
+
+.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub.open:not(.menu-item-closing) > a:after {
+  -webkit-transform : rotate(90deg);
+      -ms-transform : rotate(90deg);
+          transform : rotate(90deg);	  
+}
+
+.vertical-layout.vertical-menu-modern.menu-expanded .footer {
+  margin-left : 260px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header {
+  float : left;
+  width : 80px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header .modern-nav-toggle {
+  display : none;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header.expanded {
+  width : 260px;
+  z-index : 1000;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .navbar .navbar-header.expanded .modern-nav-toggle {
+  display : block;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .navbar.fixed-top {
+  left : 80px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
+  width : 80px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navbar-header .brand-text, .vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .modern-nav-toggle {
+  display : none;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation-header {
+  margin-left : 2.2rem;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation-header span {
+  display : none;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation-header .feather-more-horizontal {
+  display : block;
+  font-size : 1.285rem;
+  width : 18px;
+  height : 18px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li:last-child {
+  margin-bottom : 1.25rem !important;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu:not(.expanded) .navigation li.active a {
+  background : whitesmoke;
+  box-shadow : none;
+  color : #565656;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded {
+  width : 260px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation > li.navigation-header span {
+  display : block;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation > li.navigation-header .feather-more-horizontal {
+  display : none;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation li.has-sub > a:after {
+  content : '';
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%236e6b7b\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : 1rem;
+  height : 1rem;
+  width : 1rem;
+  display : inline-block;
+  position : absolute;
+  right : 20px;
+  top : 14px;
+  -webkit-transform : rotate(0deg);
+      -ms-transform : rotate(0deg);
+          transform : rotate(0deg);
+  -webkit-transition : all 0.2s ease-out;
+          transition : all 0.2s ease-out;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation li.has-sub.open:not(.menu-item-closing) > a:after {
+  -webkit-transform : rotate(90deg);
+      -ms-transform : rotate(90deg);
+          transform : rotate(90deg);	  
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navbar-header .brand-text {
+  display : inline;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .modern-nav-toggle {
+  display : block;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation {
+  overflow : visible;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li.navigation-header span {
+  display : none;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a {
+  text-overflow : inherit;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .app-content, .vertical-layout.vertical-menu-modern.menu-collapsed .footer {
+  margin-left : 80px;
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.floating-nav {
+  width : calc(100vw - (100vw - 100%) - 4.4rem - 74px);
+}
+
+.vertical-layout.vertical-menu-modern.menu-collapsed .header-navbar.navbar-static-top {
+  width : calc(100vw - (100vw - 100%) - 74px);
+  left : 74px;
+}
+
+.vertical-layout.vertical-menu-modern .toggle-icon, .vertical-layout.vertical-menu-modern .collapse-toggle-icon {
+  margin-right : 0.425rem;
+}
+
+.vertical-layout.vertical-menu-modern .toggle-icon:focus, .vertical-layout.vertical-menu-modern .collapse-toggle-icon:focus {
+  outline : none;
+}
+
+@media (min-width: 992px) {
+  .vertical-layout.vertical-menu-modern .main-menu {
+    width : 260px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .vertical-layout.vertical-menu-modern .main-menu {
+    width : 0;
+  }
+  .vertical-layout.vertical-menu-modern .navbar .navbar-header {
+    width : 0;
+  }
+  .vertical-layout.vertical-menu-modern .content, .vertical-layout.vertical-menu-modern .footer {
+    margin-left : 0;
+  }
+  .vertical-layout.vertical-menu-modern.menu-collapsed .app-content, .vertical-layout.vertical-menu-modern.menu-collapsed .footer {
+    margin-left : 0;
+  }
+  .vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
+    width : 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .vertical-layout.vertical-menu-modern .main-menu {
+    width : 0;
+  }
+  .vertical-layout.vertical-menu-modern .navbar .navbar-header {
+    width : 0;
+  }
+  .vertical-layout.vertical-menu-modern .content, .vertical-layout.vertical-menu-modern .footer {
+    margin-left : 0;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity : 0;
+  }
+  to {
+    opacity : 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity : 0;
+  }
+  to {
+    opacity : 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity : 1;
+  }
+  to {
+    opacity : 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity : 1;
+  }
+  to {
+    opacity : 0;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .vertical-menu-modern.vertical-layout .main-menu .navigation > li > a > span {
+    -webkit-animation : none;
+            animation : none;
+  }
+}
+
+/*=========================================================================================
+    File Name: vertical-overlay-menu.scss
+    Description: A overlay style vertical menu with show and hide support. It support
+    light & dark version, filpped layout, right side icons, native scroll and borders menu
+    item seperation.
+    ----------------------------------------------------------------------------------------
+    Item Name: Vuexy  - Vuejs, HTML & Laravel Admin Dashboard Template
+    Author: PIXINVENT
+    Author URL: http://www.themeforest.net/user/pixinvent
+==========================================================================================*/
+.vertical-overlay-menu .content {
+  margin-left : 0;
+}
+
+.vertical-overlay-menu .navbar .navbar-header {
+  float : left;
+  width : 260px;
+}
+
+.vertical-overlay-menu .main-menu, .vertical-overlay-menu.menu-hide .main-menu {
+  opacity : 0;
+  -webkit-transform : translate3d(0, 0, 0);
+          transform : translate3d(0, 0, 0);
+  -webkit-transition : width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+          transition : width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+          transition : width 0.25s, opacity 0.25s, transform 0.25s;
+          transition : width 0.25s, opacity 0.25s, transform 0.25s, -webkit-transform 0.25s;
+  width : 260px;
+  left : -260px;
+}
+
+.vertical-overlay-menu .main-menu .navigation > li > a > svg, .vertical-overlay-menu .main-menu .navigation > li > a > i {
+  margin-right : 14px;
+  float : left;
+  -webkit-transition : 200ms ease all;
+          transition : 200ms ease all;
+  height : 1.4285rem;
+  width : 1.4285rem;
+}
+
+.vertical-overlay-menu .main-menu .navigation > li > a > svg:before, .vertical-overlay-menu .main-menu .navigation > li > a > i:before {
+  -webkit-transition : 200ms ease all;
+          transition : 200ms ease all;
+  font-size : 1.429rem;
+}
+
+.vertical-overlay-menu .main-menu .navigation li.has-sub > a:after {
+  content : '';
+  background-image : url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%236e6b7b\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\' class=\'feather feather-chevron-right\'%3E%3Cpolyline points=\'9 18 15 12 9 6\'%3E%3C/polyline%3E%3C/svg%3E');
+  background-repeat : no-repeat;
+  background-position : center;
+  background-size : 1rem;
+  height : 1rem;
+  width : 1rem;
+  display : inline-block;
+  position : absolute;
+  right : 20px;
+  top : 14px;
+  -webkit-transform : rotate(0deg);
+      -ms-transform : rotate(0deg);
+          transform : rotate(0deg);
+  -webkit-transition : all 0.2s ease-out;
+          transition : all 0.2s ease-out;
+}
+
+.vertical-overlay-menu .main-menu .navigation li.has-sub.open:not(.menu-item-closing) > a:after {
+  -webkit-transform : rotate(90deg);
+      -ms-transform : rotate(90deg);
+          transform : rotate(90deg);	  
+}
+
+.vertical-overlay-menu .main-menu .navigation .navigation-header .feather-more-horizontal {
+  display : none;
+}
+
+.vertical-overlay-menu.menu-open .main-menu {
+  opacity : 1;
+  -webkit-transform : translate3d(260px, 0, 0);
+          transform : translate3d(260px, 0, 0);
+  -webkit-transition : width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+          transition : width 0.25s, opacity 0.25s, -webkit-transform 0.25s;
+          transition : width 0.25s, opacity 0.25s, transform 0.25s;
+          transition : width 0.25s, opacity 0.25s, transform 0.25s, -webkit-transform 0.25s;
+}
