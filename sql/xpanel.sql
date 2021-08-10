@@ -1221,14 +1221,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `afflink` varchar(25) DEFAULT NULL,
   `notification` int(3) NOT NULL DEFAULT '1',
   `ref_by` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id`, `user_name`, `email`, `pass`, `passwd`, `uuid`, `mobile`, `t`, `u`, `d`, `transfer_enable`, `forbidden_ip`, `forbidden_port`, `enable`, `reg_date`, `money`, `expire_time`, `reg_ip`, `node_speedlimit`, `node_connector`, `is_admin`, `last_day_t`, `class`, `expire_in`, `remark`, `node_group`, `reset_day`, `reset_bandwidth`, `telegram_id`, `telegram_name`, `expire_notified`, `traffic_notified`, `afflink`, `notification`, `ref_by`) VALUES
-(1, 'admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 'ePoY6c', '63c0259a-ff63-3b4b-9edc-6da675872ddc', '', 0, 0, 0, 107374182400, '', NULL, 1, '2021-08-08 08:15:06', '0.00', 0, '127.0.0.1', 1024, 1, 1, 0, 0, '2022-08-09 08:15:06', '', 0, 0, '0.00', NULL, NULL, 0, 0, 'v94XiqnQnJ', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -1608,7 +1602,7 @@ ALTER TABLE `telegram_tasks`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `user_subscribe_log`
 --
