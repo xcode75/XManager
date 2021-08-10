@@ -83,7 +83,8 @@ $xPanel['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '🔰Global'
+                        '🔰Global',
+						'🚀Direct'
                     ],
                     'regex' => '(.*)',
                 ]
@@ -93,7 +94,8 @@ $xPanel['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '🔰Global'
+                        '🔰Global',
+						'🚀Direct'
                     ],
                     'regex' => '(.*)',
                 ]
@@ -119,7 +121,7 @@ $xPanel['Clash_Profiles'] = [
             ]
         ],
         'rules' => [
-            'source' => 'default.tpl'
+            'source' => 'clash.tpl'
         ]
     ],
     'clash_old' => [
@@ -200,7 +202,8 @@ $xPanel['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '🔰Global'
+                        '🔰Global',
+						'🚀Direct'
                     ],
                     'regex' => '(.*)',
                 ]
@@ -210,7 +213,8 @@ $xPanel['Clash_Profiles'] = [
                 'type' => 'select',
                 'content' => [
                     'left-proxies' => [
-                        '🔰Global'
+                        '🔰Global',
+						'🚀Direct'
                     ],
                     'regex' => '(.*)',
                 ]
@@ -236,7 +240,7 @@ $xPanel['Clash_Profiles'] = [
             ]
         ],
         'Rule' => [
-            'source' => 'default.tpl'
+            'source' => 'clash.tpl'
         ]
     ]	
 ];
