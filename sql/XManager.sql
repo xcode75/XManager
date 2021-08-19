@@ -238,6 +238,8 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('version', 'v1.0'),
 ('ViewLogs', '0'),
+('AutoUpdate', '0'),
+('NotifyUpdate', '1'),
 ('WebapiSafe', '1'),
 ('wechat_url', NULL);
 
