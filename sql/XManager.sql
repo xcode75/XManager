@@ -236,7 +236,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_account_sid', ''),
 ('twillo_auth_token', ''),
 ('twillo_number', ''),
-('version', 'v1.0'),
+('version', 'v2.3'),
 ('ViewLogs', '0'),
 ('AutoUpdate', '0'),
 ('NotifyUpdate', '1'),
