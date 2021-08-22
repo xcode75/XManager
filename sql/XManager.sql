@@ -241,7 +241,12 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('AutoUpdate', '0'),
 ('NotifyUpdate', '1'),
 ('WebapiSafe', '1'),
-('wechat_url', NULL);
+('wechat_url', NULL),
+('GoogleAuth', '0'),
+('GoogleEmail', ''),
+('GoogleClientID', ''),
+('GoogleSecret', ''),
+('GoogleToken', '');
 
 -- --------------------------------------------------------
 
@@ -1222,9 +1227,10 @@ CREATE TABLE IF NOT EXISTS `user` (
   `traffic_notified` tinyint(1) NOT NULL DEFAULT '0',
   `afflink` varchar(25) DEFAULT NULL,
   `notification` int(3) NOT NULL DEFAULT '1',
-  `ref_by` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
+  `ref_by` int(11) NOT NULL DEFAULT '0',
+  `notice_status` int(10) NOT NULL DEFAULT '0',
+  `notice_id` text
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
