@@ -236,7 +236,6 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_account_sid', ''),
 ('twillo_auth_token', ''),
 ('twillo_number', ''),
-('version', 'v2.3'),
 ('ViewLogs', '0'),
 ('AutoUpdate', '0'),
 ('NotifyUpdate', '1'),
@@ -246,7 +245,10 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('GoogleEmail', ''),
 ('GoogleClientID', ''),
 ('GoogleSecret', ''),
-('GoogleToken', '');
+('GoogleToken', ''),
+('smtp_debug', '0'),
+('latesversion', 'v2.6'),
+('version', 'v2.6');
 
 -- --------------------------------------------------------
 
