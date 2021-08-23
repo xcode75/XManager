@@ -1035,7 +1035,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `id` int(11) NOT NULL,
   `name` varchar(128) NOT NULL,
   `type` int(3) NOT NULL,
-  `server` varchar(128) NOT NULL,
+  `server` varchar(300) NOT NULL,
   `method` varchar(50) NOT NULL DEFAULT 'aes-128-gcm',
   `info` varchar(128) DEFAULT NULL,
   `status` varchar(128) DEFAULT NULL,
