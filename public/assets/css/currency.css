@@ -1,0 +1,4963 @@
+@font-face {
+  font-family: 'crypto';
+  src:  url('/assets/fonts/apps/crypto.eot?663qtf');
+  src:  url('/assets/fonts/apps/crypto.eot?663qtf#iefix') format('embedded-opentype'),
+    url('/assets/fonts/apps/crypto.ttf?663qtf') format('truetype'),
+    url('/assets/fonts/apps/crypto.woff?663qtf') format('woff'),
+    url('/assets/fonts/apps/crypto.svg?663qtf#crypto') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="crypto-"], [class*=" crypto-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'crypto' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.crypto-xbtc .path1:before {
+  content: "\e900";
+  color: rgb(255, 145, 77);
+}
+.crypto-xbtc .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xbtc .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-give .path1:before {
+  content: "\e903";
+  color: rgb(241, 203, 96);
+}
+.crypto-give .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-give .path3:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-give .path4:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-give .path5:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-give .path6:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-abt .path1:before {
+  content: "\e909";
+  color: rgb(62, 255, 255);
+}
+.crypto-abt .path2:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-act .path1:before {
+  content: "\e90b";
+  color: rgb(118, 125, 255);
+}
+.crypto-act .path2:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-actn .path1:before {
+  content: "\e90d";
+  color: rgb(255, 0, 0);
+}
+.crypto-actn .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ada .path1:before {
+  content: "\e90f";
+  color: rgb(13, 30, 48);
+}
+.crypto-ada .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.crypto-ada .path3:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-add .path1:before {
+  content: "\e912";
+  color: rgb(254, 200, 7);
+}
+.crypto-add .path2:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-adx .path1:before {
+  content: "\e914";
+  color: rgb(27, 117, 188);
+}
+.crypto-adx .path2:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ae .path1:before {
+  content: "\e916";
+  color: rgb(222, 63, 107);
+}
+.crypto-ae .path2:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aeon .path1:before {
+  content: "\e918";
+  color: rgb(19, 68, 81);
+}
+.crypto-aeon .path2:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aeon .path3:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aeon .path4:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aeon .path5:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aeur .path1:before {
+  content: "\e91d";
+  color: rgb(5, 29, 45);
+}
+.crypto-aeur .path2:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.crypto-aeur .path3:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.crypto-agi .path1:before {
+  content: "\e920";
+  color: rgb(105, 22, 255);
+}
+.crypto-agi .path2:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-agi .path3:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-agrs .path1:before {
+  content: "\e923";
+  color: rgb(244, 158, 0);
+}
+.crypto-agrs .path2:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aion .path1:before {
+  content: "\e925";
+  color: rgb(0, 191, 236);
+}
+.crypto-aion .path2:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aion .path3:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-algo .path1:before {
+  content: "\e928";
+  color: rgb(0, 0, 0);
+}
+.crypto-algo .path2:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-amb .path1:before {
+  content: "\e92a";
+  color: rgb(60, 91, 224);
+}
+.crypto-amb .path2:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-amp .path1:before {
+  content: "\e92c";
+  color: rgb(45, 174, 228);
+}
+.crypto-amp .path2:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ampl .path1:before {
+  content: "\e92e";
+  color: rgb(0, 0, 0);
+}
+.crypto-ampl .path2:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ant .path1:before {
+  content: "\e930";
+  color: rgb(44, 211, 225);
+}
+.crypto-ant .path2:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-apex .path1:before {
+  content: "\e932";
+  color: rgb(31, 76, 159);
+}
+.crypto-apex .path2:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-appc .path1:before {
+  content: "\e934";
+  color: rgb(253, 135, 94);
+}
+.crypto-appc .path2:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.crypto-ardr .path1:before {
+  content: "\e936";
+  color: rgb(60, 135, 199);
+}
+.crypto-ardr .path2:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-arg .path1:before {
+  content: "\e938";
+  color: rgb(167, 20, 53);
+}
+.crypto-arg .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-arg .path3:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ark .path1:before {
+  content: "\e93b";
+  color: rgb(247, 0, 0);
+}
+.crypto-ark .path2:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-arn .path1:before {
+  content: "\e93d";
+  color: rgb(0, 146, 181);
+}
+.crypto-arn .path2:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-arnx .path1:before {
+  content: "\e93f";
+  color: rgb(67, 102, 151);
+}
+.crypto-arnx .path2:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-arnx .path3:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ary .path1:before {
+  content: "\e942";
+  color: rgb(52, 52, 52);
+}
+.crypto-ary .path2:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ast .path1:before {
+  content: "\e944";
+  color: rgb(0, 97, 255);
+}
+.crypto-ast .path2:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atm .path1:before {
+  content: "\e946";
+  color: rgb(52, 111, 206);
+}
+.crypto-atm .path2:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path1:before {
+  content: "\e948";
+  color: rgb(46, 49, 72);
+}
+.crypto-atom .path2:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path3:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path4:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path5:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path6:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path7:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-atom .path8:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-audr .path1:before {
+  content: "\e950";
+  color: rgb(52, 49, 138);
+}
+.crypto-audr .path2:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-auto .path1:before {
+  content: "\e952";
+  color: rgb(250, 180, 49);
+}
+.crypto-auto .path2:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aywa .path1:before {
+  content: "\e954";
+  color: rgb(51, 85, 181);
+}
+.crypto-aywa .path2:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aywa .path3:before {
+  content: "\e956";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-aywa .path4:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bab .path1:before {
+  content: "\e958";
+  color: rgb(241, 159, 19);
+}
+.crypto-bab .path2:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bal .path1:before {
+  content: "\e95a";
+  color: rgb(30, 30, 30);
+}
+.crypto-bal .path2:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bal .path3:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bal .path4:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-band .path1:before {
+  content: "\e95e";
+  color: rgb(81, 106, 255);
+}
+.crypto-band .path2:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-band .path3:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bat .path1:before {
+  content: "\e961";
+  color: rgb(255, 80, 0);
+}
+.crypto-bat .path2:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bay .path1:before {
+  content: "\e963";
+  color: rgb(99, 86, 171);
+}
+.crypto-bay .path2:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bcbc .path1:before {
+  content: "\e965";
+  color: rgb(0, 74, 181);
+}
+.crypto-bcbc .path2:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bcc .path1:before {
+  content: "\e967";
+  color: rgb(247, 147, 28);
+}
+.crypto-bcc .path2:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: rgb(254, 253, 252);
+}
+.crypto-bcd .path1:before {
+  content: "\e969";
+  color: rgb(252, 195, 57);
+}
+.crypto-bcd .path2:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bch .path1:before {
+  content: "\e96b";
+  color: rgb(141, 195, 81);
+}
+.crypto-bch .path2:before {
+  content: "\e96c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bcio .path1:before {
+  content: "\e96d";
+  color: rgb(63, 67, 173);
+}
+.crypto-bcio .path2:before {
+  content: "\e96e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bcn .path1:before {
+  content: "\e96f";
+  color: rgb(240, 64, 134);
+}
+.crypto-bcn .path2:before {
+  content: "\e970";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bco .path1:before {
+  content: "\e971";
+  color: rgb(44, 118, 183);
+}
+.crypto-bco .path2:before {
+  content: "\e972";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bcpt .path1:before {
+  content: "\e973";
+  color: rgb(64, 64, 64);
+}
+.crypto-bcpt .path2:before {
+  content: "\e974";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bdl .path1:before {
+  content: "\e975";
+  color: rgb(229, 76, 64);
+}
+.crypto-bdl .path2:before {
+  content: "\e976";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-beam .path1:before {
+  content: "\e977";
+  color: rgb(11, 118, 255);
+}
+.crypto-beam .path2:before {
+  content: "\e978";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bela .path1:before {
+  content: "\e979";
+  color: rgb(19, 160, 246);
+}
+.crypto-bela .path2:before {
+  content: "\e97a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bix .path1:before {
+  content: "\e97b";
+  color: rgb(0, 0, 0);
+}
+.crypto-bix .path2:before {
+  content: "\e97c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-blcn .path1:before {
+  content: "\e97d";
+  color: rgb(42, 171, 228);
+}
+.crypto-blcn .path2:before {
+  content: "\e97e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-blk .path1:before {
+  content: "\e97f";
+  color: rgb(24, 24, 24);
+}
+.crypto-blk .path2:before {
+  content: "\e980";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-block .path1:before {
+  content: "\e981";
+  color: rgb(16, 19, 65);
+}
+.crypto-block .path2:before {
+  content: "\e982";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-block .path3:before {
+  content: "\e983";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-blz .path1:before {
+  content: "\e984";
+  color: rgb(24, 87, 140);
+}
+.crypto-blz .path2:before {
+  content: "\e985";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bnb .path1:before {
+  content: "\e986";
+  color: rgb(243, 186, 47);
+}
+.crypto-bnb .path2:before {
+  content: "\e987";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bnt .path1:before {
+  content: "\e988";
+  color: rgb(0, 13, 43);
+}
+.crypto-bnt .path2:before {
+  content: "\e989";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bnty .path1:before {
+  content: "\e98a";
+  color: rgb(253, 122, 61);
+}
+.crypto-bnty .path2:before {
+  content: "\e98b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-booty .path1:before {
+  content: "\e98c";
+  color: rgb(0, 180, 244);
+}
+.crypto-booty .path2:before {
+  content: "\e98d";
+  margin-left: -1em;
+  color: rgb(254, 255, 255);
+}
+.crypto-bos .path1:before {
+  content: "\e98e";
+  color: rgb(0, 168, 214);
+}
+.crypto-bos .path2:before {
+  content: "\e98f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bpt .path1:before {
+  content: "\e990";
+  color: rgb(15, 99, 216);
+}
+.crypto-bpt .path2:before {
+  content: "\e991";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bq .path1:before {
+  content: "\e992";
+  color: rgb(29, 29, 29);
+}
+.crypto-bq .path2:before {
+  content: "\e993";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-brd .path1:before {
+  content: "\e994";
+  color: rgb(254, 93, 134);
+}
+.crypto-brd .path2:before {
+  content: "\e995";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bsd .path1:before {
+  content: "\e996";
+  color: rgb(0, 0, 0);
+}
+.crypto-bsd .path2:before {
+  content: "\e997";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bsv .path1:before {
+  content: "\e998";
+  color: rgb(234, 179, 4);
+}
+.crypto-bsv .path2:before {
+  content: "\e999";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btc .path1:before {
+  content: "\e99a";
+  color: rgb(247, 147, 26);
+}
+.crypto-btc .path2:before {
+  content: "\e99b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btcd .path1:before {
+  content: "\e99c";
+  color: rgb(255, 102, 0);
+}
+.crypto-btcd .path2:before {
+  content: "\e99d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btch .path1:before {
+  content: "\e99e";
+  color: rgb(71, 0, 194);
+}
+.crypto-btch .path2:before {
+  content: "\e99f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btch .path3:before {
+  content: "\e9a0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btch .path4:before {
+  content: "\e9a1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btcp .path1:before {
+  content: "\e9a2";
+  color: rgb(39, 45, 99);
+}
+.crypto-btcp .path2:before {
+  content: "\e9a3";
+  margin-left: -1em;
+  color: rgb(254, 254, 254);
+}
+.crypto-btcz .path1:before {
+  content: "\e9a4";
+  color: rgb(248, 194, 74);
+}
+.crypto-btcz .path2:before {
+  content: "\e9a5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btdx .path1:before {
+  content: "\e9a6";
+  color: rgb(0, 170, 255);
+}
+.crypto-btdx .path2:before {
+  content: "\e9a7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btdx .path3:before {
+  content: "\e9a8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btg .path1:before {
+  content: "\e9a9";
+  color: rgb(235, 168, 9);
+}
+.crypto-btg .path2:before {
+  content: "\e9aa";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btm .path1:before {
+  content: "\e9ab";
+  color: rgb(80, 76, 76);
+}
+.crypto-btm .path2:before {
+  content: "\e9ac";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bts .path1:before {
+  content: "\e9ad";
+  color: rgb(53, 186, 235);
+}
+.crypto-bts .path2:before {
+  content: "\e9ae";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btt .path1:before {
+  content: "\e9af";
+  color: rgb(0, 0, 0);
+}
+.crypto-btt .path2:before {
+  content: "\e9b0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btt .path3:before {
+  content: "\e9b1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btt .path4:before {
+  content: "\e9b2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btt .path5:before {
+  content: "\e9b3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-btx .path1:before {
+  content: "\e9b4";
+  color: rgb(251, 46, 163);
+}
+.crypto-btx .path2:before {
+  content: "\e9b5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-burst .path1:before {
+  content: "\e9b6";
+  color: rgb(45, 45, 45);
+}
+.crypto-burst .path2:before {
+  content: "\e9b7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-bze .path1:before {
+  content: "\e9b8";
+  color: rgb(0, 174, 239);
+}
+.crypto-bze .path2:before {
+  content: "\e9b9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-call .path1:before {
+  content: "\e9ba";
+  color: rgb(251, 180, 19);
+}
+.crypto-call .path2:before {
+  content: "\e9bb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-call .path3:before {
+  content: "\e9bc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cc .path1:before {
+  content: "\e9bd";
+  color: rgb(54, 176, 243);
+}
+.crypto-cc .path2:before {
+  content: "\e9be";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cc .path3:before {
+  content: "\e9bf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cdn .path1:before {
+  content: "\e9c0";
+  color: rgb(247, 8, 8);
+}
+.crypto-cdn .path2:before {
+  content: "\e9c1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cdt .path1:before {
+  content: "\e9c2";
+  color: rgb(39, 39, 49);
+}
+.crypto-cdt .path2:before {
+  content: "\e9c3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cenz .path1:before {
+  content: "\e9c4";
+  color: rgb(48, 137, 242);
+}
+.crypto-cenz .path2:before {
+  content: "\e9c5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-chain .path1:before {
+  content: "\e9c6";
+  color: rgb(0, 172, 237);
+}
+.crypto-chain .path2:before {
+  content: "\e9c7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-chain .path3:before {
+  content: "\e9c8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-chat .path1:before {
+  content: "\e9c9";
+  color: rgb(28, 152, 247);
+}
+.crypto-chat .path2:before {
+  content: "\e9ca";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-chips .path1:before {
+  content: "\e9cb";
+  color: rgb(89, 129, 130);
+}
+.crypto-chips .path2:before {
+  content: "\e9cc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cix .path1:before {
+  content: "\e9cd";
+  color: rgb(5, 118, 180);
+}
+.crypto-cix .path2:before {
+  content: "\e9ce";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cix .path3:before {
+  content: "\e9cf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-clam .path1:before {
+  content: "\e9d0";
+  color: rgb(32, 197, 211);
+}
+.crypto-clam .path2:before {
+  content: "\e9d1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cloak .path1:before {
+  content: "\e9d2";
+  color: rgb(255, 58, 0);
+}
+.crypto-cloak .path2:before {
+  content: "\e9d3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cmm .path1:before {
+  content: "\e9d4";
+  color: rgb(47, 210, 229);
+}
+.crypto-cmm .path2:before {
+  content: "\e9d5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cmt .path1:before {
+  content: "\e9d6";
+  color: rgb(193, 160, 92);
+}
+.crypto-cmt .path2:before {
+  content: "\e9d7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cnd .path1:before {
+  content: "\e9d8";
+  color: rgb(56, 57, 57);
+}
+.crypto-cnd .path2:before {
+  content: "\e9d9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cnx .path1:before {
+  content: "\e9da";
+  color: rgb(76, 107, 174);
+}
+.crypto-cnx .path2:before {
+  content: "\e9db";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-cnx .path3:before {
+  content: "\e9dc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cny .path1:before {
+  content: "\e9dd";
+  color: rgb(255, 67, 20);
+}
+.crypto-cny .path2:before {
+  content: "\e9de";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cob .path1:before {
+  content: "\e9df";
+  color: rgb(19, 191, 153);
+}
+.crypto-cob .path2:before {
+  content: "\e9e0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-colx .path1:before {
+  content: "\e9e1";
+  color: rgb(119, 195, 176);
+}
+.crypto-colx .path2:before {
+  content: "\e9e2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-comp .path1:before {
+  content: "\e9e3";
+  color: rgb(0, 211, 149);
+}
+.crypto-comp .path2:before {
+  content: "\e9e4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-coqui .path1:before {
+  content: "\e9e5";
+  color: rgb(113, 200, 0);
+}
+.crypto-coqui .path2:before {
+  content: "\e9e6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cred .path1:before {
+  content: "\e9e7";
+  color: rgb(55, 232, 163);
+}
+.crypto-cred .path2:before {
+  content: "\e9e8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-crpt .path1:before {
+  content: "\e9e9";
+  color: rgb(0, 189, 205);
+}
+.crypto-crpt .path2:before {
+  content: "\e9ea";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-crw .path1:before {
+  content: "\e9eb";
+  color: rgb(15, 21, 41);
+}
+.crypto-crw .path2:before {
+  content: "\e9ec";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cs .path1:before {
+  content: "\e9ed";
+  color: rgb(38, 38, 38);
+}
+.crypto-cs .path2:before {
+  content: "\e9ee";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ctr .path1:before {
+  content: "\e9ef";
+  color: rgb(253, 222, 108);
+}
+.crypto-ctr .path2:before {
+  content: "\e9f0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ctxc .path1:before {
+  content: "\e9f1";
+  color: rgb(0, 0, 0);
+}
+.crypto-ctxc .path2:before {
+  content: "\e9f2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ctxc .path3:before {
+  content: "\e9f3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ctxc .path4:before {
+  content: "\e9f4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-cvc .path1:before {
+  content: "\e9f5";
+  color: rgb(58, 176, 62);
+}
+.crypto-cvc .path2:before {
+  content: "\e9f6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-d .path1:before {
+  content: "\e9f7";
+  color: rgb(184, 184, 184);
+}
+.crypto-d .path2:before {
+  content: "\e9f8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dai .path1:before {
+  content: "\e9f9";
+  color: rgb(244, 183, 49);
+}
+.crypto-dai .path2:before {
+  content: "\e9fa";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dash .path1:before {
+  content: "\e9fb";
+  color: rgb(0, 140, 231);
+}
+.crypto-dash .path2:before {
+  content: "\e9fc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dash .path3:before {
+  content: "\e9fd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dat .path1:before {
+  content: "\e9fe";
+  color: rgb(45, 156, 219);
+}
+.crypto-dat .path2:before {
+  content: "\e9ff";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-data .path1:before {
+  content: "\ea00";
+  color: rgb(233, 87, 15);
+}
+.crypto-data .path2:before {
+  content: "\ea01";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dbc .path1:before {
+  content: "\ea02";
+  color: rgb(91, 193, 212);
+}
+.crypto-dbc .path2:before {
+  content: "\ea03";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dcn .path1:before {
+  content: "\ea04";
+  color: rgb(19, 100, 133);
+}
+.crypto-dcn .path2:before {
+  content: "\ea05";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dcr .path1:before {
+  content: "\ea06";
+  color: rgb(46, 214, 161);
+}
+.crypto-dcr .path2:before {
+  content: "\ea07";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-deez .path1:before {
+  content: "\ea08";
+  color: rgb(147, 147, 147);
+}
+.crypto-deez .path2:before {
+  content: "\ea09";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dent .path1:before {
+  content: "\ea0a";
+  color: rgb(102, 102, 102);
+}
+.crypto-dent .path2:before {
+  content: "\ea0b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dew .path1:before {
+  content: "\ea0c";
+  color: rgb(254, 201, 7);
+}
+.crypto-dew .path2:before {
+  content: "\ea0d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dgb .path1:before {
+  content: "\ea0e";
+  color: rgb(0, 106, 210);
+}
+.crypto-dgb .path2:before {
+  content: "\ea0f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dgd .path1:before {
+  content: "\ea10";
+  color: rgb(244, 208, 41);
+}
+.crypto-dgd .path2:before {
+  content: "\ea11";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dlt .path1:before {
+  content: "\ea12";
+  color: rgb(244, 174, 149);
+}
+.crypto-dlt .path2:before {
+  content: "\ea13";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dnt .path1:before {
+  content: "\ea14";
+  color: rgb(44, 57, 143);
+}
+.crypto-dnt .path2:before {
+  content: "\ea15";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dock .path1:before {
+  content: "\ea16";
+  color: rgb(120, 109, 188);
+}
+.crypto-dock .path2:before {
+  content: "\ea17";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-doge .path1:before {
+  content: "\ea18";
+  color: rgb(195, 166, 52);
+}
+.crypto-doge .path2:before {
+  content: "\ea19";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dot .path1:before {
+  content: "\ea1a";
+  color: rgb(230, 0, 122);
+}
+.crypto-dot .path2:before {
+  content: "\ea1b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-drgn .path1:before {
+  content: "\ea1c";
+  color: rgb(201, 17, 17);
+}
+.crypto-drgn .path2:before {
+  content: "\ea1d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-drgn .path3:before {
+  content: "\ea1e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-drop .path1:before {
+  content: "\ea1f";
+  color: rgb(36, 45, 61);
+}
+.crypto-drop .path2:before {
+  content: "\ea20";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-drop .path3:before {
+  content: "\ea21";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-drop .path4:before {
+  content: "\ea22";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-drop .path5:before {
+  content: "\ea23";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dta .path1:before {
+  content: "\ea24";
+  color: rgb(116, 210, 105);
+}
+.crypto-dta .path2:before {
+  content: "\ea25";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dth .path1:before {
+  content: "\ea26";
+  color: rgb(60, 128, 241);
+}
+.crypto-dth .path2:before {
+  content: "\ea27";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dth .path3:before {
+  content: "\ea28";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dtr .path1:before {
+  content: "\ea29";
+  color: rgb(18, 23, 71);
+}
+.crypto-dtr .path2:before {
+  content: "\ea2a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-dtr .path3:before {
+  content: "\ea2b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-ebst .path1:before {
+  content: "\ea2c";
+  color: rgb(22, 147, 212);
+}
+.crypto-ebst .path2:before {
+  content: "\ea2d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-eca .path1:before {
+  content: "\ea2e";
+  color: rgb(170, 21, 221);
+}
+.crypto-eca .path2:before {
+  content: "\ea2f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-edg .path1:before {
+  content: "\ea30";
+  color: rgb(43, 21, 68);
+}
+.crypto-edg .path2:before {
+  content: "\ea31";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-edo .path1:before {
+  content: "\ea32";
+  color: rgb(36, 36, 36);
+}
+.crypto-edo .path2:before {
+  content: "\ea33";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-edoge .path1:before {
+  content: "\ea34";
+  color: rgb(15, 172, 243);
+}
+.crypto-edoge .path2:before {
+  content: "\ea35";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ela .path1:before {
+  content: "\ea36";
+  color: rgb(63, 186, 223);
+}
+.crypto-ela .path2:before {
+  content: "\ea37";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+.crypto-ela .path3:before {
+  content: "\ea38";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-ela .path4:before {
+  content: "\ea39";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-ela .path5:before {
+  content: "\ea3a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ela .path6:before {
+  content: "\ea3b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-ela .path7:before {
+  content: "\ea3c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-elec .path1:before {
+  content: "\ea3d";
+  color: rgb(255, 153, 0);
+}
+.crypto-elec .path2:before {
+  content: "\ea3e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-elec .path3:before {
+  content: "\ea3f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-elec .path4:before {
+  content: "\ea40";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-elf .path1:before {
+  content: "\ea41";
+  color: rgb(43, 94, 187);
+}
+.crypto-elf .path2:before {
+  content: "\ea42";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-elix .path1:before {
+  content: "\ea43";
+  color: rgb(0, 173, 237);
+}
+.crypto-elix .path2:before {
+  content: "\ea44";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-elix .path3:before {
+  content: "\ea45";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-elix .path4:before {
+  content: "\ea46";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-elix .path5:before {
+  content: "\ea47";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.145;
+}
+.crypto-ella .path1:before {
+  content: "\ea48";
+  color: rgb(57, 106, 40);
+}
+.crypto-ella .path2:before {
+  content: "\ea49";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-emc .path1:before {
+  content: "\ea4a";
+  color: rgb(180, 159, 252);
+}
+.crypto-emc .path2:before {
+  content: "\ea4b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-emc2 .path1:before {
+  content: "\ea4c";
+  color: rgb(0, 204, 255);
+}
+.crypto-emc2 .path2:before {
+  content: "\ea4d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+.crypto-emc2 .path3:before {
+  content: "\ea4e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-emc2 .path4:before {
+  content: "\ea4f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-eng .path1:before {
+  content: "\ea50";
+  color: rgb(47, 47, 47);
+}
+.crypto-eng .path2:before {
+  content: "\ea51";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-enj .path1:before {
+  content: "\ea52";
+  color: rgb(98, 77, 191);
+}
+.crypto-enj .path2:before {
+  content: "\ea53";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-entrp .path1:before {
+  content: "\ea54";
+  color: rgb(250, 88, 54);
+}
+.crypto-entrp .path2:before {
+  content: "\ea55";
+  margin-left: -1em;
+  color: rgb(254, 255, 255);
+}
+.crypto-eon .path1:before {
+  content: "\ea56";
+  color: rgb(68, 63, 84);
+}
+.crypto-eon .path2:before {
+  content: "\ea57";
+  margin-left: -1em;
+  color: rgb(254, 255, 254);
+  opacity: 0.7;
+}
+.crypto-eon .path3:before {
+  content: "\ea58";
+  margin-left: -1em;
+  color: rgb(254, 255, 254);
+}
+.crypto-eop .path1:before {
+  content: "\ea59";
+  color: rgb(53, 167, 223);
+}
+.crypto-eop .path2:before {
+  content: "\ea5a";
+  margin-left: -1em;
+  color: rgb(254, 255, 254);
+}
+.crypto-eqli .path1:before {
+  content: "\ea5c";
+  color: rgb(201, 163, 94);
+}
+.crypto-eqli .path2:before {
+  content: "\ea5d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-equa .path1:before {
+  content: "\ea5e";
+  color: rgb(246, 137, 34);
+}
+.crypto-equa .path2:before {
+  content: "\ea5f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-etc .path1:before {
+  content: "\ea60";
+  color: rgb(50, 131, 50);
+}
+.crypto-etc .path2:before {
+  content: "\ea61";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-etc .path3:before {
+  content: "\ea62";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6010;
+}
+.crypto-etc .path4:before {
+  content: "\ea63";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.crypto-etc .path5:before {
+  content: "\ea64";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6030;
+}
+.crypto-eth .path1:before {
+  content: "\ea65";
+  color: rgb(98, 126, 234);
+}
+.crypto-eth .path2:before {
+  content: "\ea66";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6020;
+}
+.crypto-eth .path3:before {
+  content: "\ea67";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-eth .path4:before {
+  content: "\ea68";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6020;
+}
+.crypto-eth .path5:before {
+  content: "\ea69";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-eth .path6:before {
+  content: "\ea6a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.crypto-eth .path7:before {
+  content: "\ea6b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6020;
+}
+.crypto-ethos .path1:before {
+  content: "\ea6c";
+  color: rgb(0, 255, 186);
+}
+.crypto-ethos .path2:before {
+  content: "\ea6d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ethos .path3:before {
+  content: "\ea6e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-etn .path1:before {
+  content: "\ea6f";
+  color: rgb(35, 190, 226);
+}
+.crypto-etn .path2:before {
+  content: "\ea70";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-etp .path1:before {
+  content: "\ea71";
+  color: rgb(0, 165, 255);
+}
+.crypto-etp .path2:before {
+  content: "\ea72";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-eur .path1:before {
+  content: "\ea73";
+  color: rgb(15, 143, 248);
+}
+.crypto-eur .path2:before {
+  content: "\ea74";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-evx .path1:before {
+  content: "\ea75";
+  color: rgb(4, 74, 172);
+}
+.crypto-evx .path2:before {
+  content: "\ea76";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-exmo .path1:before {
+  content: "\ea77";
+  color: rgb(52, 127, 251);
+}
+.crypto-exmo .path2:before {
+  content: "\ea78";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-exp .path1:before {
+  content: "\ea79";
+  color: rgb(255, 170, 92);
+}
+.crypto-exp .path2:before {
+  content: "\ea7a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fair .path1:before {
+  content: "\ea7b";
+  color: rgb(201, 151, 5);
+}
+.crypto-fair .path2:before {
+  content: "\ea7c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fct .path1:before {
+  content: "\ea7d";
+  color: rgb(65, 123, 164);
+}
+.crypto-fct .path2:before {
+  content: "\ea7e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fil .path1:before {
+  content: "\ea7f";
+  color: rgb(66, 193, 202);
+}
+.crypto-fil .path2:before {
+  content: "\ea80";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fjc .path1:before {
+  content: "\ea81";
+  color: rgb(0, 175, 236);
+}
+.crypto-fjc .path2:before {
+  content: "\ea82";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fjc .path3:before {
+  content: "\ea83";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fjc .path4:before {
+  content: "\ea84";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fldc .path1:before {
+  content: "\ea85";
+  color: rgb(196, 14, 9);
+}
+.crypto-fldc .path2:before {
+  content: "\ea86";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-flo .path1:before {
+  content: "\ea87";
+  color: rgb(32, 128, 162);
+}
+.crypto-flo .path2:before {
+  content: "\ea88";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fsn .path1:before {
+  content: "\ea89";
+  color: rgb(29, 154, 215);
+}
+.crypto-fsn .path2:before {
+  content: "\ea8a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ftc .path1:before {
+  content: "\ea8b";
+  color: rgb(39, 50, 58);
+}
+.crypto-ftc .path2:before {
+  content: "\ea8c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fuel .path1:before {
+  content: "\ea8d";
+  color: rgb(64, 150, 208);
+}
+.crypto-fuel .path2:before {
+  content: "\ea8e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-fun .path1:before {
+  content: "\ea8f";
+  color: rgb(237, 25, 104);
+}
+.crypto-fun .path2:before {
+  content: "\ea90";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-game .path1:before {
+  content: "\ea91";
+  color: rgb(45, 71, 91);
+}
+.crypto-game .path2:before {
+  content: "\ea92";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gas .path1:before {
+  content: "\ea93";
+  color: rgb(88, 191, 0);
+}
+.crypto-gas .path2:before {
+  content: "\ea94";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gbp .path1:before {
+  content: "\ea95";
+  color: rgb(188, 63, 224);
+}
+.crypto-gbp .path2:before {
+  content: "\ea96";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gbx .path1:before {
+  content: "\ea97";
+  color: rgb(22, 102, 175);
+}
+.crypto-gbx .path2:before {
+  content: "\ea98";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gbyte .path1:before {
+  content: "\ea99";
+  color: rgb(48, 44, 44);
+}
+.crypto-gbyte .path2:before {
+  content: "\ea9a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-generic .path1:before {
+  content: "\ea9b";
+  color: rgb(239, 185, 20);
+}
+.crypto-generic .path2:before {
+  content: "\ea9c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gin .path1:before {
+  content: "\ea9d";
+  color: rgb(0, 141, 222);
+}
+.crypto-gin .path2:before {
+  content: "\ea9e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gin .path3:before {
+  content: "\ea9f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-glxt .path1:before {
+  content: "\eaa0";
+  color: rgb(0, 83, 150);
+}
+.crypto-glxt .path2:before {
+  content: "\eaa1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gmr .path1:before {
+  content: "\eaa2";
+  color: rgb(55, 45, 44);
+}
+.crypto-gmr .path2:before {
+  content: "\eaa3";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.crypto-gmr .path3:before {
+  content: "\eaa4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gmr .path4:before {
+  content: "\eaa5";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.crypto-gmr .path5:before {
+  content: "\eaa6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gno .path1:before {
+  content: "\eaa7";
+  color: rgb(0, 166, 196);
+}
+.crypto-gno .path2:before {
+  content: "\eaa8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gnt .path1:before {
+  content: "\eaa9";
+  color: rgb(0, 29, 87);
+}
+.crypto-gnt .path2:before {
+  content: "\eaaa";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gold .path1:before {
+  content: "\eaab";
+  color: rgb(241, 179, 43);
+}
+.crypto-gold .path2:before {
+  content: "\eaac";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-grc .path1:before {
+  content: "\eaad";
+  color: rgb(84, 17, 179);
+}
+.crypto-grc .path2:before {
+  content: "\eaae";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-grin .path1:before {
+  content: "\eaaf";
+  color: rgb(255, 243, 0);
+}
+.crypto-grin .path2:before {
+  content: "\eab0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-grs .path1:before {
+  content: "\eab1";
+  color: rgb(55, 126, 150);
+}
+.crypto-grs .path2:before {
+  content: "\eab2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gsc .path1:before {
+  content: "\eab3";
+  color: rgb(255, 0, 96);
+}
+.crypto-gsc .path2:before {
+  content: "\eab4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gto .path1:before {
+  content: "\eab5";
+  color: rgb(127, 39, 255);
+}
+.crypto-gto .path2:before {
+  content: "\eab6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gup .path1:before {
+  content: "\eab7";
+  color: rgb(55, 220, 216);
+}
+.crypto-gup .path2:before {
+  content: "\eab8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gusd .path1:before {
+  content: "\eab9";
+  color: rgb(0, 220, 250);
+}
+.crypto-gusd .path2:before {
+  content: "\eaba";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gvt .path1:before {
+  content: "\eabb";
+  color: rgb(22, 185, 173);
+}
+.crypto-gvt .path2:before {
+  content: "\eabc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gxs .path1:before {
+  content: "\eabd";
+  color: rgb(53, 165, 243);
+}
+.crypto-gxs .path2:before {
+  content: "\eabe";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gzr .path1:before {
+  content: "\eabf";
+  color: rgb(86, 201, 233);
+}
+.crypto-gzr .path2:before {
+  content: "\eac0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gzr .path3:before {
+  content: "\eac1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gzr .path4:before {
+  content: "\eac2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-gzr .path5:before {
+  content: "\eac3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-hight .path1:before {
+  content: "\eac4";
+  color: rgb(17, 127, 192);
+}
+.crypto-hight .path2:before {
+  content: "\eac5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-hodl .path1:before {
+  content: "\eac6";
+  color: rgb(213, 145, 67);
+}
+.crypto-hodl .path2:before {
+  content: "\eac7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-hot .path1:before {
+  content: "\eac8";
+  color: rgb(136, 52, 255);
+}
+.crypto-hot .path2:before {
+  content: "\eac9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-hpb .path1:before {
+  content: "\eaca";
+  color: rgb(21, 145, 202);
+}
+.crypto-hpb .path2:before {
+  content: "\eacb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-hpb .path3:before {
+  content: "\eacc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-hsr .path1:before {
+  content: "\eacd";
+  color: rgb(86, 66, 142);
+}
+.crypto-hsr .path2:before {
+  content: "\eace";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ht .path1:before {
+  content: "\eacf";
+  color: rgb(42, 48, 105);
+}
+.crypto-ht .path2:before {
+  content: "\ead0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ht .path3:before {
+  content: "\ead1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-html .path1:before {
+  content: "\ead2";
+  color: rgb(207, 169, 103);
+}
+.crypto-html .path2:before {
+  content: "\ead3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-huc .path1:before {
+  content: "\ead4";
+  color: rgb(255, 192, 24);
+}
+.crypto-huc .path2:before {
+  content: "\ead5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-hush .path1:before {
+  content: "\ead6";
+  color: rgb(41, 41, 41);
+}
+.crypto-hush .path2:before {
+  content: "\ead7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-icn .path1:before {
+  content: "\ead8";
+  color: rgb(76, 111, 140);
+}
+.crypto-icn .path2:before {
+  content: "\ead9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-icx .path1:before {
+  content: "\eada";
+  color: rgb(31, 197, 201);
+}
+.crypto-icx .path2:before {
+  content: "\eadb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ignis .path1:before {
+  content: "\eadc";
+  color: rgb(249, 192, 17);
+}
+.crypto-ignis .path2:before {
+  content: "\eadd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ilk .path1:before {
+  content: "\eade";
+  color: rgb(152, 194, 58);
+}
+.crypto-ilk .path2:before {
+  content: "\eadf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ink .path1:before {
+  content: "\eae0";
+  color: rgb(223, 26, 20);
+}
+.crypto-ink .path2:before {
+  content: "\eae1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ins .path1:before {
+  content: "\eae2";
+  color: rgb(178, 163, 246);
+}
+.crypto-ins .path2:before {
+  content: "\eae3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ins .path3:before {
+  content: "\eae4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-ion .path1:before {
+  content: "\eae5";
+  color: rgb(87, 190, 234);
+}
+.crypto-ion .path2:before {
+  content: "\eae6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iop .path1:before {
+  content: "\eae7";
+  color: rgb(12, 175, 165);
+}
+.crypto-iop .path2:before {
+  content: "\eae8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iop .path3:before {
+  content: "\eae9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iop .path4:before {
+  content: "\eaea";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iost .path1:before {
+  content: "\eaeb";
+  color: rgb(28, 28, 28);
+}
+.crypto-iost .path2:before {
+  content: "\eaec";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iotx .path1:before {
+  content: "\eaed";
+  color: rgb(0, 212, 213);
+}
+.crypto-iotx .path2:before {
+  content: "\eaee";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iotx .path3:before {
+  content: "\eaef";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.crypto-iotx .path4:before {
+  content: "\eaf0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-iotx .path5:before {
+  content: "\eaf1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-iotx .path6:before {
+  content: "\eaf2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iotx .path7:before {
+  content: "\eaf3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+.crypto-iotx .path8:before {
+  content: "\eaf4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.crypto-iotx .path9:before {
+  content: "\eaf5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3;
+}
+.crypto-iotx .path10:before {
+  content: "\eaf6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.crypto-iotx .path11:before {
+  content: "\eaf7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-iotx .path12:before {
+  content: "\eaf8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.crypto-iotx .path13:before {
+  content: "\eaf9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-iotx .path14:before {
+  content: "\eafa";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-iotx .path15:before {
+  content: "\eafb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-iotx .path16:before {
+  content: "\eafc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.95;
+}
+.crypto-iotx .path17:before {
+  content: "\eafd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-iotx .path18:before {
+  content: "\eafe";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.55;
+}
+.crypto-iotx .path19:before {
+  content: "\eaff";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iotx .path20:before {
+  content: "\eb00";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.95;
+}
+.crypto-iotx .path21:before {
+  content: "\eb01";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.crypto-iotx .path22:before {
+  content: "\eb02";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-iotx .path23:before {
+  content: "\eb03";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+.crypto-iotx .path24:before {
+  content: "\eb04";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-iq .path1:before {
+  content: "\eb05";
+  color: rgb(85, 221, 255);
+}
+.crypto-iq .path2:before {
+  content: "\eb06";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-itc .path1:before {
+  content: "\eb07";
+  color: rgb(16, 32, 68);
+}
+.crypto-itc .path2:before {
+  content: "\eb08";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-jnt .path1:before {
+  content: "\eb09";
+  color: rgb(0, 80, 219);
+}
+.crypto-jnt .path2:before {
+  content: "\eb0a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-jpy .path1:before {
+  content: "\eb0b";
+  color: rgb(234, 199, 73);
+}
+.crypto-jpy .path2:before {
+  content: "\eb0c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-kcs .path1:before {
+  content: "\eb0d";
+  color: rgb(0, 147, 221);
+}
+.crypto-kcs .path2:before {
+  content: "\eb0e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-kin .path1:before {
+  content: "\eb0f";
+  color: rgb(0, 95, 255);
+}
+.crypto-kin .path2:before {
+  content: "\eb10";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-klown .path1:before {
+  content: "\eb11";
+  color: rgb(234, 0, 23);
+}
+.crypto-klown .path2:before {
+  content: "\eb12";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-klown .path3:before {
+  content: "\eb13";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-klown .path4:before {
+  content: "\eb14";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-kmd .path1:before {
+  content: "\eb15";
+  color: rgb(43, 102, 128);
+}
+.crypto-kmd .path2:before {
+  content: "\eb16";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-kmd .path3:before {
+  content: "\eb17";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-knc .path1:before {
+  content: "\eb18";
+  color: rgb(24, 140, 146);
+}
+.crypto-knc .path2:before {
+  content: "\eb19";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-krb .path1:before {
+  content: "\eb1a";
+  color: rgb(0, 174, 239);
+}
+.crypto-krb .path2:before {
+  content: "\eb1b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lbc .path1:before {
+  content: "\eb1c";
+  color: rgb(0, 97, 73);
+}
+.crypto-lbc .path2:before {
+  content: "\eb1d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lend .path1:before {
+  content: "\eb1e";
+  color: rgb(15, 169, 201);
+}
+.crypto-lend .path2:before {
+  content: "\eb1f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-leo .path1:before {
+  content: "\eb20";
+  color: rgb(17, 2, 30);
+}
+.crypto-leo .path2:before {
+  content: "\eb21";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-leo .path3:before {
+  content: "\eb22";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-leo .path4:before {
+  content: "\eb23";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-leo .path5:before {
+  content: "\eb24";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-link .path1:before {
+  content: "\eb25";
+  color: rgb(42, 90, 218);
+}
+.crypto-link .path2:before {
+  content: "\eb26";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lkk .path1:before {
+  content: "\eb27";
+  color: rgb(157, 1, 235);
+}
+.crypto-lkk .path2:before {
+  content: "\eb28";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-loom .path1:before {
+  content: "\eb29";
+  color: rgb(72, 190, 255);
+}
+.crypto-loom .path2:before {
+  content: "\eb2a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-loom .path3:before {
+  content: "\eb2b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-loom .path4:before {
+  content: "\eb2c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lpt .path1:before {
+  content: "\eb2d";
+  color: rgb(0, 0, 0);
+}
+.crypto-lpt .path2:before {
+  content: "\eb2e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lrc .path1:before {
+  content: "\eb2f";
+  color: rgb(42, 182, 246);
+}
+.crypto-lrc .path2:before {
+  content: "\eb30";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lsk .path1:before {
+  content: "\eb31";
+  color: rgb(13, 78, 160);
+}
+.crypto-lsk .path2:before {
+  content: "\eb32";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ltc .path1:before {
+  content: "\eb33";
+  color: rgb(191, 187, 187);
+}
+.crypto-ltc .path2:before {
+  content: "\eb34";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-lun .path1:before {
+  content: "\eb35";
+  color: rgb(245, 87, 73);
+}
+.crypto-lun .path2:before {
+  content: "\eb36";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-maid .path1:before {
+  content: "\eb37";
+  color: rgb(85, 146, 215);
+}
+.crypto-maid .path2:before {
+  content: "\eb38";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-maid .path3:before {
+  content: "\eb39";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-maid .path4:before {
+  content: "\eb3a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.2;
+}
+.crypto-mana .path1:before {
+  content: "\eb3b";
+  color: rgb(255, 45, 85);
+}
+.crypto-mana .path2:before {
+  content: "\eb3c";
+  margin-left: -1em;
+  color: rgb(22, 20, 26);
+}
+.crypto-matic .path1:before {
+  content: "\eb3d";
+  color: rgb(43, 109, 239);
+}
+.crypto-matic .path2:before {
+  content: "\eb3e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mcap .path1:before {
+  content: "\eb3f";
+  color: rgb(3, 59, 74);
+}
+.crypto-mcap .path2:before {
+  content: "\eb40";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mco .path1:before {
+  content: "\eb41";
+  color: rgb(16, 63, 104);
+}
+.crypto-mco .path2:before {
+  content: "\eb42";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mda .path1:before {
+  content: "\eb43";
+  color: rgb(1, 166, 79);
+}
+.crypto-mda .path2:before {
+  content: "\eb44";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mds .path1:before {
+  content: "\eb45";
+  color: rgb(30, 37, 44);
+}
+.crypto-mds .path2:before {
+  content: "\eb46";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-med .path1:before {
+  content: "\eb47";
+  color: rgb(0, 176, 255);
+}
+.crypto-med .path2:before {
+  content: "\eb48";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-meetone .path1:before {
+  content: "\eb49";
+  color: rgb(0, 0, 0);
+}
+.crypto-meetone .path2:before {
+  content: "\eb4a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7030;
+}
+.crypto-meetone .path3:before {
+  content: "\eb4b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mft .path1:before {
+  content: "\eb4c";
+  color: rgb(218, 17, 87);
+}
+.crypto-mft .path2:before {
+  content: "\eb4d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-miota .path1:before {
+  content: "\eb4e";
+  color: rgb(36, 36, 36);
+}
+.crypto-miota .path2:before {
+  content: "\eb4f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mith .path1:before {
+  content: "\eb50";
+  color: rgb(0, 49, 109);
+}
+.crypto-mith .path2:before {
+  content: "\eb51";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mkr .path1:before {
+  content: "\eb52";
+  color: rgb(26, 171, 155);
+}
+.crypto-mkr .path2:before {
+  content: "\eb53";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mln .path1:before {
+  content: "\eb54";
+  color: rgb(11, 21, 41);
+}
+.crypto-mln .path2:before {
+  content: "\eb55";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mnx .path1:before {
+  content: "\eb56";
+  color: rgb(0, 173, 239);
+}
+.crypto-mnx .path2:before {
+  content: "\eb57";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mnz .path1:before {
+  content: "\eb58";
+  color: rgb(127, 54, 138);
+}
+.crypto-mnz .path2:before {
+  content: "\eb59";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-moac .path1:before {
+  content: "\eb5a";
+  color: rgb(0, 0, 0);
+}
+.crypto-moac .path2:before {
+  content: "\eb5b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mod .path1:before {
+  content: "\eb5c";
+  color: rgb(9, 84, 125);
+}
+.crypto-mod .path2:before {
+  content: "\eb5d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-mod .path3:before {
+  content: "\eb5e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mona .path1:before {
+  content: "\eb5f";
+  color: rgb(222, 199, 153);
+}
+.crypto-mona .path2:before {
+  content: "\eb60";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-msr .path1:before {
+  content: "\eb61";
+  color: rgb(71, 185, 92);
+}
+.crypto-msr .path2:before {
+  content: "\eb62";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-msr .path3:before {
+  content: "\eb63";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mth .path1:before {
+  content: "\eb64";
+  color: rgb(16, 79, 202);
+}
+.crypto-mth .path2:before {
+  content: "\eb65";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-mth .path3:before {
+  content: "\eb66";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-mth .path4:before {
+  content: "\eb67";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-mth .path5:before {
+  content: "\eb68";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-mtl .path1:before {
+  content: "\eb69";
+  color: rgb(30, 31, 37);
+}
+.crypto-mtl .path2:before {
+  content: "\eb6a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-music .path1:before {
+  content: "\eb6b";
+  color: rgb(255, 255, 255);
+}
+.crypto-music .path2:before {
+  content: "\eb6c";
+  margin-left: -1em;
+  color: rgb(251, 191, 2);
+}
+.crypto-mzc .path1:before {
+  content: "\eb6d";
+  color: rgb(255, 170, 5);
+}
+.crypto-mzc .path2:before {
+  content: "\eb6e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nano .path1:before {
+  content: "\eb6f";
+  color: rgb(74, 144, 226);
+}
+.crypto-nano .path2:before {
+  content: "\eb70";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nas .path1:before {
+  content: "\eb71";
+  color: rgb(34, 34, 34);
+}
+.crypto-nas .path2:before {
+  content: "\eb72";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nav .path1:before {
+  content: "\eb73";
+  color: rgb(125, 89, 181);
+}
+.crypto-nav .path2:before {
+  content: "\eb74";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ncash .path1:before {
+  content: "\eb75";
+  color: rgb(54, 169, 207);
+}
+.crypto-ncash .path2:before {
+  content: "\eb76";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ndz .path1:before {
+  content: "\eb77";
+  color: rgb(98, 47, 186);
+}
+.crypto-ndz .path2:before {
+  content: "\eb78";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nebl .path1:before {
+  content: "\eb79";
+  color: rgb(80, 71, 158);
+}
+.crypto-nebl .path2:before {
+  content: "\eb7a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-neo .path1:before {
+  content: "\eb7b";
+  color: rgb(88, 191, 0);
+}
+.crypto-neo .path2:before {
+  content: "\eb7c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-neos .path1:before {
+  content: "\eb7d";
+  color: rgb(229, 243, 0);
+}
+.crypto-neos .path2:before {
+  content: "\eb7e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-neu .path1:before {
+  content: "\eb7f";
+  color: rgb(179, 186, 0);
+}
+.crypto-neu .path2:before {
+  content: "\eb80";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-neu .path3:before {
+  content: "\eb81";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nexo .path1:before {
+  content: "\eb82";
+  color: rgb(26, 65, 153);
+}
+.crypto-nexo .path2:before {
+  content: "\eb83";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-nexo .path3:before {
+  content: "\eb84";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.crypto-nexo .path4:before {
+  content: "\eb85";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nexo .path5:before {
+  content: "\eb86";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.9;
+}
+.crypto-nexo .path6:before {
+  content: "\eb87";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-nexo .path7:before {
+  content: "\eb88";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-ngc .path1:before {
+  content: "\eb89";
+  color: rgb(248, 0, 0);
+}
+.crypto-ngc .path2:before {
+  content: "\eb8a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nio .path1:before {
+  content: "\eb8b";
+  color: rgb(112, 201, 201);
+}
+.crypto-nio .path2:before {
+  content: "\eb8c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nlc2 .path1:before {
+  content: "\eb8d";
+  color: rgb(242, 143, 1);
+}
+.crypto-nlc2 .path2:before {
+  content: "\eb8e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nlg .path1:before {
+  content: "\eb8f";
+  color: rgb(42, 176, 253);
+}
+.crypto-nlg .path2:before {
+  content: "\eb90";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nmc .path1:before {
+  content: "\eb91";
+  color: rgb(24, 108, 157);
+}
+.crypto-nmc .path2:before {
+  content: "\eb92";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nmr .path1:before {
+  content: "\eb93";
+  color: rgb(5, 7, 8);
+}
+.crypto-nmr .path2:before {
+  content: "\eb94";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-npxs .path1:before {
+  content: "\eb95";
+  color: rgb(245, 209, 0);
+}
+.crypto-npxs .path2:before {
+  content: "\eb96";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-npxs .path3:before {
+  content: "\eb97";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nuls .path1:before {
+  content: "\eb98";
+  color: rgb(130, 189, 57);
+}
+.crypto-nuls .path2:before {
+  content: "\eb99";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nxs .path1:before {
+  content: "\eb9a";
+  color: rgb(64, 153, 205);
+}
+.crypto-nxs .path2:before {
+  content: "\eb9b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-nxt .path1:before {
+  content: "\eb9c";
+  color: rgb(0, 143, 187);
+}
+.crypto-nxt .path2:before {
+  content: "\eb9d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-oax .path1:before {
+  content: "\eb9e";
+  color: rgb(22, 75, 121);
+}
+.crypto-oax .path2:before {
+  content: "\eb9f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ok .path1:before {
+  content: "\eba0";
+  color: rgb(0, 0, 0);
+}
+.crypto-ok .path2:before {
+  content: "\eba1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-omg .path1:before {
+  content: "\eba2";
+  color: rgb(16, 16, 16);
+}
+.crypto-omg .path2:before {
+  content: "\eba3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-omni .path1:before {
+  content: "\eba4";
+  color: rgb(28, 52, 122);
+}
+.crypto-omni .path2:before {
+  content: "\eba5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ong .path1:before {
+  content: "\eba6";
+  color: rgb(0, 0, 0);
+}
+.crypto-ong .path2:before {
+  content: "\eba7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ong .path3:before {
+  content: "\eba8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ong .path4:before {
+  content: "\eba9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ont .path1:before {
+  content: "\ebaa";
+  color: rgb(50, 164, 190);
+}
+.crypto-ont .path2:before {
+  content: "\ebab";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-oot .path1:before {
+  content: "\ebac";
+  color: rgb(37, 170, 225);
+}
+.crypto-oot .path2:before {
+  content: "\ebad";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ost .path1:before {
+  content: "\ebae";
+  color: rgb(52, 68, 91);
+}
+.crypto-ost .path2:before {
+  content: "\ebaf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ox .path1:before {
+  content: "\ebb0";
+  color: rgb(67, 146, 205);
+}
+.crypto-ox .path2:before {
+  content: "\ebb1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-oxt .path1:before {
+  content: "\ebb2";
+  color: rgb(95, 69, 186);
+}
+.crypto-oxt .path2:before {
+  content: "\ebb3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pac .path1:before {
+  content: "\ebb4";
+  color: rgb(245, 235, 22);
+}
+.crypto-pac .path2:before {
+  content: "\ebb5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-part .path1:before {
+  content: "\ebb6";
+  color: rgb(3, 232, 176);
+}
+.crypto-part .path2:before {
+  content: "\ebb7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pasc .path1:before {
+  content: "\ebb8";
+  color: rgb(247, 147, 30);
+}
+.crypto-pasc .path2:before {
+  content: "\ebb9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pasl .path1:before {
+  content: "\ebba";
+  color: rgb(0, 172, 255);
+}
+.crypto-pasl .path2:before {
+  content: "\ebbb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pax .path1:before {
+  content: "\ebbc";
+  color: rgb(237, 231, 8);
+}
+.crypto-pax .path2:before {
+  content: "\ebbd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pay .path1:before {
+  content: "\ebbe";
+  color: rgb(48, 44, 44);
+}
+.crypto-pay .path2:before {
+  content: "\ebbf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-payx .path1:before {
+  content: "\ebc0";
+  color: rgb(102, 51, 0);
+}
+.crypto-payx .path2:before {
+  content: "\ebc1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-payx .path3:before {
+  content: "\ebc2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pink .path1:before {
+  content: "\ebc3";
+  color: rgb(237, 121, 170);
+}
+.crypto-pink .path2:before {
+  content: "\ebc4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-pink .path3:before {
+  content: "\ebc5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pirl .path1:before {
+  content: "\ebc6";
+  color: rgb(150, 183, 61);
+}
+.crypto-pirl .path2:before {
+  content: "\ebc7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-plr .path1:before {
+  content: "\ebca";
+  color: rgb(0, 191, 255);
+}
+.crypto-plr .path2:before {
+  content: "\ebcb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-poa .path1:before {
+  content: "\ebcc";
+  color: rgb(68, 79, 161);
+}
+.crypto-poa .path2:before {
+  content: "\ebcd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-poe .path1:before {
+  content: "\ebce";
+  color: rgb(220, 214, 204);
+}
+.crypto-poe .path2:before {
+  content: "\ebcf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-polis .path1:before {
+  content: "\ebd0";
+  color: rgb(44, 62, 80);
+}
+.crypto-polis .path2:before {
+  content: "\ebd1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-poly .path1:before {
+  content: "\ebd2";
+  color: rgb(76, 90, 149);
+}
+.crypto-poly .path2:before {
+  content: "\ebd3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pot .path1:before {
+  content: "\ebd4";
+  color: rgb(16, 91, 47);
+}
+.crypto-pot .path2:before {
+  content: "\ebd5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-powr .path1:before {
+  content: "\ebd6";
+  color: rgb(5, 188, 169);
+}
+.crypto-powr .path2:before {
+  content: "\ebd7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ppc .path1:before {
+  content: "\ebd8";
+  color: rgb(60, 176, 84);
+}
+.crypto-ppc .path2:before {
+  content: "\ebd9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ppp .path1:before {
+  content: "\ebda";
+  color: rgb(52, 143, 141);
+}
+.crypto-ppp .path2:before {
+  content: "\ebdb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ppt .path1:before {
+  content: "\ebdc";
+  color: rgb(21, 39, 67);
+}
+.crypto-ppt .path2:before {
+  content: "\ebdd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pre .path1:before {
+  content: "\ebde";
+  color: rgb(58, 140, 189);
+}
+.crypto-pre .path2:before {
+  content: "\ebdf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pre .path3:before {
+  content: "\ebe0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pre .path4:before {
+  content: "\ebe1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-prl .path1:before {
+  content: "\ebe2";
+  color: rgb(16, 97, 227);
+}
+.crypto-prl .path2:before {
+  content: "\ebe3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-pungo .path1:before {
+  content: "\ebe4";
+  color: rgb(34, 181, 115);
+}
+.crypto-pungo .path2:before {
+  content: "\ebe5";
+  margin-left: -1em;
+  color: rgb(254, 255, 255);
+}
+.crypto-pura .path1:before {
+  content: "\ebe6";
+  color: rgb(51, 51, 51);
+}
+.crypto-pura .path2:before {
+  content: "\ebe7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-qash .path1:before {
+  content: "\ebe8";
+  color: rgb(19, 71, 232);
+}
+.crypto-qash .path2:before {
+  content: "\ebe9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-qiwi .path1:before {
+  content: "\ebea";
+  color: rgb(255, 140, 0);
+}
+.crypto-qiwi .path2:before {
+  content: "\ebeb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-qlc .path1:before {
+  content: "\ebec";
+  color: rgb(97, 0, 137);
+}
+.crypto-qlc .path2:before {
+  content: "\ebed";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-qrl .path1:before {
+  content: "\ebee";
+  color: rgb(37, 37, 37);
+}
+.crypto-qrl .path2:before {
+  content: "\ebef";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-qsp .path1:before {
+  content: "\ebf0";
+  color: rgb(69, 69, 69);
+}
+.crypto-qsp .path2:before {
+  content: "\ebf1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-qtum .path1:before {
+  content: "\ebf2";
+  color: rgb(46, 154, 208);
+}
+.crypto-qtum .path2:before {
+  content: "\ebf3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-r .path1:before {
+  content: "\ebf4";
+  color: rgb(119, 26, 78);
+}
+.crypto-r .path2:before {
+  content: "\ebf5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rads .path1:before {
+  content: "\ebf6";
+  color: rgb(157, 75, 239);
+}
+.crypto-rads .path2:before {
+  content: "\ebf7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rap .path1:before {
+  content: "\ebf8";
+  color: rgb(0, 0, 0);
+}
+.crypto-rap .path2:before {
+  content: "\ebf9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rcn .path1:before {
+  content: "\ebfa";
+  color: rgb(53, 85, 249);
+}
+.crypto-rcn .path2:before {
+  content: "\ebfb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rdd .path1:before {
+  content: "\ebfc";
+  color: rgb(227, 6, 19);
+}
+.crypto-rdd .path2:before {
+  content: "\ebfd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.75;
+}
+.crypto-rdd .path3:before {
+  content: "\ebfe";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rdn .path1:before {
+  content: "\ebff";
+  color: rgb(42, 42, 42);
+}
+.crypto-rdn .path2:before {
+  content: "\ec00";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ren .path1:before {
+  content: "\ec01";
+  color: rgb(8, 8, 23);
+}
+.crypto-ren .path2:before {
+  content: "\ec02";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rep .path1:before {
+  content: "\ec03";
+  color: rgb(96, 42, 82);
+}
+.crypto-rep .path2:before {
+  content: "\ec04";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-repv2 .path1:before {
+  content: "\ec05";
+  color: rgb(14, 14, 33);
+}
+.crypto-repv2 .path2:before {
+  content: "\ec06";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-req .path1:before {
+  content: "\ec07";
+  color: rgb(0, 230, 160);
+}
+.crypto-req .path2:before {
+  content: "\ec08";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rhoc .path1:before {
+  content: "\ec09";
+  color: rgb(204, 30, 70);
+}
+.crypto-rhoc .path2:before {
+  content: "\ec0a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ric .path1:before {
+  content: "\ec0b";
+  color: rgb(96, 228, 221);
+}
+.crypto-ric .path2:before {
+  content: "\ec0c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rise .path1:before {
+  content: "\ec0d";
+  color: rgb(244, 147, 82);
+}
+.crypto-rise .path2:before {
+  content: "\ec0e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rlc .path1:before {
+  content: "\ec0f";
+  color: rgb(255, 216, 0);
+}
+.crypto-rlc .path2:before {
+  content: "\ec10";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rpx .path1:before {
+  content: "\ec11";
+  color: rgb(141, 24, 27);
+}
+.crypto-rpx .path2:before {
+  content: "\ec12";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rub .path1:before {
+  content: "\ec13";
+  color: rgb(100, 209, 255);
+}
+.crypto-rub .path2:before {
+  content: "\ec14";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-rvn .path1:before {
+  content: "\ec15";
+  color: rgb(56, 65, 130);
+}
+.crypto-rvn .path2:before {
+  content: "\ec16";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ryo .path1:before {
+  content: "\ec17";
+  color: rgb(61, 88, 176);
+}
+.crypto-ryo .path2:before {
+  content: "\ec18";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ryo .path3:before {
+  content: "\ec19";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-safe .path1:before {
+  content: "\ec1a";
+  color: rgb(0, 104, 140);
+}
+.crypto-safe .path2:before {
+  content: "\ec1b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-safe .path3:before {
+  content: "\ec1c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sai .path1:before {
+  content: "\ec1d";
+  color: rgb(182, 137, 0);
+}
+.crypto-sai .path2:before {
+  content: "\ec1e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-salt .path1:before {
+  content: "\ec1f";
+  color: rgb(27, 238, 244);
+}
+.crypto-salt .path2:before {
+  content: "\ec20";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-san .path1:before {
+  content: "\ec21";
+  color: rgb(43, 119, 179);
+}
+.crypto-san .path2:before {
+  content: "\ec22";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sbd .path1:before {
+  content: "\ec23";
+  color: rgb(75, 162, 242);
+}
+.crypto-sbd .path2:before {
+  content: "\ec24";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sberbank .path1:before {
+  content: "\ec25";
+  color: rgb(72, 178, 84);
+}
+.crypto-sberbank .path2:before {
+  content: "\ec26";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sc .path1:before {
+  content: "\ec27";
+  color: rgb(32, 238, 130);
+}
+.crypto-sc .path2:before {
+  content: "\ec28";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-shift .path1:before {
+  content: "\ec29";
+  color: rgb(150, 75, 156);
+}
+.crypto-shift .path2:before {
+  content: "\ec2a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+}
+.crypto-shift .path3:before {
+  content: "\ec2b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-shift .path4:before {
+  content: "\ec2c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.4;
+}
+.crypto-shift .path5:before {
+  content: "\ec2d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.crypto-sib .path1:before {
+  content: "\ec2e";
+  color: rgb(5, 123, 193);
+}
+.crypto-sib .path2:before {
+  content: "\ec2f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sin .path1:before {
+  content: "\ec30";
+  color: rgb(245, 52, 46);
+}
+.crypto-sin .path2:before {
+  content: "\ec31";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sin .path3:before {
+  content: "\ec32";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sky .path1:before {
+  content: "\ec33";
+  color: rgb(0, 114, 255);
+}
+.crypto-sky .path2:before {
+  content: "\ec34";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-slr .path1:before {
+  content: "\ec35";
+  color: rgb(253, 166, 22);
+}
+.crypto-slr .path2:before {
+  content: "\ec36";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sls .path1:before {
+  content: "\ec37";
+  color: rgb(142, 148, 149);
+}
+.crypto-sls .path2:before {
+  content: "\ec38";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-smart .path1:before {
+  content: "\ec39";
+  color: rgb(254, 198, 13);
+}
+.crypto-smart .path2:before {
+  content: "\ec3a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sngls .path1:before {
+  content: "\ec3b";
+  color: rgb(179, 13, 35);
+}
+.crypto-sngls .path2:before {
+  content: "\ec3c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-snm .path1:before {
+  content: "\ec3d";
+  color: rgb(11, 28, 38);
+}
+.crypto-snm .path2:before {
+  content: "\ec3e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-snt .path1:before {
+  content: "\ec3f";
+  color: rgb(91, 109, 238);
+}
+.crypto-snt .path2:before {
+  content: "\ec40";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-soc .path1:before {
+  content: "\ec41";
+  color: rgb(25, 146, 72);
+}
+.crypto-soc .path2:before {
+  content: "\ec42";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-soc .path3:before {
+  content: "\ec43";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-spank .path1:before {
+  content: "\ec44";
+  color: rgb(255, 59, 129);
+}
+.crypto-spank .path2:before {
+  content: "\ec45";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sphtx .path1:before {
+  content: "\ec46";
+  color: rgb(0, 176, 152);
+}
+.crypto-sphtx .path2:before {
+  content: "\ec47";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-srn .path1:before {
+  content: "\ec48";
+  color: rgb(28, 28, 28);
+}
+.crypto-srn .path2:before {
+  content: "\ec49";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-stak .path1:before {
+  content: "\ec4a";
+  color: rgb(242, 148, 27);
+}
+.crypto-stak .path2:before {
+  content: "\ec4b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-start .path1:before {
+  content: "\ec4c";
+  color: rgb(1, 174, 240);
+}
+.crypto-start .path2:before {
+  content: "\ec4d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-steem .path1:before {
+  content: "\ec4e";
+  color: rgb(75, 162, 242);
+}
+.crypto-steem .path2:before {
+  content: "\ec4f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-storj .path1:before {
+  content: "\ec50";
+  color: rgb(38, 131, 255);
+}
+.crypto-storj .path2:before {
+  content: "\ec51";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-storm .path1:before {
+  content: "\ec52";
+  color: rgb(8, 13, 152);
+}
+.crypto-storm .path2:before {
+  content: "\ec53";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-stq .path1:before {
+  content: "\ec54";
+  color: rgb(45, 196, 231);
+}
+.crypto-stq .path2:before {
+  content: "\ec55";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-strat .path1:before {
+  content: "\ec56";
+  color: rgb(19, 135, 201);
+}
+.crypto-strat .path2:before {
+  content: "\ec57";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-stx .path1:before {
+  content: "\ec58";
+  color: rgb(115, 36, 240);
+}
+.crypto-stx .path2:before {
+  content: "\ec59";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sub .path1:before {
+  content: "\ec5a";
+  color: rgb(229, 52, 49);
+}
+.crypto-sub .path2:before {
+  content: "\ec5b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sumo .path1:before {
+  content: "\ec5c";
+  color: rgb(45, 156, 219);
+}
+.crypto-sumo .path2:before {
+  content: "\ec5d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-sys .path1:before {
+  content: "\ec5e";
+  color: rgb(0, 130, 198);
+}
+.crypto-sys .path2:before {
+  content: "\ec5f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-taas .path1:before {
+  content: "\ec60";
+  color: rgb(0, 35, 66);
+}
+.crypto-taas .path2:before {
+  content: "\ec61";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tau .path1:before {
+  content: "\ec62";
+  color: rgb(123, 52, 110);
+}
+.crypto-tau .path2:before {
+  content: "\ec63";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tbx .path1:before {
+  content: "\ec64";
+  color: rgb(82, 68, 212);
+}
+.crypto-tbx .path2:before {
+  content: "\ec65";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tel .path1:before {
+  content: "\ec66";
+  color: rgb(20, 200, 255);
+}
+.crypto-tel .path2:before {
+  content: "\ec67";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ten .path1:before {
+  content: "\ec68";
+  color: rgb(8, 153, 205);
+}
+.crypto-ten .path2:before {
+  content: "\ec69";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tern .path1:before {
+  content: "\ec6a";
+  color: rgb(244, 194, 87);
+}
+.crypto-tern .path2:before {
+  content: "\ec6b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tgch .path1:before {
+  content: "\ec6c";
+  color: rgb(67, 66, 71);
+}
+.crypto-tgch .path2:before {
+  content: "\ec6d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tgch .path3:before {
+  content: "\ec6e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-theta .path1:before {
+  content: "\ec6f";
+  color: rgb(42, 184, 230);
+}
+.crypto-theta .path2:before {
+  content: "\ec70";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tix .path1:before {
+  content: "\ec71";
+  color: rgb(239, 73, 77);
+}
+.crypto-tix .path2:before {
+  content: "\ec72";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tkn .path1:before {
+  content: "\ec73";
+  color: rgb(36, 221, 123);
+}
+.crypto-tkn .path2:before {
+  content: "\ec74";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tks .path1:before {
+  content: "\ec75";
+  color: rgb(137, 90, 248);
+}
+.crypto-tks .path2:before {
+  content: "\ec76";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tks .path3:before {
+  content: "\ec77";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tnb .path1:before {
+  content: "\ec78";
+  color: rgb(255, 192, 78);
+}
+.crypto-tnb .path2:before {
+  content: "\ec79";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tnc .path1:before {
+  content: "\ec7a";
+  color: rgb(255, 67, 155);
+}
+.crypto-tnc .path2:before {
+  content: "\ec7b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tnt .path1:before {
+  content: "\ec7c";
+  color: rgb(255, 64, 129);
+}
+.crypto-tnt .path2:before {
+  content: "\ec7d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tomo .path1:before {
+  content: "\ec7e";
+  color: rgb(26, 31, 54);
+}
+.crypto-tomo .path2:before {
+  content: "\ec7f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tpay .path1:before {
+  content: "\ec80";
+  color: rgb(48, 88, 166);
+}
+.crypto-tpay .path2:before {
+  content: "\ec81";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tpay .path3:before {
+  content: "\ec82";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tpay .path4:before {
+  content: "\ec83";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-trig .path1:before {
+  content: "\ec84";
+  color: rgb(48, 192, 242);
+}
+.crypto-trig .path2:before {
+  content: "\ec85";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-trtl .path1:before {
+  content: "\ec86";
+  color: rgb(0, 132, 61);
+}
+.crypto-trtl .path2:before {
+  content: "\ec87";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-trtl .path3:before {
+  content: "\ec88";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-trx .path1:before {
+  content: "\ec89";
+  color: rgb(239, 0, 39);
+}
+.crypto-trx .path2:before {
+  content: "\ec8a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tusd .path1:before {
+  content: "\ec8b";
+  color: rgb(43, 46, 127);
+}
+.crypto-tusd .path2:before {
+  content: "\ec8c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tusd .path3:before {
+  content: "\ec8d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tusd .path4:before {
+  content: "\ec8e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-tzc .path1:before {
+  content: "\ec8f";
+  color: rgb(55, 72, 81);
+}
+.crypto-tzc .path2:before {
+  content: "\ec90";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-ubq .path1:before {
+  content: "\ec91";
+  color: rgb(0, 234, 144);
+}
+.crypto-ubq .path2:before {
+  content: "\ec92";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.698;
+}
+.crypto-ubq .path3:before {
+  content: "\ec93";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-uma .path1:before {
+  content: "\ec94";
+  color: rgb(255, 74, 74);
+}
+.crypto-uma .path2:before {
+  content: "\ec95";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-uma .path3:before {
+  content: "\ec96";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-uni .path1:before {
+  content: "\ec97";
+  color: rgb(255, 0, 122);
+}
+.crypto-uni .path2:before {
+  content: "\ec98";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-uni .path3:before {
+  content: "\ec99";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-uni .path4:before {
+  content: "\ec9a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-uni .path5:before {
+  content: "\ec9b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-unity .path1:before {
+  content: "\ec9c";
+  color: rgb(245, 134, 52);
+}
+.crypto-unity .path2:before {
+  content: "\ec9d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-unity .path3:before {
+  content: "\ec9e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+.crypto-usd .path1:before {
+  content: "\ec9f";
+  color: rgb(108, 222, 7);
+}
+.crypto-usd .path2:before {
+  content: "\eca0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-usdc .path1:before {
+  content: "\eca1";
+  color: rgb(39, 117, 201);
+}
+.crypto-usdc .path2:before {
+  content: "\eca2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-usdt .path1:before {
+  content: "\eca3";
+  color: rgb(38, 161, 123);
+}
+.crypto-usdt .path2:before {
+  content: "\eca4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-utk .path1:before {
+  content: "\eca5";
+  color: rgb(48, 54, 122);
+}
+.crypto-utk .path2:before {
+  content: "\eca6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-veri .path1:before {
+  content: "\eca7";
+  color: rgb(255, 153, 51);
+}
+.crypto-veri .path2:before {
+  content: "\eca8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vet .path1:before {
+  content: "\eca9";
+  color: rgb(21, 189, 255);
+}
+.crypto-vet .path2:before {
+  content: "\ecaa";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-via .path1:before {
+  content: "\ecab";
+  color: rgb(86, 86, 86);
+}
+.crypto-via .path2:before {
+  content: "\ecac";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vib .path1:before {
+  content: "\ecad";
+  color: rgb(255, 31, 67);
+}
+.crypto-vib .path2:before {
+  content: "\ecae";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vibe .path1:before {
+  content: "\ecaf";
+  color: rgb(51, 139, 229);
+}
+.crypto-vibe .path2:before {
+  content: "\ecb0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vivo .path1:before {
+  content: "\ecb1";
+  color: rgb(64, 138, 241);
+}
+.crypto-vivo .path2:before {
+  content: "\ecb2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vrc .path1:before {
+  content: "\ecb3";
+  color: rgb(65, 139, 202);
+}
+.crypto-vrc .path2:before {
+  content: "\ecb4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vrsc .path1:before {
+  content: "\ecb5";
+  color: rgb(255, 181, 0);
+}
+.crypto-vrsc .path2:before {
+  content: "\ecb6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vrsc .path3:before {
+  content: "\ecb7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vtc .path1:before {
+  content: "\ecb8";
+  color: rgb(4, 134, 87);
+}
+.crypto-vtc .path2:before {
+  content: "\ecb9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-vtho .path1:before {
+  content: "\ecba";
+  color: rgb(42, 82, 132);
+}
+.crypto-vtho .path2:before {
+  content: "\ecbb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7040;
+}
+.crypto-vtho .path3:before {
+  content: "\ecbc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wabi .path1:before {
+  content: "\ecbd";
+  color: rgb(57, 155, 50);
+}
+.crypto-wabi .path2:before {
+  content: "\ecbe";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wan .path1:before {
+  content: "\ecbf";
+  color: rgb(19, 106, 173);
+}
+.crypto-wan .path2:before {
+  content: "\ecc0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-waves .path1:before {
+  content: "\ecc1";
+  color: rgb(1, 85, 255);
+}
+.crypto-waves .path2:before {
+  content: "\ecc2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wax .path1:before {
+  content: "\ecc3";
+  color: rgb(248, 144, 34);
+}
+.crypto-wax .path2:before {
+  content: "\ecc4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wbtc .path1:before {
+  content: "\ecc5";
+  color: rgb(32, 26, 45);
+}
+.crypto-wbtc .path2:before {
+  content: "\ecc6";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wbtc .path3:before {
+  content: "\ecc7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wgr .path1:before {
+  content: "\ecc8";
+  color: rgb(184, 0, 0);
+}
+.crypto-wgr .path2:before {
+  content: "\ecc9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wicc .path1:before {
+  content: "\ecca";
+  color: rgb(87, 131, 203);
+}
+.crypto-wicc .path2:before {
+  content: "\eccb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wicc .path3:before {
+  content: "\eccc";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wings .path1:before {
+  content: "\eccd";
+  color: rgb(13, 201, 247);
+}
+.crypto-wings .path2:before {
+  content: "\ecce";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3050;
+}
+.crypto-wings .path3:before {
+  content: "\eccf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.7;
+}
+.crypto-wings .path4:before {
+  content: "\ecd0";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wpr .path1:before {
+  content: "\ecd1";
+  color: rgb(255, 230, 0);
+}
+.crypto-wpr .path2:before {
+  content: "\ecd2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wtc .path1:before {
+  content: "\ecd3";
+  color: rgb(130, 0, 255);
+}
+.crypto-wtc .path2:before {
+  content: "\ecd4";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-wtc .path3:before {
+  content: "\ecd5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5040;
+}
+.crypto-x .path1:before {
+  content: "\ecd6";
+  color: rgb(59, 89, 152);
+}
+.crypto-x .path2:before {
+  content: "\ecd7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-x .path3:before {
+  content: "\ecd8";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-x .path4:before {
+  content: "\ecd9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xas .path1:before {
+  content: "\ecda";
+  color: rgb(250, 160, 13);
+}
+.crypto-xas .path2:before {
+  content: "\ecdb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xbc .path1:before {
+  content: "\ecdc";
+  color: rgb(247, 147, 26);
+}
+.crypto-xbc .path2:before {
+  content: "\ecdd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xbp .path1:before {
+  content: "\ecde";
+  color: rgb(33, 175, 103);
+}
+.crypto-xbp .path2:before {
+  content: "\ecdf";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xby .path1:before {
+  content: "\ece0";
+  color: rgb(86, 244, 241);
+}
+.crypto-xby .path2:before {
+  content: "\ece1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xcp .path1:before {
+  content: "\ece2";
+  color: rgb(237, 22, 80);
+}
+.crypto-xcp .path2:before {
+  content: "\ece3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xdn .path1:before {
+  content: "\ece4";
+  color: rgb(79, 122, 162);
+}
+.crypto-xdn .path2:before {
+  content: "\ece5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xem .path1:before {
+  content: "\ece6";
+  color: rgb(103, 178, 232);
+}
+.crypto-xem .path2:before {
+  content: "\ece7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xin .path1:before {
+  content: "\ece8";
+  color: rgb(30, 181, 250);
+}
+.crypto-xin .path2:before {
+  content: "\ece9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xlm .path1:before {
+  content: "\ecea";
+  color: rgb(0, 0, 0);
+}
+.crypto-xlm .path2:before {
+  content: "\eceb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmcc .path1:before {
+  content: "\ecec";
+  color: rgb(221, 6, 50);
+}
+.crypto-xmcc .path2:before {
+  content: "\eced";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmg .path1:before {
+  content: "\ecee";
+  color: rgb(0, 74, 128);
+}
+.crypto-xmg .path2:before {
+  content: "\ecef";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmo .path1:before {
+  content: "\ecf0";
+  color: rgb(255, 102, 0);
+}
+.crypto-xmo .path2:before {
+  content: "\ecf1";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmo .path3:before {
+  content: "\ecf2";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmo .path4:before {
+  content: "\ecf3";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmr .path1:before {
+  content: "\ecf4";
+  color: rgb(255, 102, 0);
+}
+.crypto-xmr .path2:before {
+  content: "\ecf5";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xmy .path1:before {
+  content: "\ecf6";
+  color: rgb(236, 16, 118);
+}
+.crypto-xmy .path2:before {
+  content: "\ecf7";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xp .path1:before {
+  content: "\ecf8";
+  color: rgb(0, 130, 0);
+}
+.crypto-xp .path2:before {
+  content: "\ecf9";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xpa .path1:before {
+  content: "\ecfa";
+  color: rgb(79, 167, 132);
+}
+.crypto-xpa .path2:before {
+  content: "\ecfb";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xpm .path1:before {
+  content: "\ecfc";
+  color: rgb(255, 216, 27);
+}
+.crypto-xpm .path2:before {
+  content: "\ecfd";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xrp .path1:before {
+  content: "\ecfe";
+  color: rgb(35, 41, 47);
+}
+.crypto-xrp .path2:before {
+  content: "\ecff";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xsg .path1:before {
+  content: "\ed00";
+  color: rgb(210, 30, 43);
+}
+.crypto-xsg .path2:before {
+  content: "\ed01";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xtz .path1:before {
+  content: "\ed02";
+  color: rgb(166, 224, 0);
+}
+.crypto-xtz .path2:before {
+  content: "\ed03";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xuc .path1:before {
+  content: "\ed04";
+  color: rgb(37, 170, 227);
+}
+.crypto-xuc .path2:before {
+  content: "\ed05";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xvc .path1:before {
+  content: "\ed06";
+  color: rgb(181, 1, 38);
+}
+.crypto-xvc .path2:before {
+  content: "\ed07";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xvg .path1:before {
+  content: "\ed08";
+  color: rgb(0, 203, 255);
+}
+.crypto-xvg .path2:before {
+  content: "\ed09";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-xvg .path3:before {
+  content: "\ed0a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.5040;
+}
+.crypto-xzc .path1:before {
+  content: "\ed0b";
+  color: rgb(35, 184, 82);
+}
+.crypto-xzc .path2:before {
+  content: "\ed0c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-yfi .path1:before {
+  content: "\ed0d";
+  color: rgb(0, 106, 227);
+}
+.crypto-yfi .path2:before {
+  content: "\ed0e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-yfi .path3:before {
+  content: "\ed0f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-yoyow .path1:before {
+  content: "\ed10";
+  color: rgb(33, 165, 222);
+}
+.crypto-yoyow .path2:before {
+  content: "\ed11";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zcl .path1:before {
+  content: "\ed12";
+  color: rgb(200, 112, 53);
+}
+.crypto-zcl .path2:before {
+  content: "\ed13";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zec .path1:before {
+  content: "\ed14";
+  color: rgb(236, 178, 68);
+}
+.crypto-zec .path2:before {
+  content: "\ed15";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zel .path1:before {
+  content: "\ed16";
+  color: rgb(24, 60, 135);
+}
+.crypto-zel .path2:before {
+  content: "\ed17";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zen .path1:before {
+  content: "\ed18";
+  color: rgb(0, 234, 171);
+}
+.crypto-zen .path2:before {
+  content: "\ed19";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zen .path3:before {
+  content: "\ed1a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zen .path4:before {
+  content: "\ed1b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zest .path1:before {
+  content: "\ed1c";
+  color: rgb(7, 188, 156);
+}
+.crypto-zest .path2:before {
+  content: "\ed1d";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zest .path3:before {
+  content: "\ed1e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zest .path4:before {
+  content: "\ed1f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zil .path1:before {
+  content: "\ed20";
+  color: rgb(73, 193, 191);
+}
+.crypto-zil .path2:before {
+  content: "\ed21";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.3040;
+}
+.crypto-zil .path3:before {
+  content: "\ed22";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+  opacity: 0.646;
+}
+.crypto-zil .path4:before {
+  content: "\ed23";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zilla .path1:before {
+  content: "\ed24";
+  color: rgb(0, 0, 77);
+}
+.crypto-zilla .path2:before {
+  content: "\ed25";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.crypto-zrx .path1:before {
+  content: "\ed26";
+  color: rgb(48, 44, 44);
+}
+.crypto-zrx .path2:before {
+  content: "\ed27";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
