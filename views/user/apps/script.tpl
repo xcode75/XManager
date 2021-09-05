@@ -1,67 +1,37 @@
-!odMbo!
-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
+<script>
+	window.addEventListener('load', () => {
+		if(document.getElementById("clash-android")){
+			document.getElementById("clash-android").innerHTML = '<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}
+		if(document.getElementById("anxray-android")){
+			document.getElementById("anxray-android").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  data-clipboard-text="{$subInfo['anxray']}"><i class="fas fa-paper-plane"></i> {$lang->get('CopyLink')}</a>';
+		}
+		if(document.getElementById("v2rayng-android")){
+			document.getElementById("v2rayng-android").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  data-clipboard-text="{$subInfo['config']}"><i class="fas fa-paper-plane"></i> {$lang->get('CopyLink')}</a>';
+		}
+		if(document.getElementById("clash-windows")){
+			document.getElementById("clash-windows").innerHTML = '<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}
+		if(document.getElementById("v2rayn-windows")){
+			document.getElementById("v2rayn-windows").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  data-clipboard-text="{$subInfo['config']}"><i class="fas fa-paper-plane"></i> {$lang->get('CopyLink')}</a>';
+		}
+		if(document.getElementById("shadowrocket-ios")){
+			document.getElementById("shadowrocket-ios").innerHTML = '<a class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  onclick=AddSub("{$subInfo['shadowrocket']}","shadowrocket://add/sub://")><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}	
+		if(document.getElementById("quantumultx-ios")){
+			document.getElementById("quantumultx-ios").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  data-clipboard-text="{$subInfo['quantumultx']}"><i class="fas fa-paper-plane"></i> {$lang->get('CopyLink')}</a>';
+		}
+		if(document.getElementById("clash-mac-ox")){
+			document.getElementById("clash-mac-ox").innerHTML = '<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}
+		if(document.getElementById("clash-mac")){
+			document.getElementById("clash-mac").innerHTML = '<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}
+		if(document.getElementById("qv2ray-linux")){
+			document.getElementById("qv2ray-linux").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  data-clipboard-text="{$subInfo['config']}"><i class="fas fa-paper-plane"></i> {$lang->get('CopyLink')}</a>';
+		}
+		if(document.getElementById("clash-linux")){
+			document.getElementById("clash-linux").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}		
+	})
+</script>
