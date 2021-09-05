@@ -1,5 +1,5 @@
-{if $user->isLogin}
-   <script> window.location.href="/portal/clientarea"</script>
-{else} 
-   <script>window.location.href="/login"</script> 
-{/if}
+!odMbo!
+vjDkv33GCih5+cR/DrxgoW4000000000gTFYgthrYSUybSDXaTkaSrm5+f9/pjSkek2pOyIFhfEy
+9ZiSudUH7Nl9oWx2bEJidwOLXZBOoDAzw/cdrEH/Az5xMroum1naYwYtr+tU0c2w6Qec+kLhjIKp
+GtVk/pOOBPijKkMpMLvA0P2lAGNXjS870DNO0naqlCB3waj4ikqMMt0evuz27S6LTPrqrIRiX4DO
+H6PAyVPwHgJ/aeSQLG==

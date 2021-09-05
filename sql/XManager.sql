@@ -243,8 +243,9 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('GoogleSecret', ''),
 ('GoogleToken', ''),
 ('smtp_debug', '0'),
-('latesversion', 'v2.7'),
-('version', 'v2.7');
+('coinpayments_Currency', 'USDT.TRC20'),
+('latesversion', 'v2.8'),
+('version', 'v2.8');
 
 -- --------------------------------------------------------
 
@@ -1622,6 +1623,10 @@ ALTER TABLE `user_token`
 --
 -- AUTO_INCREMENT for table `user_traffic_log`
 --
+
+ALTER TABLE `server` ADD `isrelay` int(3) NOT NULL DEFAULT '0';
+ALTER TABLE `server` ADD `relay` int(3) NOT NULL DEFAULT '0';
+
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
