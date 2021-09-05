@@ -1624,8 +1624,8 @@ ALTER TABLE `user_token`
 -- AUTO_INCREMENT for table `user_traffic_log`
 --
 
-ALTER TABLE `server` ADD `isrelay` int(3) NOT NULL DEFAULT '0';
-ALTER TABLE `server` ADD `relay` int(3) NOT NULL DEFAULT '0';
+ALTER TABLE `servers` ADD `isrelay` int(3) NOT NULL DEFAULT '0';
+ALTER TABLE `servers` ADD `relay` int(3) NOT NULL DEFAULT '0';
 
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
