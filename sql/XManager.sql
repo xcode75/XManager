@@ -243,7 +243,6 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('GoogleSecret', ''),
 ('GoogleToken', ''),
 ('smtp_debug', '0'),
-('coinpayments_Currency', 'USDT.TRC20'),
 ('latesversion', 'v2.9'),
 ('version', 'v2.9');
 
