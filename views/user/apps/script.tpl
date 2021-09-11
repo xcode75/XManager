@@ -3,6 +3,9 @@
 		if(document.getElementById("clash-android")){
 			document.getElementById("clash-android").innerHTML = '<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
 		}
+		if(document.getElementById("clash-android-cn")){
+			document.getElementById("clash-android-cn").innerHTML = '<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  href="clash://install-config?url={urlencode($subInfo['clash'])}"><i class="fas fa-paper-plane"></i> {$lang->get('ToApp')}</a>';
+		}		
 		if(document.getElementById("anxray-android")){
 			document.getElementById("anxray-android").innerHTML = '<a class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:#1572e8;color:white"  data-clipboard-text="{$subInfo['anxray']}"><i class="fas fa-paper-plane"></i> {$lang->get('CopyLink')}</a>';
 		}
