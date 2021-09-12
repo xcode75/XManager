@@ -1626,6 +1626,7 @@ ALTER TABLE `user_token`
 
 ALTER TABLE `servers` ADD `isrelay` int(3) NOT NULL DEFAULT '0';
 ALTER TABLE `servers` ADD `relay` int(3) NOT NULL DEFAULT '0';
+ALTER TABLE `orders` ADD `extra` DECIMAL(12,2) NOT NULL DEFAULT '0.00' AFTER `pending`;
 
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
