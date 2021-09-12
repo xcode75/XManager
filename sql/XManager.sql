@@ -243,8 +243,9 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('GoogleSecret', ''),
 ('GoogleToken', ''),
 ('smtp_debug', '0'),
-('latesversion', 'v3.0'),
-('version', 'v3.0');
+('statsupdate', '10'),
+('latesversion', 'v3.1'),
+('version', 'v3.1');
 
 -- --------------------------------------------------------
 
