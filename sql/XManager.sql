@@ -244,8 +244,8 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('GoogleToken', ''),
 ('smtp_debug', '0'),
 ('statsupdate', '10'),
-('latesversion', 'v3.1'),
-('version', 'v3.1');
+('latesversion', 'v3.2'),
+('version', 'v3.2');
 
 -- --------------------------------------------------------
 
