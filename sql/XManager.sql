@@ -175,9 +175,11 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('mailgun_sender', ''),
 ('maintenance', '0'),
 ('merchant_private_key', ''),
-('mgate_api_url', ''),
 ('mgate_app_id', ''),
 ('mgate_app_secret', ''),
+('mgate_api_url', 'https://api.paytaro.com/v1/gateway/fetch'),
+('theadpay_url', ''),
+('easypay_apiurl', 'https://api.crossz.pro/v1/gateway/fetch');
 ('mobile_verify', '0'),
 ('muKey', ''),
 ('order_exp', '5'),
@@ -1627,6 +1629,7 @@ ALTER TABLE `user_token`
 ALTER TABLE `servers` ADD `isrelay` int(3) NOT NULL DEFAULT '0';
 ALTER TABLE `servers` ADD `relay` int(3) NOT NULL DEFAULT '0';
 ALTER TABLE `orders` ADD `extra` DECIMAL(12,2) NOT NULL DEFAULT '0.00' AFTER `pending`;
+ALTER TABLE `package` ADD `allow_buy_count` INT(11) NOT NULL DEFAULT '0' AFTER `expire_days`;
 
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
