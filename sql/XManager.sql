@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Aug 09, 2021 at 10:26 PM
+-- Generation Time: Sep 17, 2021 at 05:52 AM
 -- Server version: 5.5.68-MariaDB
--- PHP Version: 7.4.22
+-- PHP Version: 7.4.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -132,10 +132,10 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('aws_secret', ''),
 ('backup_email', ''),
 ('backup_password', ''),
-('baseUrl', 'https://test.gbxcloud.com'),
+('baseUrl', 'https://xmanager.xx.com'),
 ('buy_reset', '1'),
 ('callback_addr', ''),
-('captcha', '2'),
+('captcha', '0'),
 ('client_id', ''),
 ('cnrestrictions', ''),
 ('coinpayments_Currency', 'USDT.TRC20'),
@@ -143,10 +143,14 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('coinpayments_Public_Key', ''),
 ('cp_ipn_secret', ''),
 ('cp_merchant_id', ''),
+('crypto_secret', NULL),
+('easypay_apiurl', ''),
+('easypay_app_id', ''),
+('easypay_secret', ''),
 ('email_backup', '0'),
 ('email_verify', '1'),
-('enablepayments', '0'),
-('enable_alipay', '0'),
+('enablepayments', '1'),
+('enable_alipay', '6'),
 ('enable_backup', '0'),
 ('enable_bitcoin', '0'),
 ('enable_ga_tracking', '0'),
@@ -161,11 +165,17 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('exp_reset', '1'),
 ('f2fpay_app_id', ''),
 ('ga_id', ''),
+('GoogleAuth', '0'),
+('GoogleClientID', ''),
+('GoogleEmail', ''),
+('GoogleSecret', ''),
+('GoogleToken', ''),
 ('h_captcha_key', ''),
 ('h_captcha_secrete', ''),
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
+('latesversion', 'v3.6'),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
 ('logo_path', '/uploads/X.png'),
@@ -175,13 +185,12 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('mailgun_sender', ''),
 ('maintenance', '0'),
 ('merchant_private_key', ''),
+('mgate_api_url', ''),
 ('mgate_app_id', ''),
 ('mgate_app_secret', ''),
-('mgate_api_url', 'https://api.paytaro.com/v1/gateway/fetch'),
-('theadpay_url', ''),
-('easypay_apiurl', 'https://api.crossz.pro/v1/gateway/fetch');
 ('mobile_verify', '0'),
-('muKey', ''),
+('mugglepayAppSecret', NULL),
+('muKey', 'XManager'),
 ('order_exp', '5'),
 ('paypal_client', ''),
 ('paypal_mode', 'live'),
@@ -207,6 +216,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('ShareAccounts', '1'),
 ('site_key', '1145141919810'),
 ('smsDriver', '0'),
+('smtp_debug', '0'),
 ('smtp_host', 'smtp.sendgrid.net'),
 ('smtp_name', 'XManager'),
 ('smtp_password', ''),
@@ -214,10 +224,11 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('smtp_sender', ''),
 ('smtp_ssl', '1'),
 ('smtp_username', ''),
+('statsupdate', '10'),
 ('stripe_key', ''),
 ('stripe_webhook', ''),
-('subUrl', 'https://test.gbxcloud.com/link/'),
-('sub_addr', 'https://test.gbxcloud.com/link/'),
+('subUrl', 'https://xmanager.xx.com/link/'),
+('sub_addr', 'https://xmanager.xx.com/link/'),
 ('tawkchat_api', ''),
 ('tawkchat_id', ''),
 ('telegram_backup', '0'),
@@ -230,24 +241,17 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('telegram_token', ''),
 ('theadpay_key', ''),
 ('theadpay_mchid', ''),
+('theadpay_url', ''),
 ('tracking_id', ''),
 ('Tutoriallink', ''),
 ('TutorialState', '0'),
 ('twillo_account_sid', ''),
 ('twillo_auth_token', ''),
 ('twillo_number', ''),
+('version', 'v3.6'),
 ('ViewLogs', '0'),
-('WebapiSafe', '0'),
-('wechat_url', NULL),
-('GoogleAuth', '0'),
-('GoogleEmail', ''),
-('GoogleClientID', ''),
-('GoogleSecret', ''),
-('GoogleToken', ''),
-('smtp_debug', '0'),
-('statsupdate', '10'),
-('latesversion', 'v3.3'),
-('version', 'v3.3');
+('WebapiSafe', '1'),
+('wechat_url', NULL);
 
 -- --------------------------------------------------------
 
@@ -533,6 +537,19 @@ CREATE TABLE IF NOT EXISTS `coupon` (
   `type` bigint(11) NOT NULL,
   `status` int(2) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `disconnect_ip`
+--
+
+CREATE TABLE IF NOT EXISTS `disconnect_ip` (
+  `id` bigint(20) NOT NULL,
+  `userid` bigint(20) NOT NULL,
+  `ip` text NOT NULL,
+  `datetime` bigint(20) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -934,7 +951,8 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `expdate` text,
   `amount` varchar(11) DEFAULT NULL,
   `wallet` text,
-  `pending` varchar(11) DEFAULT NULL
+  `pending` varchar(11) DEFAULT NULL,
+  `extra` decimal(12,2) NOT NULL DEFAULT '0.00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -952,7 +970,8 @@ CREATE TABLE IF NOT EXISTS `package` (
   `category` varchar(25) DEFAULT NULL,
   `status` int(11) NOT NULL DEFAULT '1',
   `price` decimal(12,2) DEFAULT NULL,
-  `expire_days` varchar(25) DEFAULT NULL
+  `expire_days` varchar(25) DEFAULT NULL,
+  `allow_buy_count` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -1035,7 +1054,6 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `name` varchar(128) NOT NULL,
   `type` int(3) NOT NULL,
   `server` varchar(300) NOT NULL,
-  `method` varchar(50) NOT NULL DEFAULT 'aes-128-gcm',
   `info` varchar(128) DEFAULT NULL,
   `status` varchar(128) DEFAULT NULL,
   `traffic_rate` float NOT NULL DEFAULT '1',
@@ -1048,15 +1066,18 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `node_group` int(11) NOT NULL DEFAULT '0',
   `online` tinyint(1) NOT NULL DEFAULT '1',
   `sort` int(3) NOT NULL DEFAULT '0',
-  `mu_only` int(2) NOT NULL DEFAULT '1'
+  `method` varchar(50) NOT NULL DEFAULT 'aes-128-gcm',
+  `mu_only` int(2) NOT NULL DEFAULT '1',
+  `isrelay` int(3) NOT NULL DEFAULT '0',
+  `relay` int(3) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `servers`
 --
 
-INSERT INTO `servers` (`id`, `name`, `type`, `server`, `method`, `info`, `status`, `traffic_rate`, `node_class`, `node_speedlimit`, `node_connector`, `node_bandwidth`, `node_heartbeat`, `node_ip`, `node_group`, `online`, `sort`, `mu_only`) VALUES
-(1, 'Expired', 1, '8.8.8.8;port=443|server=server.abc.net', 'aes-256-gcm', 'GB', NULL, 0, -1, 0, 0, 0, 0, '127.0.0.1', 0, 0, 0, 1);
+INSERT INTO `servers` (`id`, `name`, `type`, `server`, `info`, `status`, `traffic_rate`, `node_class`, `node_speedlimit`, `node_connector`, `node_bandwidth`, `node_heartbeat`, `node_ip`, `node_group`, `online`, `sort`, `method`, `mu_only`, `isrelay`, `relay`) VALUES
+(1, 'Expired', 0, '8.8.8.8;port=443', 'GB', NULL, 0, -1, 0, 0, 0, 0, '127.0.0.1', 0, 0, 0, 'aes-128-gcm', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -1109,31 +1130,31 @@ CREATE TABLE IF NOT EXISTS `setup` (
 --
 
 INSERT INTO `setup` (`id`, `title`, `type`, `content`, `content_cn`, `datetime`, `status`, `url`, `link`, `icon`) VALUES
-(1, 'ClashForAndroid', '1', NULL, NULL, 1627801777, 1, '/download/Clash.apk', 'clash=1', 'xpanel xpanel-clash'),
+(1, 'ClashForAndroid', '1', '', '', 1631802765, 1, '/download/Clash.apk', 'config=1', 'xpanel xpanel-clash'),
 (2, 'AnXray', '1', '', NULL, 1627221354, 0, 'https://github.com/XTLS/AnXray/releases', 'anxray=1', 'icomoon icomoon-anxray'),
 (3, 'V2rayNG', '1', '', NULL, 1627221316, 0, 'https://github.com/2dust/v2rayNG/releases', 'config=1', 'icomoon icomoon-v2rayng-new'),
 (4, NULL, '1', NULL, NULL, NULL, 0, NULL, NULL, ''),
-(5, 'ClashForWindows', '3', NULL, NULL, 1627220216, 1, '/download/Clash.exe', 'clash=1', 'xpanel xpanel-clash'),
+(5, 'ClashForWindows', '3', '', '', 1631802774, 1, '/download/Clash.exe', 'config=1', 'xpanel xpanel-clash'),
 (6, 'V2rayN', '3', '', NULL, 1627221253, 0, '/download/v2rayN.zip', 'config=1', 'icomoon icomoon-v2rayn'),
 (7, NULL, '3', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (8, NULL, '3', NULL, NULL, NULL, 0, NULL, NULL, ''),
-(9, 'Shadowrocket', '2', NULL, NULL, 1627069890, 1, 'https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8', 'list=shadowrocket', 'xpanel xpanel-shadowrocket'),
+(9, 'Shadowrocket', '2', '', '', 1631802784, 1, 'https://itunes.apple.com/us/app/shadowrocket/id932747118?mt=8', 'config=1', 'xpanel xpanel-shadowrocket'),
 (10, 'QuantumultX', '2', '', NULL, 1627221126, 0, 'https://apps.apple.com/us/app/quantumult-x/id1443988620', 'quantumultx=1', 'xpanel xpanel-quantumultx'),
 (11, NULL, '2', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (12, NULL, '2', NULL, NULL, NULL, 0, NULL, NULL, ''),
-(13, 'ClashX', '4', NULL, NULL, 1627070034, 1, '/download/ClashX.dmg', 'clash=1', 'xpanel xpanel-clash'),
+(13, 'ClashX', '4', '', '', 1631802795, 1, '/download/ClashX.dmg', 'config=1', 'xpanel xpanel-clash'),
 (14, 'ClashForWindows(Mac)', '4', '', NULL, 1627379292, 0, '/download/Clash.dmg', 'clash=1', 'xpanel xpanel-clash'),
 (15, NULL, '4', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (16, NULL, '4', NULL, NULL, NULL, 0, NULL, NULL, ''),
-(17, 'Qv2ray', '5', NULL, NULL, 1627221038, 1, '/download/Qv2rayLinux.zip', 'config=1', 'icomoon icomoon-qv2ray'),
+(17, 'Qv2ray', '5', '', '', 1631802803, 1, '/download/Qv2rayLinux.zip', 'config=1', 'icomoon icomoon-qv2ray'),
 (18, 'ClashForWindows(Linux)', '5', '', NULL, 1627673297, 0, '/download/Clash.tar.gz', 'clash=1', 'xpanel xpanel-clash'),
 (19, NULL, '5', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (20, NULL, '5', NULL, NULL, NULL, 0, NULL, NULL, ''),
-(21, 'Openclash', '6', '', '', 1628500869, 1, '', 'clash=1', 'xpanel xpanel-clash'),
+(21, 'Openclash', '6', '', '', 1631802813, 1, '', 'config=1', 'xpanel xpanel-clash'),
 (22, NULL, '6', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (23, NULL, '6', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (24, NULL, '6', NULL, NULL, NULL, 0, NULL, NULL, ''),
-(25, 'TeamViewer (Windows)', '7', '', NULL, 1627226060, 1, 'https://dl.tvcdn.de/download/TeamViewer_Setup.exe', '', 'icomoon icomoon-teamviewer'),
+(25, 'TeamViewer (Windows)', '7', '', '', 1631802823, 1, 'https://dl.tvcdn.de/download/TeamViewer_Setup.exe', '', 'icomoon icomoon-teamviewer'),
 (26, 'TeamViewer (Mac)', '7', '', '', 1628349861, 1, 'https://download.teamviewer.com/download/TeamViewer.dmg', '', 'icomoon icomoon-teamviewer'),
 (27, NULL, '7', NULL, NULL, NULL, 0, NULL, NULL, ''),
 (28, NULL, '7', NULL, NULL, NULL, 0, NULL, NULL, ''),
@@ -1199,6 +1220,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `email` varchar(32) NOT NULL,
   `pass` varchar(256) NOT NULL,
   `passwd` varchar(16) NOT NULL,
+  `method` varchar(50) NOT NULL DEFAULT 'aes-128-gcm',
   `uuid` text COMMENT 'uuid',
   `mobile` varchar(20) DEFAULT NULL,
   `t` int(11) NOT NULL DEFAULT '0',
@@ -1230,10 +1252,10 @@ CREATE TABLE IF NOT EXISTS `user` (
   `notification` int(3) NOT NULL DEFAULT '1',
   `ref_by` int(11) NOT NULL DEFAULT '0',
   `notice_status` int(10) NOT NULL DEFAULT '0',
-  `notice_id` text
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `notice_id` text,
+  `disconnect_ip` longtext
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
 
--- --------------------------------------------------------
 
 --
 -- Table structure for table `user_subscribe_log`
@@ -1336,6 +1358,12 @@ ALTER TABLE `country`
 -- Indexes for table `coupon`
 --
 ALTER TABLE `coupon`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `disconnect_ip`
+--
+ALTER TABLE `disconnect_ip`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1518,6 +1546,11 @@ ALTER TABLE `country`
 ALTER TABLE `coupon`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 --
+-- AUTO_INCREMENT for table `disconnect_ip`
+--
+ALTER TABLE `disconnect_ip`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+--
 -- AUTO_INCREMENT for table `email_verify`
 --
 ALTER TABLE `email_verify`
@@ -1611,7 +1644,7 @@ ALTER TABLE `telegram_tasks`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user_subscribe_log`
 --
@@ -1625,12 +1658,6 @@ ALTER TABLE `user_token`
 --
 -- AUTO_INCREMENT for table `user_traffic_log`
 --
-
-ALTER TABLE `servers` ADD `isrelay` int(3) NOT NULL DEFAULT '0';
-ALTER TABLE `servers` ADD `relay` int(3) NOT NULL DEFAULT '0';
-ALTER TABLE `orders` ADD `extra` DECIMAL(12,2) NOT NULL DEFAULT '0.00' AFTER `pending`;
-ALTER TABLE `package` ADD `allow_buy_count` INT(11) NOT NULL DEFAULT '0' AFTER `expire_days`;
-
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
