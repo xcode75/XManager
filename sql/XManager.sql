@@ -1658,6 +1658,7 @@ ALTER TABLE `user_token`
 --
 -- AUTO_INCREMENT for table `user_traffic_log`
 --
+
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
