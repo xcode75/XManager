@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
   `imagepath` text
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `accounts`
@@ -267,7 +267,7 @@ CREATE TABLE IF NOT EXISTS `country` (
   `alpha2` text NOT NULL,
   `alpha3` text NOT NULL,
   `code` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `country`
@@ -537,19 +537,6 @@ CREATE TABLE IF NOT EXISTS `coupon` (
   `type` bigint(11) NOT NULL,
   `status` int(2) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `disconnect_ip`
---
-
-CREATE TABLE IF NOT EXISTS `disconnect_ip` (
-  `id` bigint(20) NOT NULL,
-  `userid` bigint(20) NOT NULL,
-  `ip` text NOT NULL,
-  `datetime` bigint(20) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -1012,7 +999,7 @@ CREATE TABLE IF NOT EXISTS `rule_list` (
   `name` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `regex` longtext COLLATE utf8mb4_unicode_ci,
   `type` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `rule_list`
@@ -1070,7 +1057,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `mu_only` int(2) NOT NULL DEFAULT '1',
   `isrelay` int(3) NOT NULL DEFAULT '0',
   `relay` int(3) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `servers`
@@ -1253,8 +1240,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `ref_by` int(11) NOT NULL DEFAULT '0',
   `notice_status` int(10) NOT NULL DEFAULT '0',
   `notice_id` text,
-  `disconnect_ip` longtext
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+  `onlineips` longtext
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 --
@@ -1307,6 +1294,16 @@ CREATE TABLE IF NOT EXISTS `user_traffic_log` (
 -- Indexes for dumped tables
 --
 
+CREATE TABLE IF NOT EXISTS `onlineip` (
+  `id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `ip` longtext NOT NULL,
+  `datetime` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+ALTER TABLE `onlineip`
+  ADD PRIMARY KEY (`id`);
 --
 -- Indexes for table `accounts`
 --
@@ -1360,11 +1357,6 @@ ALTER TABLE `country`
 ALTER TABLE `coupon`
   ADD PRIMARY KEY (`id`);
 
---
--- Indexes for table `disconnect_ip`
---
-ALTER TABLE `disconnect_ip`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `email_verify`
@@ -1514,7 +1506,7 @@ ALTER TABLE `user_traffic_log`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `alive_ip`
 --
@@ -1539,17 +1531,13 @@ ALTER TABLE `commission`
 -- AUTO_INCREMENT for table `country`
 --
 ALTER TABLE `country`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=245;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `coupon`
 --
 ALTER TABLE `coupon`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
---
--- AUTO_INCREMENT for table `disconnect_ip`
---
-ALTER TABLE `disconnect_ip`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+
 --
 -- AUTO_INCREMENT for table `email_verify`
 --
@@ -1559,7 +1547,7 @@ ALTER TABLE `email_verify`
 -- AUTO_INCREMENT for table `isocodes`
 --
 ALTER TABLE `isocodes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=254;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `link`
 --
@@ -1604,7 +1592,7 @@ ALTER TABLE `pay_qrcode`
 -- AUTO_INCREMENT for table `rule_list`
 --
 ALTER TABLE `rule_list`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `rule_log`
 --
@@ -1614,7 +1602,7 @@ ALTER TABLE `rule_log`
 -- AUTO_INCREMENT for table `servers`
 --
 ALTER TABLE `servers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `server_info`
 --
@@ -1629,7 +1617,7 @@ ALTER TABLE `server_online_log`
 -- AUTO_INCREMENT for table `setup`
 --
 ALTER TABLE `setup`
-  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=33;
+  MODIFY `id` int(25) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `telegram_session`
 --
@@ -1644,7 +1632,7 @@ ALTER TABLE `telegram_tasks`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;
 --
 -- AUTO_INCREMENT for table `user_subscribe_log`
 --
