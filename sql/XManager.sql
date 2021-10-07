@@ -175,7 +175,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v3.7'),
+('latesversion', 'v3.9.1'),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
 ('logo_path', '/uploads/X.png'),
@@ -248,7 +248,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_account_sid', ''),
 ('twillo_auth_token', ''),
 ('twillo_number', ''),
-('version', 'v3.7'),
+('version', 'v3.9.1'),
 ('ViewLogs', '0'),
 ('WebapiSafe', '1'),
 ('wechat_url', NULL);
