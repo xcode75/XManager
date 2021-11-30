@@ -903,8 +903,8 @@ CREATE TABLE IF NOT EXISTS `package` (
   `speedlimit` int(10) NOT NULL DEFAULT '0',
   `group` int(5) NOT NULL DEFAULT '1',
   `level` int(5) NOT NULL DEFAULT '0',
-  package` ADD  `note` longtext DEFAULT NULL,
-  `package` ADD  `topup_price` decimal(12,2) DEFAULT NULL
+  `note` longtext DEFAULT NULL,
+  `topup_price` decimal(12,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
