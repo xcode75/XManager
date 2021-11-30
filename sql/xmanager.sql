@@ -49,6 +49,8 @@ CREATE TABLE IF NOT EXISTS `config` (
 
 
 INSERT INTO `config` (`name`, `value`) VALUES
+('rebate_info', ''),
+('devLimitType', '1'),
 ('accessdenied', '0'),
 ('add_emoji_to_server_name', '1'),
 ('admin_telegram', ''),
@@ -132,7 +134,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.16'),
+('latesversion', 'v4.18'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -215,7 +217,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.16'),
+('version', 'v4.18'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -879,7 +881,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `pending` varchar(11) DEFAULT NULL,
   `extra` decimal(12,2) NOT NULL DEFAULT '0.00',
   `exrate` decimal(12,2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE IF NOT EXISTS `package` (
@@ -900,8 +902,10 @@ CREATE TABLE IF NOT EXISTS `package` (
   `connector` int(5) NOT NULL DEFAULT '2',
   `speedlimit` int(10) NOT NULL DEFAULT '0',
   `group` int(5) NOT NULL DEFAULT '1',
-  `level` int(5) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `level` int(5) NOT NULL DEFAULT '0',
+  package` ADD  `note` longtext DEFAULT NULL,
+  `package` ADD  `topup_price` decimal(12,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE IF NOT EXISTS `password_reset` (
@@ -910,7 +914,7 @@ CREATE TABLE IF NOT EXISTS `password_reset` (
   `token` varchar(128) NOT NULL,
   `init_time` int(11) NOT NULL,
   `expire_time` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE IF NOT EXISTS `payout` (
@@ -921,7 +925,7 @@ CREATE TABLE IF NOT EXISTS `payout` (
   `method` int(5) NOT NULL DEFAULT '1',
   `status` int(11) DEFAULT NULL,
   `datetime` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
 CREATE TABLE IF NOT EXISTS `rule_list` (
