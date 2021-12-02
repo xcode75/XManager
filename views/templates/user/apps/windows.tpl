@@ -1,126 +1,92 @@
-!odMbo!
-AK3MYA9BMrLdVN+sTFhBnG4000000000bsAsLMB8LbFHuUhDLEyY0InXEprsWSTI01WwUR9szgYu
-RKIGe8QI5cTNszEjbkuW89CNnqO2/Nr/jIa6GpaQoL8zXqKFOMlB3+oKYSaA3vu0/MGEzhtIoIOc
-GnZqE8ddXEKpJm7T8dF1GYRxha4z0ylXmjHFD1XLy0uABXCDFDV3F+xp81rYlAGezXgTJNk66OBD
-lp4bIB4szBYGonh4bCGo2CjW/f7wLZkx+JWPGgBrt6AbDYuXLZdx1ndb0L+95/KKl25F5a+f5DAN
-8B2ehzuPhQVsQq8Zl+f+p8R/7aQNnYuRLljJJwlTPulnHaLHCZmJuvRs99wHYhY90lGbUHGx7wgO
-OhsE6EucxuknVZ8ibehgI1pmKQkAwW49FA83z+aw9pxwKegbIsiy17VjHx3HQS0JVDIYQCWJueXe
-LM+rFsrGvyL48aAtnVkqe5wLVMuFmqZg+mQbgrIteEjyn/ct7LEgl7w5OCJbimwj/aa5FRV7/9fL
-N4qlUNCMPLK3aRBH09iJApVJwH8nKm3Oz8/ZL5Ssj1lrcfNkxQ0wzA4Go7cXqVobYQc+MG9f+Rc+
-j9BSF+QFMOSZM1nfWVd7rH4TVlNrHBRhWMMH+Z2FZ5KJIZw74z2/AHEf70/R55MNs4sY1lks9R+B
-zgPD0Q+5Rn1j+D2y06M52taWAb8U8d86L0xSfwgCJ00yuE204jqZoOU4RAqycFMt4lFYl7rWF4Ba
-ZQDRjzVKhkYiLT2DhwjBR0ks4ka4ZyjZihG1Cn6U5ybaO7fU4UFwE6V9cxMfYhQ3PpnIgez1WOHj
-V2vkZpZNmQXo7jldniD7gA90YGSCUx8wubHwI4Wf5iXwQseYZSwJu+KjWSHVKE7ctFWcLHXZUhjL
-ARQ5cBB4RsmN9p4ZZzG99AsPKWGIK+EvFhuirlTR1D1hjInYwu/cNY7erxtGLS8uN89em6jE09uw
-/Dacj+h3JornWcmkP7DcFX/Q446qfkFNCz6WyS8E/9IvzETPwQ9t773RJyb4b5dfRakxd/Ql31fu
-AARWc3w3fWFOrpaWOGdoXEBEC+t6DKA3uhqABflAoBas+kZkTS6uOD+dzTEI+EmLQSmbJZ1bjZVN
-9Uc3WLkLZmbVuZ497b3MYj3vrBYJHBn87fbZJwwPvKwlwS+GY6qKo0YFsvy4pBkb/KHqDmNUvQUJ
-KotxEPBvrkSWZn3+OugFa45aha+NizcToRs386MlV3v1lfUk7H21ailsmKZyfcgrlG+sM1QW5Vw1
-42HFAOK1NpLIdKT9s8R6sS6zmoxfOD0PvvJTIF+EXzOkh2PrBx6QeIGkivKPrfk+WWwgrwgvAgtE
-VtISRMeq2kKdxugnUd481rscu+NHjkP2pb/g8uclI0UW+ED2jdXABtK9/yH/Va2Ejn6C0rNLgmMu
-AJIlYCQmPPm1MfGlGezoFVOEVbwlWawffHjLNShtOqyHfiFt/NQqavBuptdtAa/oTHFeRECvoo5I
-HpRJmkVIO+IbhW9e7pYqWCJ+cCtxaaGGi23R0xptuixnXKK3RyZoo2zDFF7To3v3zAfwpz2KWRf+
-hselxjOlEV46/64VXzeJNovYfifCzspdODbvkFI4+EBmX6rXJbh3ehl5BVQkypIM2fGgGFUTGmu/
-3d8aTdsgckniD7a6Ec356rk/nZIxA4NPOH69nDFYlnq8wxexlCeCH4hlnp1XXxJp8qYrz7jyMqrz
-0ex8zipo0a4mn+vM5S6jkhnMYDOIWjNdl6M1eDH9YFKDhjR+xMDeVleLuvx6P5rKUnW8U6Qg0Unh
-39H/2kNKj3qLesMP5MEBOJTO+7i3EsDpzdnoUUsVdgnqauERHQaN28f++5PlZzkmoG4TXGR+xOKD
-NbSpMCANIavdovDGtL4al7iNktknemTQsVu3k/YV+rT/jrjANlkB6K54+KT3CyuhkAviFHxJLR04
-X2VOevesjncd8B9Lda4FmnL8DCk7D7hHrx43jpGjs6iuya7SSMBMWV0+QpkXuPJ/deJmDwFF+CB5
-ZD7wOj0ZCy/zu+kUiilfAlhqOzWw+xieWwmoqNwHGUkHs3T3i94RTWMg3CwWyORPJTE/OaRXRMlL
-TaPe0dyTW0n9KtxkGBQFWr+8+mmfrQvm7VPBYybCtfFBRgHSo9QfqHWJ7eHzz8HM16TEIMfUTHz9
-dpEZdXcxA4Xy/xo4MISzdF5uGup1P+OV8sCvVObYDzMCrAlrVsjNhJRNgyUOV3/7UnaMrXa1d5HT
-4jwMrDul/A+YxQoxauzPSfizuAqjqYY4c0JgHUL+oZI9kCAJlploNkd/0WcMHSzbpU3NW9NIj0Go
-jsbWX6jUwQnH6c68oTXvyNT7oErsoSzazYzWcts0WVy2lD94z4TyYG5+e4Zaojbdfa6uuKXszV4x
-JOUQkK9l5sekgOIDZ+qCa8xamU7J4RG24CGhteBtgXTvvy53Kv7VmEbww5aJOtUPrFNXJ+L6sQ57
-nXwNUUKMNh1Zk8bbI2ORqkUL/2qf5/3DSxIdZVbblvGOzRpE5MqFZM64THOoPDd6MypKVNXzPNEC
-Opwt5RAW6GPXyvjSmV3LM+7zWbaGMFbywm6PWctMPATCH+hHCkmtrqQhqKaMZDTiJfLmTpg5BPwN
-EqHaEhAlohN0sW9Yot19ut7lrQpQZ7Fva5zlxmip79fPSQPH4aCtdWUywEfwtTtA721Ucskubhx7
-BtMZYWP1RpD3SpVZtDbAIMZxHev7Fuxwg8ZzYXWFsZLHdKSNwUdGKca5H4x1jEu/xxh9qObC10O4
-2uA4+bGm7uRoh7lKxng5gzHOovGhQO3IkQEumZr0exRNEPdRjmkKu6eABGaGk6YaTHmE0xLdvBDf
-XqSviKDc29RdDcYnx0MvBx9lqs6WtFDE6updOM1cQPWzQ3ojvlhFLIuUe3iyDBzPqKP5WjTwCYPw
-PUmdUpLGm51xkqJoU8JIuFrT9zThCP/jbIwS6WOmtlewnCo3AReBr5Ui2D+MvvN5dHVEf+eCFuOc
-F3ZW2+PBxZvYypnqFGTJCRIUQMGBUW5s2JWW6wkMZjLMcz1WTBhUNlia+6ppLxuBWHmYFvRt9MbI
-aFAKAlY7nB9BctBnOFN/ZS8OMrjfOg7Ro4xSJag0pSOBUxX8ywo6mNH/mGL8MhuNNLXhQdo2aV/0
-WlP6nTBYd9bRSZ+JduNNZfw68q2sPQ3sYIxdo925x6guRYsvZ0XgfwckP5cREOTWbDvgIZzA6+CN
-angbK/q5eMJGvuQSdv480cRc0KxADwOEKKbMDoCn7L0GOiNb6Jtts23x7wFZQP+xeFAapbP0wtAX
-pnuYmdLqzuXo7y6tjLheqbb17WMQjM3gdGc8fCkMANTp2yG7W9j4AkEy/DGD64tXAse6hVnCEJFd
-L95LdAEidXiiof0uSK57/C4CS7GiykuEpO6KCgB2ZUo/0xobghd8TpHgIggvBtZnLke390J6BOQs
-NQFCwZPF+BRlsx/XLzPgxitFJPqtAEY86huxdviPzHEgmaZQLaQkIR7bITpRL17ZJNMEP//DJEUc
-6+9SigKVK6XxtF/p/dsdB7XzOyGb51gy+60O9z/sTPnkKvspkwxYnnTz0ELxixOb2jBbA1uFJoXV
-C8nk/5j0A/Bh+hrESarRnKJykYJUMXUcsI0zqvu9rW/Z41rgxDYXkUkfDcv2/+d7ivHSOqZjecLR
-HVxkqUVSocW+06ASfEn7STdanPBMzqWy0WKGZlQN3MWwiyy/o+9LmkeiuYdru35wqd1JK27Ozopi
-9r/Cz333s5usIUDgbc4x199V6G2WKi+Xep1WPaO0juxp5GB5gwx3Bjt4b7/rVOuNNT8py5R8zVTt
-yD7l99n1xAF+Hsc7GeW3IyCyaLTztpoq/MC1DIrIO3/wuDKku/O3SMVo9DVjSELoL3foRXoe4v6c
-kSUmjoAxAtGqbJ7P6G7YsJEddR6rLGQl61eKEXeix+T/hQFPiv/I98v8xlbpa7FnAAedtcbuTsZv
-dI5zMVhqFE2IrjQqakUK2HKrgkSHtBNSEKcaTS4SXt+nb6mMikm+/N21kz4njrg6Re+iNwfH267V
-wJ8rz/hjuenVlsn0wBMNp35v45aD6btZtGC/QDNf+2LOQTb+uz4F+qq7DzVcfVwGGWp7hV0Qt57N
-aJlIt7IBgqgV2TOOLGCsYcM65wcPkrcXJCPhlRNQsDpY2UY5P91grHy1eWuwJN52uMqxzx8DrEGv
-fIDU+w38IohMM6MzBjP/nz69U6s6OW7nHsrEdrc88wpDHd9EOs3V3ULvNBmzdu/K1/btzA3uvkA/
-NFhzVbFvsV89qHQ2N2LolSbJ9GXdE+cLL+IfpO4Gg2saMf36gSG+9dQmZQf9m3P5iWbjKmJfd3It
-jxQtooB6+0BNNGuZpe3gekEwx2+pL2GsCVRWtpxM118FsFMNmLFmjzY947jJSG6ZEVKAxiGarE19
-rXjIUwdFmOHfd+L4zB+jto32FMAdq2mk9JhIpbxc5GAkGPfbCEPhpvrKOu1Pzjt3Wc09lXE+VrhL
-qzNqqacsWYabW6UnN9TjgWanIrArI5nkw+nISNpHPqItfE2pCjXvHf45uY4JsEdPJinIbXJT1WE4
-LDi2FbN5kf3/xdKGuWAJimi11gWxgkmECeSb0AiaACwTpXdLry1MOUNhJApvNZ6foBq5Rksb9h+Z
-D2C7iExhmOXvSz+PLwHhswytaoiKnlVHoW6hiVYqa2ARbYRhWG9W1zP1kvNcQ1aPdbgt07Q49o3i
-Fu8mmB678IocPZ48Lux04hiRy3e+w1C2u9w+/d7gUv8W+KqpQrearX/v/uzUCSUG2tdk2wcUO46w
-o792Rbd1jgQanDARbVzd/gCUs9+q/RJ71EijemMSr8REYvtFnn2TSb3k5Gvk1JnDiqwbeyK0vTHN
-MZ4VegE7VGD2jpxuvkvjeAuLA5Tgi4nEGB4BcT1SqJPcCM8C45YbOedVSEzeUfBk3rDwWuwgV3b2
-t+n1RhrfO4WGJdnon9TJkbqFJPToTw45FGY2ZfMfy0y+9/Y1cuNS4K1HDuxPdhWOjM1iK9Ycwmnw
-4W9k/iaUCJw819PMJ73aqr9M8UHdcbSuUdMt7Cn8xdbFp7YJGFeWyn0hsCGKyK38HkakDMccJ5a2
-M2BXcRKGqzGSzXSMamoOXVpNTtUkP0Ca1iK4cfVYaDFKtEM911UDCt3gfS3JmMIlA/7xHmjqNtVM
-her1L0EBI3SZzdskDgvDyQnSr5WG2lCZKvoArVWbFIkABuceObEGerK1LDKLVYTtDtJRze+3PjpB
-QGjik3di9/72Vtxh+DgMSrekSEOCrS8I9y9EsDTsYVb0sN4pnDzSGCeWin9VUDxThvkBl7ghgU0B
-G6K1wWsH828gOp05wAw18YVh9srpbGSrLX9ZxFoEq8kCDwNkGS8OelW3fYdOSCq3tPe24ybxYzze
-GE9qoWBpgv4Dvym8MHrPIEelq701PSfNPNoLJLHXsHRBpEJ/U9WT3G/c3N0I3y+VxKIa44Sov9bJ
-Wi04x+8IHMsGBAwyPJQqyEFLPD6mflCXYj+CqtUTvjJUtEbIu9pcXA9wBk/rzByEmBfAaKy3Uc0K
-VjzTZVgzgU66SLe12HUIqO0bIgLM3N8X9ZWUWAlm9cfBJROSj+V+TQMYs7lP/m5ixDmkzxIsOGq8
-jxjUGQiNYNErfgDQdq2uuEwUf9uBK65fNEXumBmdH2mQYeANmFTBfHwJ1nes2JDQSSdTZ/F+9FCg
-N4+ewskMVOy2DDGVsLGd0JiOtnL7fYcSFwLGp0RUlJp+rap0CGApNpbJECx3OcnTrpTCIzq02WVk
-vMIe80R8x5ccPwT/wyG5hlbzZy9uOZqT6AGYiMd2TbIEB9aluwDAYmq9CGhoSxIzLki3Qqdz/0R9
-kK6qy32p3/hdsQ4N2NgGJtCdSYs98htM++nQlTApQ7Fo7yovVrmlqnUd3T2QWOFzEYQZLE9XqHGB
-/l0nuz3nYP9eNIrmoNfZrFnzQuh3q0PXA0LXK5ACK2Tb6ZVm8qk101wy0RTZ26DBtpn7aZWvfYXJ
-OgPQOT7FIb7kZEdkpF+ru9N9ogJ2cY4++8fxUygaVrbRCXK0pabNXLOaEhb4r4r2QzmHGgZi7jOp
-ucCFmx7uNEaqRAGM9p1ETJowJ17YyRxtxEt+By+WcaoKFrXn0GWkHn+acRcFSjLr1CC4jUXs9tn+
-/HQmvYwdUSLxYmpkIPZlkJIB6meQsAP7E0sHfwhVAMAOz8WUoBNb3qBnPO/bsBzNxjWp5OJfMVwy
-1Z5WUfTa8X+pc6nwcMiyuRY2oftk3pzV6pGwt+gTWBZECVsqcDXXcAJlGB6dvQNstgP/GgJyRKFr
-xXcjTp1lypaIObDZ9eT4+6nuDDDsryqIdUqk7JEiWO6c2/GsbjPohlxS6O7wbK0yP9S0Sv12ra1O
-dELSB34OzKGmy5TGaWLiMb29RACW6xz9YFH6yiHj4qts7Jbrb0HBl/ggdlzs+TyAdAfsBX/NZCu+
-gQaTfzOhlz7PrdFmFyjD6zjyZs7pW8uCzOoDvIUVI5ZOD/QbXOSMGf5GfjTettOUpOsWYGCUGAxl
-2+aDDuefrZQBEm4jhV3qMaAKs+6Y0SjWw/2DqPShEPS0CyhpxNU8cM4xyskWRWxmxPC9CtFTJRUc
-jDYFcx5PnHA7y1v0HwPeuGbqcL6hwBNGFku1ZtggtGdumZrkhXjz5/0lbut95HzFkbZPk7wKpvg1
-9bJPyPshOwaIhr7qsa4Al1VgqJ48MQpiIm6lzBuZdbkMxhrZ3FoJ7ODOTSaDAtgLH4KydMg+tOVQ
-SfGz2A/J5hJJk+2s25lVxX+lOfTdqpa2vB+GWrDH5W8/RXFqDScb0YwJFK6RW3B4cKtvUIFZ0/q+
-9B2n81W+Bfr7k+c8IcHCXsnQdP3s3MHlObvzH0qHI361pXKsDZITq9zih/X0OvpF11DTf4OB3VkZ
-ziGSr0SNOkV1gb8XGs1egqwm+kiCLzooxCwTLPl7lP+vcmKSFjs/oqBUWNS1L5V6wsmBDvD8S7CI
-OA/CeV6/fEvXqrZj+Jmu4cZMI4cwUnNT2MEHwqIGPg2h7xsJXv88bBjWEFF3qbwtEPnS/b+D6e43
-R7zqaYI5nJZKtEulgjwc6m+jhW7WJHRGvKpXTxnbCeP1e46mvij9Z43YHLgCE6Sy9FgU5trocBXu
-yp2epm/gfEywOioLD/HN7kc8nvdxUhWIrdfzaxqoXiv9bCOaPpIB7iwjZV/oAAxoa/m9fXqiNq+O
-Nh2pxQddny+A/plL02fAbXy/nVJLKx2nnPPgXG2ieoQQlRWo+VDdrPzdHRLvVnJqi9834/nISrnG
-cZ4zWq9V6h3dbXviqVD+fBcb+3HAyc4AXQraDM8cwOri1X8bSZ4WSJhkGTCZmXbroTWxMoBBROgn
-AIh/Sap1xT6FoLfEFG+gVJeSOMsJFqqV3GhT7bG+lpqW3dYLPaJ8wiPcojtLA34igwFxJe8yymHJ
-uAi7qp3FSJgnVU5L/awoFhWfD8DjSDnYFjW2DxuvLIY5+WdoCoPWkwiwpmWwAQQaZo2feA877IWq
-kqOH4upBP8KXsGBxPJpG6xx23/9uOmFLvnIug0RG4k5aOfN9FCL1Fhu7zJh2zwcJn6JJiJK4za2u
-TrQL6JGY9UvmcFOtCF9W+yoFESli64bktiq42/ewDBKLJyU2MXo38yCP6bnCds9JPoBKXc1LP5uu
-IFsahH3TnKVUF9LVaaA6Z1l1U7P0m27se7XvR4flrnQCoflv0f+4R2QYGd/GdNDAYuj0jrSo2ZtO
-f/sPPZMHmsHRSV0z6J3eRUIiJ8aDVM8Gxupila7CFXqpqkkbNUCLzao6uk1CdYkwpNd4aZ2RSgS0
-gd0pcWAZriU63ea6FnOO+jnvMQ9MdQwtUgUa02x1qOgrDp+7pNRfwL5DTRIG1CvPrAdKaiyR90+7
-w3gqlQF+JPUaV+TeOUObhJxDD13wU9od2Znlq3pedPhT6xHKC7hCVo/Ont3hvCvvhpTiIAAO9qjn
-EaDCbrkqM09r/eifXlfqoiiONnHpHCB1CdJVeYTVhY3wDlCDnVDmGOymjD8dQzxgjIAO4wfom1FX
-+VDrnYBvIc2Ht1bcXFAS9xuoMuu1k9cuRFt3JHNrgL1iFC6YoYLeb3aN1APjiUMjyzBVdM9atRTd
-oDWntHSP7/s5pPxHNWXwWTlKy1BQnsOGlGzMmBom6aHxXflR8APtPyx4Z0n+77Yq9oaSfBu8HjPa
-Iz0pfZLWVAMhCe1+ucHy+d88rgcpTZeyx/TcuO8xkVn9Ilmnai1hL3mFEveQAAR2kfmZvEsJ8a5D
-hP/LLO/7IkJ1rKeDsEKnd7BiDp3Jb9xpcEiTTkbacjEmUvNSlTV30qe7EXichrEjuRp9po5W5cDQ
-fDm/Dz7IKtahzoNptHCXasqBu5NCyioBQyf8MSwKwkY1FEnuTeIAIWMnj/NcGZOr0VQeNNhpfUv+
-TW13oQmDAMk4aBL/EhciyLUhgIo5NyRe4taiH8yLT7tFqx9/HSU1UANUDiJE4Bnin269s1mngNwB
-YEMMy+AohwrcmpbfzV+PmmbkA7knjf8Y3wGHbP0CktUHY+u9/HNfjrp7G7CP6IM/df2xdV6AFrT5
-rTNuAKTixnhMjfYTnhEhfTy2dxibSuYlHBQNd1T+0eLdgCKXK8OLFMGqLRnP6WQ+v/pcNlY5xS4v
-y9D18jwskPLcYgen+E97h7Scn/rJw5RwrIYwuOjyKd+5+I71xLWzKH96aKBH+FhL+oSph60MP1qO
-NoGpKBlrsibmAXCdAkwXXaKsGktZ8gHB6/07/Yqvvj6HctObPRRS9eZNIloRBtNJXhnG7+/Qtg0a
-6FuVeAXjE7RHmC6y3Moxq99rbMl5RINtDPCbjg25+MW5PcQmxYJWqI6y8RA5scoCLMpuTzNUMks8
-bkXeCW1/+tbqItKAywb16trGsMQYZ+4ZE+e3Z8KYcA6FitiP1wQP6tQdmTEa/w/G3vErhTIBsddw
-N2wmb0uxl1hw5DerYZfUtzd176STRFDDCFtjewMHnuXL1/+l49Q13eMPrzEOKRoPaXZ6fzSl1tev
-wYmFjs7Qa30KyD8ctLeuLzD5MtcN5p/rxbfX/ZpjMNJmeso8MtQEVyQMwg27MVjPSUvtQ0+uHdlB
-Sv6de0Hsa5YP/fG48tQdJ+nrhfBAb/F5LUh2r6ci9geajiScviXtmPv56ZjjrsYCe9W0Lz9FSyZN
-pwo4XWrTYUn/rD7hmkoVRYVEuwGpupQURZrcs9/7G1gWCuS1UdvM/rwf/J/JiQDla8XPE4bP77bY
-VWzon7ZfFpxPh7TZR9PL3TU3gMXdJeF95hGaYkwufnPk0s2+xEV/l2OMX4235wcCHPrmgdA+U/wr
-1Dgpn1inPl/bFKorD1apwA/Amc6/ZGTGfBNdojBqpvDM8I0129E8aUpKeW0+zme=
+				<div class="tab-pane  fade show applist1" id="rounded-pills-icon-A3" role="tabpanel" aria-labelledby="rounded-pills-icon-A3-tab">
+				   <ul class="nav nav-pills N3 justify-content-center" id="rounded-pills-icon-tab" role="tablist">
+					  {if $app->getStatus(5) == 1}
+					  <li class="nav-item ml-1 mr-1 ap">
+						 <a class="nav-link mb-2  active text-center" id="rounded-pills-icon-5-tab" data-toggle="pill" href="#rounded-pills-icon-5" role="tab" aria-controls="rounded-pills-icon-5" aria-selected="false"><i class="{$app->getAppIcon(5)}"></i> {$app->getTitle(5)} </a>
+					  </li>
+					  {/if}
+					  {if $app->getStatus(6) == 1}
+					  <li class="nav-item ml-1 mr-1 ap">
+						 <a class="nav-link mb-2   text-center" id="rounded-pills-icon-6-tab" data-toggle="pill" href="#rounded-pills-icon-6" role="tab" aria-controls="rounded-pills-icon-6" aria-selected="false"><i class="{$app->getAppIcon(6)}"></i> {$app->getTitle(6)} </a>
+					  </li>
+					  {/if}
+					  {if $app->getStatus(7) == 1}
+					  <li class="nav-item ml-1 mr-1 ap">
+						 <a class="nav-link mb-2   text-center" id="rounded-pills-icon-7-tab" data-toggle="pill" href="#rounded-pills-icon-7" role="tab" aria-controls="rounded-pills-icon-7" aria-selected="false"><i class="{$app->getAppIcon(7)}"></i> {$app->getTitle(7)} </a>
+					  </li>
+					  {/if}
+					  {if $app->getStatus(8) == 1}
+					  <li class="nav-item ml-1 mr-1 ap">
+						 <a class="nav-link mb-2   text-center" id="rounded-pills-icon-8-tab" data-toggle="pill" href="#rounded-pills-icon-8" role="tab" aria-controls="rounded-pills-icon-8" aria-selected="false"><i class="{$app->getAppIcon(8)}"></i> {$app->getTitle(8)} </a>
+					  </li>
+					  {/if}
+				   </ul>
+				   <hr>
+				   <div class="card-body tab-content" id="rounded-pills-icon-tabContent">
+					  {if $app->getStatus(5) == 1}
+					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-5" role="tabpanel" aria-labelledby="rounded-pills-icon-5-tab">
+						 <p>
+							{$lang->get('downloads')}
+							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(5)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+						 </p>
+						 <p>
+							{$lang->get('setup')} 
+							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_5"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+						 </p>
+						 <p>
+							{$lang->get('ConfigLink')}  
+							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(5)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="clash://install-config?url={urlencode($Config["sub_addr"])}{urlencode($sub_token)}?{urlencode($app->getAppLink(5))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
+						 </p>
+					  </div>
+					  {/if}
+					  {if $app->getStatus(6) == 1}
+					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-6" role="tabpanel" aria-labelledby="rounded-pills-icon-6-tab">
+						 <p>
+							{$lang->get('downloads')}
+							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(6)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+						 </p>
+						 <p>
+							{$lang->get('setup')} 
+							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_6"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+						 </p>
+						 <p>
+							{$lang->get('ConfigLink')} 
+							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(6)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+						 </p>
+					  </div>
+					  {/if}
+					  {if $app->getStatus(7) == 1}
+					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-7" role="tabpanel" aria-labelledby="rounded-pills-icon-7-tab">
+						 <p>
+							{$lang->get('downloads')}
+							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(7)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+						 </p>
+						 <p>
+							{$lang->get('setup')} 
+							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_7"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+						 </p>
+						 <p>
+							{$lang->get('ConfigLink')}
+							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(7)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+						 </p>
+					  </div>
+					  {/if}
+					  {if $app->getStatus(8) == 1}
+					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-8" role="tabpanel" aria-labelledby="rounded-pills-icon-8-tab">
+						 <p>
+							{$lang->get('downloads')}
+							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(8)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+						 </p>
+						 <p>
+							{$lang->get('setup')} 
+							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_8"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+						 </p>
+						 <p>
+							{$lang->get('ConfigLink')}
+							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(8)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+						 </p>
+					  </div>
+					  {/if}
+				   </div>
+				</div>

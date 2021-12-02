@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountname` text NOT NULL,
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
-  `allow_check` TINYINT(1) NOT NULL DEFAULT '0'
+  `allow_check` TINYINT(1) NOT NULL DEFAULT '0',
+  `accountlevel` TEXT NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -49,6 +50,9 @@ CREATE TABLE IF NOT EXISTS `config` (
 
 
 INSERT INTO `config` (`name`, `value`) VALUES
+('disable_coupon', '1'),
+('paypal_type', '1'),
+('send_order_email', '0'),
 ('rebate_info', ''),
 ('devLimitType', '1'),
 ('accessdenied', '0'),
@@ -880,7 +884,8 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `wallet` text,
   `pending` varchar(11) DEFAULT NULL,
   `extra` decimal(12,2) NOT NULL DEFAULT '0.00',
-  `exrate` decimal(12,2) NOT NULL
+  `exrate` decimal(12,2) NOT NULL,
+  `renew` TINYINT(1) NOT NULL DEFAULT '0'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
 
@@ -897,14 +902,15 @@ CREATE TABLE IF NOT EXISTS `package` (
   `quaterly` varchar(500) NOT NULL DEFAULT '{"expire":"90","price":0,"status":0}',
   `semiannually` varchar(500) NOT NULL DEFAULT '{"expire":"180","price":0,"status":0}',
   `annually` varchar(500) NOT NULL DEFAULT '{"expire":"360","price":0,"status":0}',
-  `reset` int(5) NOT NULL DEFAULT '0',
+  `reset_renew` TINYINT(1) NOT NULL DEFAULT '0',
   `reset_every_days` int(10) NOT NULL DEFAULT '30',
   `connector` int(5) NOT NULL DEFAULT '2',
   `speedlimit` int(10) NOT NULL DEFAULT '0',
   `group` int(5) NOT NULL DEFAULT '1',
   `level` int(5) NOT NULL DEFAULT '0',
   `note` longtext DEFAULT NULL,
-  `topup_price` decimal(12,2) DEFAULT NULL
+  `topup_price` decimal(12,2) DEFAULT NULL,
+  `renew_type` TINYINT(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
