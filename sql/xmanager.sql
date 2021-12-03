@@ -1,8 +1,4 @@
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
 CREATE TABLE IF NOT EXISTS `accounts` (
   `id` int(20) NOT NULL,
   `status` int(2) NOT NULL DEFAULT '0',
@@ -50,6 +46,13 @@ CREATE TABLE IF NOT EXISTS `config` (
 
 INSERT INTO `config` (`name`, `value`) VALUES
 ('zone_id', ''),
+('dsabletrafficlogs', 0),
+('stripe_callback', ''),
+('mgate_callback', ''),
+('easypay_callback', ''),
+('theadpay_callback', ''),
+('cp_callback', ''),
+('paypal_callback', ''),
 ('disable_coupon', '1'),
 ('paypal_type', '1'),
 ('send_order_email', '0'),
@@ -67,8 +70,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('aws_secret', ''),
 ('backup_email', ''),
 ('backup_password', ''),
-('baseUrl', 'https://web.gbxcloud.com'),
-('buy_reset', '1'),
+('baseUrl', 'https://web.xyz.com'),
 ('captcha', '0'),
 ('chat_mode', '1'),
 ('cloudflare_domain', ''),
@@ -136,7 +138,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.20'),
+('latesversion', 'v4.21'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -194,8 +196,8 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('stripe_currency_code', 'CNY'),
 ('stripe_key', ''),
 ('stripe_webhook', ''),
-('subUrl', 'https://web.gbxcloud.com/link/'),
-('sub_addr', 'https://web.gbxcloud.com/link/'),
+('subUrl', 'https://web.xyz.com/link/'),
+('sub_addr', 'https://web.xyz.com/link/'),
 ('tawkchat_api', ''),
 ('tawkchat_id', ''),
 ('telegram_backup', '0'),
@@ -220,13 +222,12 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.20'),
+('version', 'v4.21'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
 ('webapisafe', '0'),
 ('wechat_url', '');
-
 
 
 CREATE TABLE IF NOT EXISTS `country` (
@@ -238,7 +239,6 @@ CREATE TABLE IF NOT EXISTS `country` (
   `alpha3` text NOT NULL,
   `code` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8mb4;
-
 
 
 INSERT INTO `country` (`id`, `cnname`, `name`, `fullname`, `alpha2`, `alpha3`, `code`) VALUES
@@ -1179,36 +1179,28 @@ ALTER TABLE `captcha`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
-
 ALTER TABLE `commission`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
-
 ALTER TABLE `config`
   ADD UNIQUE KEY `name` (`name`);
-
 
 ALTER TABLE `country`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `id` (`id`);
 
-
 ALTER TABLE `coupon`
   ADD PRIMARY KEY (`id`);
-
 
 ALTER TABLE `currency`
   ADD PRIMARY KEY (`id`);
 
-
 ALTER TABLE `email_verify`
   ADD PRIMARY KEY (`id`);
 
-
 ALTER TABLE `isocodes`
   ADD PRIMARY KEY (`id`);
-
 
 ALTER TABLE `link`
   ADD PRIMARY KEY (`id`),
@@ -1241,10 +1233,8 @@ ALTER TABLE `payout`
 ALTER TABLE `rule_list`
   ADD PRIMARY KEY (`id`);
 
-
 ALTER TABLE `rule_log`
   ADD PRIMARY KEY (`id`);
-
 
 ALTER TABLE `servers`
   ADD PRIMARY KEY (`id`),

@@ -1,5 +1,4 @@
 .idea/
 .vscode/
-/coverage/
 /vendor/
-/storage/*
+/storage/smarty/*
