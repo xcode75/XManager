@@ -903,7 +903,7 @@ CREATE TABLE IF NOT EXISTS `package` (
   `annually` varchar(500) NOT NULL DEFAULT '{"expire":"360","price":0,"status":0}',
   `reset_renew` TINYINT(1) NOT NULL DEFAULT '0',
   `renew_type` TINYINT(1) NOT NULL DEFAULT '1',
-  `renew_traffic_type` TINYINT(1) NOT NULL DEFAULT '1'
+  `renew_traffic_type` TINYINT(1) NOT NULL DEFAULT '1',
   `reset_every_days` int(10) NOT NULL DEFAULT '30',
   `connector` int(5) NOT NULL DEFAULT '2',
   `speedlimit` int(10) NOT NULL DEFAULT '0',
