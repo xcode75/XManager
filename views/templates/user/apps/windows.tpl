@@ -27,16 +27,16 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-5" role="tabpanel" aria-labelledby="rounded-pills-icon-5-tab">
 						 <p>
 							{$lang->get('downloads')}
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(5)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(5)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_5"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_5"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')}  
-							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(5)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="clash://install-config?url={urlencode($Config["sub_addr"])}{urlencode($sub_token)}?{urlencode($app->getAppLink(5))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(5)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="clash://install-config?url={urlencode($Config["sub_addr"])}{urlencode($sub_token)}?{urlencode($app->getAppLink(5))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
 						 </p>
 					  </div>
 					  {/if}
@@ -44,15 +44,15 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-6" role="tabpanel" aria-labelledby="rounded-pills-icon-6-tab">
 						 <p>
 							{$lang->get('downloads')}
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(6)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(6)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_6"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_6"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')} 
-							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(6)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(6)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						 </p>
 					  </div>
 					  {/if}
@@ -60,15 +60,15 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-7" role="tabpanel" aria-labelledby="rounded-pills-icon-7-tab">
 						 <p>
 							{$lang->get('downloads')}
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(7)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(7)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_7"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_7"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')}
-							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(7)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(7)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						 </p>
 					  </div>
 					  {/if}
@@ -76,15 +76,15 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-8" role="tabpanel" aria-labelledby="rounded-pills-icon-8-tab">
 						 <p>
 							{$lang->get('downloads')}
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(8)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(8)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_8"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_8"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')}
-							<a  class="copy-text btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(8)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(8)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						 </p>
 					  </div>
 					  {/if}

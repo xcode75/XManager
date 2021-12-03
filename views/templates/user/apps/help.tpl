@@ -27,11 +27,11 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-25" role="tabpanel" aria-labelledby="rounded-pills-icon-25-tab">
 						 <p>
 							{$lang->get('downloads')}  
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(25)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(25)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')}  
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_25"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_25"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
@@ -39,11 +39,11 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-26" role="tabpanel" aria-labelledby="rounded-pills-icon-26-tab">
 						 <p>
 							{$lang->get('downloads')}  
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(26)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(26)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_26"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_26"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
@@ -51,11 +51,11 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-27" role="tabpanel" aria-labelledby="rounded-pills-icon-27-tab">
 						 <p>
 							{$lang->get('downloads')}  
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(27)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(27)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')}  
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_27"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_27"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
@@ -63,11 +63,11 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-28" role="tabpanel" aria-labelledby="rounded-pills-icon-28-tab">
 						 <p>
 							{$lang->get('downloads')}  
-							<a  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(28)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
+							<a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="{$app->getAppURL(28)}" target="_blank"><i class="fad fa-download mr-50"></i> {$lang->get('App')}</a>
 						 </p>
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_28"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_28"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}

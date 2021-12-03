@@ -9,8 +9,7 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountname` text NOT NULL,
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
-  `allow_check` TINYINT(1) NOT NULL DEFAULT '0',
-  `accountlevel` TEXT NULL DEFAULT NULL
+  `allow_check` TINYINT(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -50,11 +49,10 @@ CREATE TABLE IF NOT EXISTS `config` (
 
 
 INSERT INTO `config` (`name`, `value`) VALUES
+('zone_id', ''),
 ('disable_coupon', '1'),
 ('paypal_type', '1'),
 ('send_order_email', '0'),
-('rebate_info', ''),
-('devLimitType', '1'),
 ('accessdenied', '0'),
 ('add_emoji_to_server_name', '1'),
 ('admin_telegram', ''),
@@ -138,7 +136,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.18'),
+('latesversion', 'v4.20'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -165,6 +163,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('pay_bal', '1'),
 ('pwdMethod', 'sha256'),
 ('rebate', '5'),
+('rebate_info', ''),
 ('reg_connector', '1'),
 ('reg_group', '1'),
 ('reg_level', '3'),
@@ -221,7 +220,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.18'),
+('version', 'v4.20'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -886,7 +885,7 @@ CREATE TABLE IF NOT EXISTS `orders` (
   `extra` decimal(12,2) NOT NULL DEFAULT '0.00',
   `exrate` decimal(12,2) NOT NULL,
   `renew` TINYINT(1) NOT NULL DEFAULT '0'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE IF NOT EXISTS `package` (
@@ -903,15 +902,16 @@ CREATE TABLE IF NOT EXISTS `package` (
   `semiannually` varchar(500) NOT NULL DEFAULT '{"expire":"180","price":0,"status":0}',
   `annually` varchar(500) NOT NULL DEFAULT '{"expire":"360","price":0,"status":0}',
   `reset_renew` TINYINT(1) NOT NULL DEFAULT '0',
+  `renew_type` TINYINT(1) NOT NULL DEFAULT '1',
+  `renew_traffic_type` TINYINT(1) NOT NULL DEFAULT '1'
   `reset_every_days` int(10) NOT NULL DEFAULT '30',
   `connector` int(5) NOT NULL DEFAULT '2',
   `speedlimit` int(10) NOT NULL DEFAULT '0',
   `group` int(5) NOT NULL DEFAULT '1',
   `level` int(5) NOT NULL DEFAULT '0',
   `note` longtext DEFAULT NULL,
-  `topup_price` decimal(12,2) DEFAULT NULL,
-  `renew_type` TINYINT(1) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `topup_price` decimal(12,2) NOT NULL DEFAULT '0.00'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 CREATE TABLE IF NOT EXISTS `password_reset` (
@@ -920,7 +920,7 @@ CREATE TABLE IF NOT EXISTS `password_reset` (
   `token` varchar(128) NOT NULL,
   `init_time` int(11) NOT NULL,
   `expire_time` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 CREATE TABLE IF NOT EXISTS `payout` (
@@ -931,7 +931,7 @@ CREATE TABLE IF NOT EXISTS `payout` (
   `method` int(5) NOT NULL DEFAULT '1',
   `status` int(11) DEFAULT NULL,
   `datetime` bigint(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
 CREATE TABLE IF NOT EXISTS `rule_list` (
@@ -1121,15 +1121,13 @@ CREATE TABLE IF NOT EXISTS `user` (
   `notification` int(3) NOT NULL DEFAULT '1',
   `notify_expire` int(2) NOT NULL DEFAULT '1',
   `notify_usedup` int(2) NOT NULL DEFAULT '1',
-  `ref_by` int(11) NULL DEFAULT '0',
+  `ref_by` int(11) NOT NULL DEFAULT '0',
   `notice_status` int(10) NOT NULL DEFAULT '0',
   `notice_id` text,
   `onlineips` longtext,
   `affclicks` int(20) NOT NULL DEFAULT '0',
   `ga_token` varchar(200) NOT NULL,
   `ga_enable` int(5) NOT NULL DEFAULT '0',
-  `reset_count` int(3) NOT NULL DEFAULT '0',
-  `allow_reset` tinyint(1) NOT NULL DEFAULT '0',
   `aff_completed` decimal(12,2) NOT NULL DEFAULT '0.00',
   `aff_pending` decimal(12,2) NOT NULL DEFAULT '0.00',
   `aff_balance` decimal(12,2) NOT NULL DEFAULT '0.00',

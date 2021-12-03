@@ -27,7 +27,7 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-29" role="tabpanel" aria-labelledby="rounded-pills-icon-29-tab">
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_29"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_29"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
@@ -35,7 +35,7 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-30" role="tabpanel" aria-labelledby="rounded-pills-icon-30-tab">
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_30"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_30"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
@@ -43,7 +43,7 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-31" role="tabpanel" aria-labelledby="rounded-pills-icon-31-tab">
 						 <p>
 							{$lang->get('setup')} 
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_31"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_31"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
@@ -51,7 +51,7 @@
 					  <div class="tab-pane  fade show configlist" id="rounded-pills-icon-32" role="tabpanel" aria-labelledby="rounded-pills-icon-32-tab">
 						 <p>
 							{$lang->get('setup')}  
-							<button  class="btn-dl btn btn-sm btn-flat-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_32"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
+							<button  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white" type="button" style="background-color: {$Config['app_color']};" data-toggle="modal" data-target="#modal_32"><i class="fad fa-bookmark mr-50"></i> {$lang->get('View')} </button>
 						 </p>
 					  </div>
 					  {/if}
