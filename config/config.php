@@ -1,18 +1,18 @@
 <?php
 
-$XManager['debug'] 			= false;
+$XManager['debug'] 			= true;
 
 $XManager['timeZone'] 	  	 = "PRC"; 
-$XManager['default_lang'] 	 = "zh-cn"; #en/zh-cn
+$XManager['default_lang'] 	 = "en"; #en/zh-cn
 
 $XManager['db_driver']    	 = 'mysql';   
 $XManager['db_host']      	 = 'localhost';
 $XManager['db_socket']    	 = '';
-$XManager['db_database']  	 = 'xmanager';           
+$XManager['db_database']  	 = 'manager';           
 $XManager['db_username']  	 = 'root';             
-$XManager['db_password']  	 = 'root';           
-$XManager['db_charset']   	 = 'utf8';
-$XManager['db_collation'] 	 = 'utf8_general_ci'; 
+$XManager['db_password']  	 = '';           
+$XManager['db_charset']   	 = 'utf8mb4';
+$XManager['db_collation'] 	 = 'utf8mb4_unicode_ci'; 
 $XManager['db_prefix']    	 = '';  
 
 $XManager['cdn_forwarded_ip'] = array('HTTP_X_FORWARDED_FOR', 'HTTP_ALI_CDN_REAL_IP', 'X-Real-IP', 'True-Client-Ip');
