@@ -25,6 +25,15 @@ CREATE TABLE IF NOT EXISTS `captcha` (
   `expire` bigint(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+CREATE TABLE `cloudflare` (
+  `id` int(11) NOT NULL,
+  `domain` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `email` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `api_key` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `zone_id` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 
 CREATE TABLE IF NOT EXISTS `commission` (
   `id` bigint(20) NOT NULL,
@@ -45,7 +54,6 @@ CREATE TABLE IF NOT EXISTS `config` (
 
 
 INSERT INTO `config` (`name`, `value`) VALUES
-('zone_id', ''),
 ('f2fpay_callback', 0),
 ('limit_phone_numbers', 0),
 ('allowed_phone_numbers', ''),
@@ -76,9 +84,6 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('baseUrl', 'https://web.xyz.com'),
 ('captcha', '0'),
 ('chat_mode', '1'),
-('cloudflare_domain', ''),
-('cloudflare_email', ''),
-('cloudflare_key', ''),
 ('cnrestrictions', ''),
 ('comm_pay_once', '0'),
 ('cp_currency', 'BTC'),
@@ -100,7 +105,6 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('enablepayments', '1'),
 ('enable_backup', '0'),
 ('enable_chat', '0'),
-('enable_cloudflare', '0'),
 ('enable_coinpayments', '0'),
 ('enable_easypay', '0'),
 ('enable_easypay_alipay', '0'),
@@ -141,7 +145,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.27'),
+('latesversion', 'v4.28'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -225,7 +229,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.27'),
+('version', 'v4.28'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -537,7 +541,7 @@ CREATE TABLE IF NOT EXISTS `currency` (
   `symbol` varchar(5) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `rate` decimal(12,2) NOT NULL DEFAULT '0.00',
   `status` int(2) NOT NULL DEFAULT '0',
-  `updatetime` bigint(20) NOT NULL
+  `updatetime` bigint(20) NULL DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `currency` (`id`, `code`, `iso2`, `symbol`, `rate`, `status`, `updatetime`) VALUES
@@ -601,15 +605,6 @@ CREATE TABLE IF NOT EXISTS `notice` (
   `markdown` longtext NOT NULL,
   `markdown_cn` longtext
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-CREATE TABLE IF NOT EXISTS `onlineip` (
-  `id` int(11) NOT NULL,
-  `userid` int(11) NOT NULL,
-  `email` varchar(250) NOT NULL,
-  `ip` longtext NOT NULL,
-  `datetime` bigint(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 
 
 CREATE TABLE IF NOT EXISTS `orders` (
@@ -754,7 +749,9 @@ CREATE TABLE IF NOT EXISTS `servers` (
   `method` varchar(50) NOT NULL DEFAULT 'aes-128-gcm',
   `mu_only` int(2) NOT NULL DEFAULT '1',
   `allowinsecure` tinyint(2) NOT NULL DEFAULT '0',
-  `rserver` varchar(300) DEFAULT NULL
+  `rserver` varchar(300) DEFAULT NULL,
+  `cloudflare` tinyint(1) NOT NULL DEFAULT '0',
+  `cloudflare_cdn` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 
@@ -882,7 +879,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `notification` int(3) NOT NULL DEFAULT '1',
   `notify_expire` int(2) NOT NULL DEFAULT '1',
   `notify_usedup` int(2) NOT NULL DEFAULT '1',
-  `ref_by` int(11) NOT NULL DEFAULT '0',
+  `ref_by` tinyint(11) NULL DEFAULT NULL,
   `notice_status` int(10) NOT NULL DEFAULT '0',
   `notice_id` text,
   `onlineips` longtext,
@@ -967,9 +964,6 @@ ALTER TABLE `mobile_verify`
   ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `notice`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `onlineip`
   ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `orders`
@@ -1099,11 +1093,15 @@ ALTER TABLE `user_token`
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
-ALTER TABLE `onlineip` 
-	MODIFY `id` INT(11) NOT NULL AUTO_INCREMENT;
-	
 ALTER TABLE `countries`
   ADD PRIMARY KEY (`id`);
 
 ALTER TABLE `countries`
   MODIFY `id` int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=1;	
+  
+ALTER TABLE `cloudflare`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `cloudflare`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
+    
