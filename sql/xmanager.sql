@@ -5,7 +5,8 @@ CREATE TABLE IF NOT EXISTS `accounts` (
   `accountname` text NOT NULL,
   `accountid` text NOT NULL,
   `accountpassword` text NOT NULL,
-  `allow_check` TINYINT(1) NOT NULL DEFAULT '0'
+  `allow_check` TINYINT(1) NOT NULL DEFAULT '0',
+  `accountlevel`text  NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
