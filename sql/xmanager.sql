@@ -146,7 +146,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.30'),
+('latesversion', 'v4.31'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -230,7 +230,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.30'),
+('version', 'v4.31'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
@@ -756,7 +756,7 @@ CREATE TABLE IF NOT EXISTS `servers` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 
-INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `connector`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`, `rserver`) VALUES
+INSERT INTO `servers` (`id`, `name`, `type`, `server`, `headertype`, `port`, `outside_port`, `protocol`, `flow`, `security`, `xhost`, `xpath`, `info`, `status`, `rate`, `level`, `speedlimit`, `tfo`, `bandwidth`, `bandwidth_limit`, `bandwidthlimit_resetday`, `heartbeat`, `node_ip`, `group`, `online`, `sort`, `method`, `mu_only`, `allowinsecure`, `rserver`) VALUES
 (1, 'Expired/过期', 0, '127.0.0.1', '', 443, '0', '', '', 'tls', '', '', 'GB', NULL, 0, -1, 0, 0, 0, 0, 0, 0, '127.0.0.1', 0, 0, 1, 'aes-128-gcm', 1, 0, NULL);
 
 
