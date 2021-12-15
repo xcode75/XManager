@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS `config` (
 
 
 INSERT INTO `config` (`name`, `value`) VALUES
+('dev_limit_type', 0),
 ('f2fpay_callback', 0),
 ('limit_phone_numbers', 0),
 ('allowed_phone_numbers', ''),
@@ -146,7 +147,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v4.31'),
+('latesversion', 'v4.32'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -230,7 +231,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('twillo_number', ''),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v4.31'),
+('version', 'v4.32'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '5'),
