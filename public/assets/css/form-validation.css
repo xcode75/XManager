@@ -1,0 +1,20 @@
+form span.error {
+  width : 100%;
+  font-size : 0.857rem;
+}
+
+form .error:not(input) {
+  color : #EA5455;
+}
+
+form input.error, form input.error:focus {
+  border-color : #EA5455 !important;
+}
+
+form textarea.error {
+  border-color : #EA5455 !important;
+}
+
+form .select2.error + .select2-container--classic .select2-selection--single, form .select2.error + .select2-container--default .select2-selection--single, form .select2.error + .select2-container--classic .select2-selection--multiple, form .select2.error + .select2-container--default .select2-selection--multiple {
+  border-color : #EA5455 !important;
+}

@@ -1,0 +1,21 @@
+/*!
+ * Font Awesome Pro 6.0.0-alpha3 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license (Commercial License)
+ */
+@import 'variables';
+
+@font-face {
+  font-family: 'Font Awesome 6 Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-display: $fa-font-display;
+  src: url('#{$fa-font-path}/fa-light-300.woff2') format('woff2'),
+    url('#{$fa-font-path}/fa-light-300.woff') format('woff'),
+    url('#{$fa-font-path}/fa-light-300.ttf') format('truetype');
+}
+
+.fal,
+.fa-light {
+  font-family: 'Font Awesome 6 Pro';
+  font-weight: 300;
+}

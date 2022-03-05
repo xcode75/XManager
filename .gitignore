@@ -1,0 +1,4 @@
+vendor/
+logs/*
+storage/smarty/
+.idea/
