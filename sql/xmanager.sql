@@ -178,7 +178,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v5.16'),
+('latesversion', 'v5.20'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -282,7 +282,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('trafficusednotifylimit', '500'),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v5.16'),
+('version', 'v5.20'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -743,6 +743,7 @@ CREATE TABLE `orders` (
   `exp` bigint(20) DEFAULT NULL,
   `expdate` text DEFAULT NULL,
   `exrate` decimal(12,2) NOT NULL,
+  `pay_url`  LONGTEXT COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `renew` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -1090,7 +1091,7 @@ CREATE TABLE `user` (
   `traffic_notified` tinyint(1) NOT NULL DEFAULT 0,
   `traffic_notified_limit` tinyint(1) NOT NULL DEFAULT 0,
   `afflink` varchar(25) DEFAULT NULL,
-  `notification` int(3) NOT NULL DEFAULT 1,
+  `verify` INT(3) NOT NULL DEFAULT '0',
   `notify_expire` int(2) NOT NULL DEFAULT 1,
   `notify_usedup` int(2) NOT NULL DEFAULT 1,
   `ref_by` tinyint(11) DEFAULT NULL,

@@ -32,7 +32,7 @@
         "khanamiryan/qrcode-detector-decoder": "*",
         "symfony/yaml": "*",
         "symfony/console":"*",
-        "endroid/qr-code": "^2.5",
+        "endroid/qr-code": "*",
         "stripe/stripe-php": "^7.105",
         "aws/aws-sdk-php":"3.202.2",
         "irazasyed/telegram-bot-sdk": "^3.4.1",
