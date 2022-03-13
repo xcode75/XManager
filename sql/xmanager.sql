@@ -188,7 +188,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('mailgun_domain', ''),
 ('mailgun_key', ''),
 ('mailgun_sender', ''),
-('maintenance', '1'),
+('maintenance', '0'),
 ('mgate_api_url', ''),
 ('mgate_app_id', ''),
 ('mgate_app_secret', ''),
