@@ -178,7 +178,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v5.20'),
+('latesversion', 'v5.21'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -282,7 +282,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('trafficusednotifylimit', '500'),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v5.20'),
+('version', 'v5.21'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -1105,7 +1105,6 @@ CREATE TABLE `user` (
   `aff_balance` decimal(12,2) NOT NULL DEFAULT 0.00,
   `aff_account` varchar(50) DEFAULT NULL,
   `aff_with_mode` int(2) NOT NULL DEFAULT 1,
-  `relay_user` int(2) NOT NULL DEFAULT 0,
   `lang` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
