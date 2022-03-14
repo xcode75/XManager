@@ -664,6 +664,14 @@ CREATE TABLE `faqs` (
 --
 -- Table structure for table `link`
 --
+CREATE TABLE `iplist` (
+  `id` bigint(20) NOT NULL,
+  `nodeid` int(11) NOT NULL,
+  `userid` int(11) NOT NULL,
+  `ip` text NOT NULL,
+  `datetime` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 
 CREATE TABLE `link` (
   `id` bigint(20) NOT NULL,
@@ -1353,9 +1361,8 @@ ALTER TABLE `user_token`
 ALTER TABLE `user_traffic_log`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT for dumped tables
---
+ALTER TABLE `iplist`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for table `accounts`
@@ -1530,4 +1537,7 @@ ALTER TABLE `user_token`
 --
 ALTER TABLE `user_traffic_log`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+ALTER TABLE `iplist`
+  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 COMMIT;

@@ -7,7 +7,7 @@
         "php-di/php-di": "^6.3",
         "selective/basepath": "^2.1",
         "slim/psr7": "^1.5",
-        "slim/slim": "^4",
+        "slim/slim": "4.9.0",
         "smarty/smarty": "3.*",
         "guzzlehttp/guzzle": "^6",
         "illuminate/pagination": "6.*",
