@@ -1,0 +1,1 @@
+ALTER TABLE `user` CHANGE `verify` `verify` INT(3) NOT NULL DEFAULT '0';
