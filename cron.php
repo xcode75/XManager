@@ -1,74 +1,63 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-5kgkhBZDNKd4RZKr4xEwICJxS9SCsMsrnsjiZ0==
+<?php
+require_once __DIR__ . '/vendor/autoload.php';
+
+$cron = new \Jobby\Jobby();
+
+/*---流量自动重置命令--*/
+$cron->add('ServerStatusCommand', array(
+    'command' => 'php bin/console.php serverstatus',
+    'schedule' => '*/5 * * * *',
+    'output' => 'logs/serverstatus.log',
+    'enabled' => true,
+));
+
+
+/*---流量重置命令--*/
+$cron->add('DataResetCommand', array(
+    'command' => 'php bin/console.php datareset',
+    'schedule' => '0 0 * * *',
+    'output' => 'logs/datareset.log',
+    'enabled' => true,
+));
+
+/*---汇率命令--*/
+$cron->add('ExchangeRateCommand', array(  
+    'command' => 'php bin/console.php updateRate',
+    'schedule' => '0 */12 * * *',
+    'output' => 'logs/rates.log',
+    'enabled' => true,
+));
+
+/*---清除日志命令--*/
+$cron->add('ClearLogsCommand', array(
+    'command' => 'php bin/console.php clearlogs',
+    'schedule' => '0 */6 * * *',
+    'output' => 'logs/clearlogs.log',
+    'enabled' => true,
+));
+
+/*---备份命令--*/
+$cron->add('BackupCommand', array(
+    'command' => 'php bin/console.php backup',
+    'schedule' => '0 */1 * * *',
+    'output' => 'logs/backup.log',
+    'enabled' => true,
+));
+
+/*---检查更新命令--*/
+$cron->add('CheckUpdateCommand', array(
+    'command' => 'php bin/console.php versioncheck',
+    'schedule' => '*/5 * * * *',
+    'output' => 'logs/versioncheck.log',
+    'enabled' => true,
+));
+
+/*---流量状态命令--*/
+$cron->add('DataStatusCommand', array(
+    'command' => 'php bin/console.php datastatus',
+    'schedule' => '*/10 * * * *',
+    'output' => 'logs/datastatus.log',
+    'enabled' => true,
+));
+
+$cron->run();
