@@ -1,2 +1,0 @@
-# XManager
-An Xray Manger 
