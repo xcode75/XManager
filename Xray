@@ -1,0 +1,146 @@
+#!/bin/bash 
+
+red='\033[0;31m'
+green='\033[0;32m'
+yellow='\033[0;33m'
+plain='\033[0m'
+
+version="v1.0.0"
+
+# check root
+[[ $EUID -ne 0 ]] && echo -e "${red}错误: ${plain} 必须使用root用户运行此脚本！\n" && exit 1
+
+# check os
+if [[ -f /etc/redhat-release ]]; then
+    release="centos"
+elif cat /etc/issue | grep -Eqi "debian"; then
+    release="debian"
+elif cat /etc/issue | grep -Eqi "ubuntu"; then
+    release="ubuntu"
+elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
+    release="centos"
+elif cat /proc/version | grep -Eqi "debian"; then
+    release="debian"
+elif cat /proc/version | grep -Eqi "ubuntu"; then
+    release="ubuntu"
+elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
+    release="centos"
+else
+    echo -e "${red}未检测到系统版本，请联系脚本作者！${plain}\n" && exit 1
+fi
+
+os_version=""
+
+if [[ -f /etc/os-release ]]; then
+    os_version=$(awk -F'[= ."]' '/VERSION_ID/{print $3}' /etc/os-release)
+fi
+if [[ -z "$os_version" && -f /etc/lsb-release ]]; then
+    os_version=$(awk -F'[= ."]+' '/DISTRIB_RELEASE/{print $2}' /etc/lsb-release)
+fi
+
+if [[ x"${release}" == x"centos" ]]; then
+    if [[ ${os_version} -le 6 ]]; then
+        echo -e "${red}Use CentOS 7 Or higher system！${plain}\n${red}请使用 CentOS 7 或更高版本的系统！${plain}\n" && exit 1
+    fi
+elif [[ x"${release}" == x"ubuntu" ]]; then
+    if [[ ${os_version} -lt 16 ]]; then
+        echo -e "${red}Use Ubuntu 16 Or higher system！${plain}\n${red}请使用 Ubuntu 16 或更高版本的系统！${plain}\n" && exit 1
+    fi
+elif [[ x"${release}" == x"debian" ]]; then
+    if [[ ${os_version} -lt 8 ]]; then
+        echo -e "${red}Use Debian 8 Or higher system！${plain}\n${red}请使用 Debian 8 或更高版本的系统！${plain}\n" && exit 1
+    fi
+fi
+
+
+update() {
+    cd /etc/Xray
+	docker-compose down
+	docker-compose pull
+	docker-compose up -d
+}
+
+start() {
+    cd /etc/Xray
+	docker-compose up -d
+}
+
+stop() {
+    cd /etc/Xray
+	docker-compose down
+}
+
+restart() {
+    cd /etc/Xray
+	docker-compose down 
+	docker-compose up -d
+}
+
+
+show_log() {
+    cd /etc/Xray
+	docker-compose logs -f
+}
+
+
+show_usage() {
+	echo "------------------------------------------"
+	echo "Xray              - Show Menu/显示菜单"
+	echo "Xray start        - Start/启动 Xray"
+	echo "Xray stop         - Stop/停止 Xray"
+	echo "Xray restart      - Restart/重启 Xray"
+	echo "Xray log          - Log/日志 Xray "
+	echo "Xray update       - Update/更新 Xray"
+	echo "------------------------------------------"
+}
+
+show_menu() {
+    echo -e "
+  ${green}0.${plain} Exit/退出
+————————————————
+  ${green}1.${plain} Update/更新 Xray
+  ${green}2.${plain} Start/启动 Xray
+  ${green}3.${plain} Stop/停止 Xray
+  ${green}4.${plain} Restart/重启 Xray
+  ${green}5.${plain} View Log/查看 Xray 日志
+————————————————
+ "
+    
+    echo && read -p "Please enter selection/请输入选择 [0-5]: " num
+
+    case "${num}" in
+        0) exit 0
+        ;;
+        1) update
+        ;;
+        2) start
+        ;;
+        3) stop
+        ;;
+        4) restart
+        ;;
+        5) show_log
+        ;;
+        *) echo -e "${red}请输入正确的数字 [0-5]${plain}"
+        ;;
+    esac
+}
+
+
+if [[ $# > 0 ]]; then
+    case $1 in
+        "start") start 0
+        ;;
+        "stop") stop 0
+        ;;
+	"update") update 0
+        ;;
+        "restart") restart 0
+        ;;      
+        "log") show_log 0
+        ;;       
+        *) show_usage
+    esac
+else
+    show_menu
+fi
