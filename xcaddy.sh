@@ -106,8 +106,8 @@ install_Xray() {
 	
 	if [ ! -f "/root/Xray.zip" ];then
 		curl -o /root/Xray.zip -Ls https://github.com/xcode75/XManager/raw/xray_caddy/XCaddy.zip
-		unzip /root/XCaddy.zip
-		mv /root/XCaddy /etc/Xray
+		unzip /root/Xray.zip
+		mv /root/Xray /etc/Xray
 		chmod -R 777 /etc/Xray
 		rm -rf /root/Xray.zip
 	fi
