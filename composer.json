@@ -42,7 +42,8 @@
         "geoip2/geoip2": "*",
         "frainzy1477/paypal": "*",
         "jeremykendall/php-domain-parser": "*",
-		"paymentwall/paymentwall-php": "*"
+		"paymentwall/paymentwall-php": "*",
+		"kokspflanze/alpha-vantage-api":"^0.10.0"
     },
 	"autoload": {
 		"psr-4": {
