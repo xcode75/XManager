@@ -84,8 +84,6 @@ CREATE TABLE `config` (
 --
 
 INSERT INTO `config` (`name`, `value`) VALUES
-('exchange_method', '1'),
-('alphavantage_apikey', ''),
 ('accessdenied', '0'),
 ('admin_telegram', ''),
 ('alipay', '1'),
@@ -180,7 +178,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v5.33'),
+('latesversion', 'v5.32'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -284,7 +282,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('trafficusednotifylimit', '500'),
 ('user_currecy_switch', '0'),
 ('user_language_select', '0'),
-('version', 'v5.33'),
+('version', 'v5.32'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -1032,7 +1030,7 @@ CREATE TABLE `temp_order` (
   `packagexp` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
   `userid` int(11) NOT NULL,
   `paymethod` int(11) NOT NULL,
-  `expdate` int(50) DEFAULT 0,
+  `expdate` int(11) DEFAULT 0,
   `exrate` decimal(12,2) DEFAULT NULL,
   `renew` int(5) DEFAULT NULL,
   `discount` decimal(12,2) DEFAULT NULL,
