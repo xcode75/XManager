@@ -60,4 +60,12 @@ $cron->add('DataStatusCommand', array(
     'enabled' => true,
 ));
 
+/*---刷新谷歌令牌命令--*/
+$cron->add('RefreshTokenCommand', array(
+    'command' => 'php bin/console.php refreshtoken',
+    'schedule' => '*/5 * * * *',
+    'output' => 'logs/refreshtoken.log',
+    'enabled' => true,
+));
+
 $cron->run();
