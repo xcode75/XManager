@@ -1,75 +1,99 @@
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-<head>
-<meta name="viewport" content="width=device-width"/>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title></title>
-</head>
-
-<body itemscope itemtype="http://schema.org/EmailMessage"
-style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em; background-color: #f6f6f6; margin: 0;"
-bgcolor="#f6f6f6">
-
-<table class="body-wrap"
-style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; background-color: #f6f6f6; margin: 0;"
-bgcolor="#f6f6f6">
-<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"
-    valign="top"></td>
-<td class="container" width="600"
-    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto;"
-    valign="top">
-    <div class="content"
-         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
-        <table class="main" width="100%" cellpadding="0" cellspacing="0"
-               style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; background-color: #fff; margin: 0; border: 1px solid #e9e9e9;"
-               bgcolor="#fff">
-            <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                <td class=""
-                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background-color: {$Config['app_color']}; margin: 0; padding: 20px;"
-                    align="center" bgcolor="#71b6f9" valign="top">
-                    <span style="margin-top: 10px;display: block;">{$lang->get('admin_message')}</span>
-                </td>
-            </tr>
-            <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                <td class="content-wrap"
-                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 20px;"
-                    valign="top">
-                    <table width="100%" cellpadding="0" cellspacing="0"
-                           style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                        <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                            <td class="content-block"
-                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
-                                valign="top">
-                                <br>{$lang->get('Hello')} {$Username}<br><br>{$Message}
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <div class="footer"
-             style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; clear: both; color: #999; margin: 0; padding: 20px;">
-            <table width="100%"
-                   style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                    <td class="aligncenter content-block"
-                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color: #999; text-align: center; margin: 0; padding: 0 0 20px;"
-                        align="center" valign="top"><a href="{$Config['baseUrl']}"
-                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: underline; margin: 0;">{$Config['appName']|upper}</a>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</td>
-<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"
-    valign="top"></td>
-</tr>
-</table>
-</body>
-</html>
+!odMbo!
+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
+yBWv
