@@ -55,7 +55,7 @@ $cron->add('CheckUpdateCommand', array(
 /*---流量状态命令--*/
 $cron->add('DataStatusCommand', array(
     'command' => 'php bin/console.php datastatus',
-    'schedule' => '*/10 * * * *',
+    'schedule' => '*/2 * * * *',
     'output' => 'logs/datastatus.log',
     'enabled' => true,
 ));

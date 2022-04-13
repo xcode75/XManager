@@ -1,87 +1,110 @@
-!odMbo!
-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
-zNVOcEfdG2uROW3RQVCzszaUU9u=
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+<head>
+<meta name="viewport" content="width=device-width"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+</head>
+
+<body itemscope itemtype="http://schema.org/EmailMessage"
+style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em; background-color: #f6f6f6; margin: 0;"
+bgcolor="#f6f6f6">
+
+<table class="body-wrap"
+style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; background-color: #f6f6f6; margin: 0;"
+bgcolor="#f6f6f6">
+<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"
+    valign="top"></td>
+<td class="container" width="600"
+    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto;"
+    valign="top">
+    <div class="content"
+         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
+        <table class="main" width="100%" cellpadding="0" cellspacing="0"
+               style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; border-radius: 3px; background-color: #fff; margin: 0; border: 1px solid #e9e9e9;"
+               bgcolor="#fff">
+            <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                <td class=""
+                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 3px 3px 0 0; background-color: #168ea1; margin: 0; padding: 20px;"
+                    align="center" bgcolor="#71b6f9" valign="top">
+                    <span style="margin-top: 10px;display: block;"> {$lang->get('TrafficMessage')}</span>
+                </td>
+            </tr>
+			<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+			   <td class="content-block aligncenter"
+				  style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: center; margin: 0; padding: 0 0 20px;"
+				  align="center" valign="top">
+				  <table class="invoice"
+					 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; text-align: left; width: 80%; margin: 40px auto;">
+					
+					<tr style="width:100%; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+						<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 5px 0;"
+							valign="top"><center> <span style="font-size: 17px;">{$lang->get('traffic2')}</span><br><br></center>
+						</td>
+					</tr>
+					<tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+						<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 5px 0;"
+						   valign="top">
+						   <table class="invoice-items" cellpadding="0" cellspacing="0"
+							  style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; margin: 0;">
+							  
+							  <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+								 <td style="width:75%; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
+									valign="top">{$lang->get('ToTraffic')}
+								 </td>
+								 <td class="alignright"
+									style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
+									align="right" valign="top">{$ToTraffic}
+								 </td>
+							  </tr>
+							  <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+								 <td style="width:75%;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
+									valign="top">{$lang->get('UTraffic')}
+								 </td>
+								 <td class="alignright"
+									style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
+									align="right" valign="top">{$UsedT}
+								 </td>
+							  </tr>
+							  <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+								 <td style="width:75%;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
+									valign="top">{$lang->get('PExpire')}
+								 </td>
+								 <td 
+									style=" font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
+									 valign="top">{$PExpire}
+								 </td>
+							  </tr>
+						   </table>
+						</td>
+					 </tr>
+				  </table>
+			   </td>
+			</tr>
+        </table>
+        <div class="footer"
+             style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; clear: both; color: #999; margin: 0; padding: 20px;">
+            <table width="100%"
+                   style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
+                    <td class="aligncenter content-block"
+                        style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color: #999; text-align: center; margin: 0; padding: 0 0 20px;"
+                        align="center" valign="top"><a href="{$Config['baseUrl']}"
+                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: underline; margin: 0;">{$Config['appName']|upper}</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</td>
+<td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0;"
+    valign="top"></td>
+</tr>
+</table>
+</body>
+</html>
