@@ -1,185 +1,183 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-6r1TnF6lJQD6fNCw
+<?php
+
+namespace App\Payments;
+
+use Exception;
+use Paymentwall_Config;
+use Paymentwall_Pingback;
+use Paymentwall_Widget;
+use Paymentwall_Product;
+use Paymentwall_GenerericApiObject; 
+
+use App\Http\Models\Order;
+use App\Http\Models\User;
+use App\Http\Models\Package;
+use App\Http\Models\Coupon;
+use App\Handlers\Config;
+use App\Helpers\Helpers;
+use App\Helpers\i18n;
+use App\Http\Models\Currency;
+use App\Http\Models\TempOrder;
+use App\Handlers\AuthHandler\Auth;
+use App\Http\Controllers\BaseController;
+
+
+class Paymentwall extends BaseController
+{
+
+    public function paymentwall($request, $response, $args)
+    {
+		ini_set('memory_limit', '-1');
+		$user = Auth::getUser();
+		if (!$user->isLogin) {
+            return $response->withStatus(302)->withHeader('Location', '/login');
+        }
+		
+		$Currency = new Currency();
+		$Config = new Config();
+		$lang = new i18n();
+		$content = $request->getParsedBody();
+		$order_id  = $content['order_id'];
+		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		
+		if(!$item){	
+			$res['ret'] = 0;			
+			$res['msg'] = $lang->get('pack_not_found');
+			$res['url'] = (new Checkout())->Url().'/portal/packages';
+			$response->getBody()->write(json_encode($res));
+			return  $response;
+		}
+		if($item->pay_url != "" || $item->pay_url != null){
+			$res['ret'] 		= 1;
+			$res['url'] 	    = $item->pay_url;
+			$response->getBody()->write(json_encode($res));
+			return $response;
+		}
+		$amount    = $item->total;
+        $packageid = $item->packageid;		
+		$package = Package::where('id', $packageid)->where('status', 1)->first();
+		if (!$package) {
+			$res['ret'] 		= 0;
+			$res['msg'] 		= $lang->get('off_shelves');
+			$response->getBody()->write(json_encode($res));
+			return $response;
+		}
+		
+        $price = bcadd($amount,0,2);
+		
+		$rate = $Currency->getRate($Config->getConfig('paymentwall_currency_code'));
+		
+		$item->status 		= 0;
+		$item->create_date 	= time();
+		$item->expdate 		= (time() + 600)*1000;
+		$item->exrate		= bcmul($price,$rate, 2);
+        $item->notify_url 	= (new Checkout())->Callback()."/notify/paymentwall";
+        $item->save();
+   
+		
+		if(Helpers::getCookie('lang')== "en"){
+			$lang = "en";
+		}else{
+			$lang = "zh_CN";
+		}
+		
+		try {
+			Paymentwall_Config::getInstance()->set(array(
+			'api_type' => Paymentwall_Config::API_GOODS,
+			'public_key' => $Config->getConfig('paymentwall_key'),
+			'private_key' => $Config->getConfig('paymentwall_secret')
+			));
+
+			$widget = new Paymentwall_Widget(
+				$user->id, // uid
+				$Config->getConfig('paymentwall_widget'), // widget
+				array(
+					new Paymentwall_Product(
+						$item->order_id, // ag_external_id
+						$item->exrate, // amount
+						$Config->getConfig('paymentwall_currency_code'), // currencyCode
+						$Config->getConfig('appName').' - '.$package->name, // ag_name
+						Paymentwall_Product::TYPE_FIXED // ag_type
+					) 
+				),
+				array(
+					'email' => $user->email, 
+					'history[registration_date]' => strtotime($user->reg_date),
+					'ps' => $type,
+					'customer[username]' => $user->user_name,
+					'success_url' => (new Checkout())->Url().'/portal/clientarea',
+					'failure_url' => (new Checkout())->Url()."portal/checkout?id=".$package->id,
+					'pingback_url' => $item->notify_url,
+					'logo_url' => $Config->getConfig('logo_path'),
+					'project_name' => $Config->getConfig('appName'),
+					'lang' => $lang,
+					'country_code' => $Config->getConfig('paymentwall_country_code'),
+					'merchant_order_id' => $item->order_id
+				)
+			);
+
+			$item = TempOrder::where("id", '=', $item->id)->where('status', 0)->first();
+			$item->pay_url 	= $widget->getUrl();
+			$item->type		= 17;
+			$item->save();	
+				
+			$res['ret'] 	= 1;
+			$res['url'] 	= $widget->getUrl();			
+			$response->getBody()->write(json_encode($res));
+			return $response;
+		}catch (Exception $e) {
+			$res['ret'] 	= 0;
+			$res['msg'] 	= $e->getMessage();
+			$response->getBody()->write(json_encode($res));
+			return $response;
+        }
+    }
+		
+    public function callback($request, $response, $args)
+    {		
+		$Config = new Config();
+		Paymentwall_Config::getInstance()->set(array(
+			'api_type' => Paymentwall_Config::API_GOODS,
+			'public_key' => $Config->getConfig('paymentwall_key'),
+			'private_key' => $Config->getConfig('paymentwall_secret')
+		));
+		$pingback = new Paymentwall_Pingback($_GET, $_SERVER['REMOTE_ADDR']);
+		$delivery = new Paymentwall_GenerericApiObject('delivery');
+		$delivery->post(array(
+			'payment_id' => $pingback->getProductId,
+			'merchant_reference_id' => $pingback->getProductId,
+			'type' => 'digital',
+			'status' => 'delivered',
+			'refundable' => false,
+			'details' => 'Item was delivered to the user account',
+			'reason' => 'none',
+		));
+		if ($pingback->validate()) {
+		  $productId = $pingback->getProduct()->getId();
+		  if ($pingback->isDeliverable()) {
+		    // deliver the product
+		  } else if ($pingback->isCancelable()) {
+			// 
+		  }
+		  
+		  $order = TempOrder::where("order_id", '=', $pingback->getProductId)->first();
+		  if($order){
+			(new Purchase())->update($pingback->getProductId);
+			echo 'OK';
+			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pingback->getProductId);
+		  } else {
+				$orders = Order::where("order_id", '=', $pingback->getProductId)->first();
+				if($orders->state == 1 || $orders->state == "1"){
+					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pingback->getProductId);
+				}else{
+					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+				}
+		  }
+		} else {
+		  //echo $pingback->getErrorSummary();
+		  return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+		}
+		$response->getBody()->write("");
+		return $response;
+	}
+}	
