@@ -47,7 +47,7 @@ $cron->add('BackupCommand', array(
 /*---检查更新命令--*/
 $cron->add('CheckUpdateCommand', array(
     'command' => 'php bin/console.php versioncheck',
-    'schedule' => '*/5 * * * *',
+    'schedule' => '*/10 * * * *',
     'output' => 'logs/versioncheck.log',
     'enabled' => true,
 ));
@@ -55,7 +55,7 @@ $cron->add('CheckUpdateCommand', array(
 /*---流量状态命令--*/
 $cron->add('DataStatusCommand', array(
     'command' => 'php bin/console.php datastatus',
-    'schedule' => '*/2 * * * *',
+    'schedule' => '*/3 * * * *',
     'output' => 'logs/datastatus.log',
     'enabled' => true,
 ));

@@ -194,7 +194,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v5.38'),
+('latesversion', 'v5.37'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -287,6 +287,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('telegram_loginverify', '1'),
 ('telegram_request_token', ''),
 ('telegram_token', ''),
+('template', 'default'),
 ('theadpay_currency_code', 'CNY'),
 ('theadpay_key', ''),
 ('theadpay_mchid', ''),
@@ -302,7 +303,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
 ('user_verify_email', '0'),
-('version', 'v5.38'),
+('version', 'v5.37'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -756,7 +757,7 @@ CREATE TABLE `orders` (
   `id` bigint(20) NOT NULL,
   `close_date` bigint(20) DEFAULT NULL,
   `create_date` bigint(20) DEFAULT NULL,
-  `order_id` varchar(255) DEFAULT NULL,
+  `order_id` text NOT NULL,
   `pay_date` bigint(20) DEFAULT NULL,
   `price` decimal(12,2) DEFAULT NULL,
   `really_price` decimal(12,2) DEFAULT NULL,
@@ -1045,7 +1046,7 @@ CREATE TABLE `temp_order` (
   `id` int(11) NOT NULL,
   `total` decimal(12,2) DEFAULT NULL,
   `price` decimal(12,2) NOT NULL,
-  `order_id` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order_id` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `create_date` bigint(20) NOT NULL,
   `coupon` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `packageid` int(5) NOT NULL,
@@ -1067,6 +1068,7 @@ CREATE TABLE `temp_order` (
   `pay_qrcode` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `deeplink` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` int(5) NOT NULL DEFAULT -1,
+  `pay_id` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `amount` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -1136,6 +1138,7 @@ CREATE TABLE `user` (
   `aff_balance` decimal(12,2) NOT NULL DEFAULT 0.00,
   `aff_account` varchar(50) DEFAULT NULL,
   `aff_with_mode` int(2) NOT NULL DEFAULT 1,
+  `currency` varchar(5) NOT NULL DEFAULT '',
   `lang` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
