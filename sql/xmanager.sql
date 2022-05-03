@@ -757,7 +757,7 @@ CREATE TABLE `orders` (
   `id` bigint(20) NOT NULL,
   `close_date` bigint(20) DEFAULT NULL,
   `create_date` bigint(20) DEFAULT NULL,
-  `order_id` text NOT NULL,
+  `order_id` varchar(250) NOT NULL,
   `pay_date` bigint(20) DEFAULT NULL,
   `price` decimal(12,2) DEFAULT NULL,
   `really_price` decimal(12,2) DEFAULT NULL,
@@ -1046,7 +1046,7 @@ CREATE TABLE `temp_order` (
   `id` int(11) NOT NULL,
   `total` decimal(12,2) DEFAULT NULL,
   `price` decimal(12,2) NOT NULL,
-  `order_id` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `order_id` varchar(250) NOT NULL,
   `create_date` bigint(20) NOT NULL,
   `coupon` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `packageid` int(5) NOT NULL,
@@ -1068,7 +1068,7 @@ CREATE TABLE `temp_order` (
   `pay_qrcode` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `deeplink` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `status` int(5) NOT NULL DEFAULT -1,
-  `pay_id` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `pay_id` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `amount` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
