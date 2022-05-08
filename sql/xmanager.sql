@@ -303,7 +303,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
 ('user_verify_email', '0'),
-('version', 'v5.41'),
+('version', 'v5.42'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -775,7 +775,7 @@ CREATE TABLE `orders` (
   `exp` bigint(20) DEFAULT NULL,
   `expdate` text DEFAULT NULL,
   `exrate` decimal(12,2) NOT NULL,
-  `pay_url`  LONGTEXT COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `pay_url`  LONGTEXT  NULL DEFAULT NULL,
   `renew` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 
@@ -1048,28 +1048,28 @@ CREATE TABLE `temp_order` (
   `price` decimal(12,2) NOT NULL,
   `order_id` varchar(250) NOT NULL,
   `create_date` bigint(20) NOT NULL,
-  `coupon` varchar(20) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `coupon` varchar(20)  DEFAULT NULL,
   `packageid` int(5) NOT NULL,
   `packagetype` int(2) NOT NULL,
-  `packagexp` varchar(5) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `packagexp` varchar(5) NOT NULL,
   `userid` int(11) NOT NULL,
   `paymethod` int(11) NOT NULL,
   `expdate` int(50) DEFAULT 0,
   `exrate` decimal(12,2) DEFAULT NULL,
   `renew` int(5) DEFAULT NULL,
   `discount` decimal(12,2) DEFAULT NULL,
-  `wallet` varchar(250) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `wallet` varchar(250) DEFAULT NULL,
   `extra` decimal(12,2) NULL DEFAULT '0.00',
   `exp` bigint(20) DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
-  `pay_url` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `notify_url` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `return_url` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `pay_qrcode` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `deeplink` longtext COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `pay_url` longtext  DEFAULT NULL,
+  `notify_url` longtext  DEFAULT NULL,
+  `return_url` longtext  DEFAULT NULL,
+  `pay_qrcode` longtext  DEFAULT NULL,
+  `deeplink` longtext  DEFAULT NULL,
   `status` int(5) NOT NULL DEFAULT -1,
-  `pay_id` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
-  `amount` varchar(50) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `pay_id` longtext  NOT NULL,
+  `amount` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------

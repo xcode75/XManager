@@ -13,12 +13,11 @@ use App\Http\Models\Package;
 use App\Http\Models\TmpOrder;
 use App\Http\Models\TempOrder;
 use App\Handlers\AuthHandler\Auth;
-use App\Http\Controllers\BaseController;
 use App\Template as View;
 use App\Services\TelegramServices\Telegram;
 
 
-class Checkout extends BaseController
+class Checkout
 {
     public function create_order($request, $response, $args)
     {
@@ -32,15 +31,15 @@ class Checkout extends BaseController
         }
 		
 				
-		$Pending = TempOrder::where("status", 0)->orwhere("status",-1)->where('userid',"=", $user->id)->count();
+		$Pending = TempOrder::where("userid", $user->id)->where("status","-1")->orwhere("status", "0")->count();
 		
 		if($Pending > 0){
-			$pendings = TempOrder::where('userid', $user->id)->where("status", 0)->orwhere("status", -1)->get();
+			$pendings = TempOrder::where("userid", $user->id)->where("status", "-1")->orwhere("status", "0")->get();
 			foreach ($pendings as $p)
 			{
 				$res['ret'] = 2;
 				$res['msg'] = $lang->get('pending_orders');
-				$res['url'] = self::Url().'/portal/order?id='.$p['order_id'];
+				$res['url'] = self::Url().'/portal/order?id='.$p["order_id"];
 				$response->getBody()->write(json_encode($res));
 				return $response;
 			}
@@ -276,7 +275,8 @@ class Checkout extends BaseController
 		$params = $request->getQueryParams();
 		$orderid = $params['id'];
 		
-		$order = TempOrder::where("order_id", $orderid)->where("status", 0)->orwhere("status", -1)->where('userid',"=", $user->id)->first();
+		$order = TempOrder::where("order_id", $orderid)->where("status", 0)->orwhere("status", -1)->where("userid", $user->id)->first();
+		
 		if ($order == null || $order == ""){
 			$newResponse = $response->withStatus(302)->withHeader('Location', '/portal/packages');
 			return $newResponse;
@@ -288,7 +288,7 @@ class Checkout extends BaseController
 			return $newResponse;
 		}
 		
-		$response->getBody()->write($this->view()
+		$response->getBody()->write(View::getSmarty()
 			->assign('user', $user)
 			->assign('order', $order)
 			->assign('package', $package)
@@ -305,7 +305,7 @@ class Checkout extends BaseController
 		$params = $request->getParsedBody();
 		$orderid = $params['id'];
 		
-		$order = TempOrder::where("order_id", $orderid)->where("status",0)->orwhere("status",-1)->where('userid',"=", $user->id)->first();
+		$order = TempOrder::where("order_id", $orderid)->where("status",0)->orwhere("status",-1)->where('userid', $user->id)->first();
 		
 		if ($order){ 
 			$order->status = "-2";
@@ -379,8 +379,9 @@ class Checkout extends BaseController
 		$params = $request->getQueryParams();
 		$orderid = $params['orderid'];
 		
-		$order = Order::where("userid",$user->id)->where("order_id", $orderid)->first();
-		if (!$order|| $order->state != -2){
+		$order = Order::where("order_id", $orderid)->where("userid", $user->id)->first();
+		
+		if (!$order || $order->state != -2 ){
 			$newResponse = $response->withStatus(302)->withHeader('Location', '/portal/orders');
 			return $newResponse;
 		}
@@ -391,7 +392,7 @@ class Checkout extends BaseController
 			return $newResponse;
 		}
 		
-		$response->getBody()->write($this->view()
+		$response->getBody()->write(View::getSmarty()
 			->assign('order', $order)
 			->assign('package', $package)
 			->assign('orderid', $orderid)
@@ -409,8 +410,8 @@ class Checkout extends BaseController
 		$params = $request->getQueryParams();
 		$orderid = $params['orderid'];
 		
-		$order = Order::where("userid",$user->id)->where("order_id", $orderid)->first();
-		if (!$order|| $order->state != -3){
+		$order = Order::where("order_id", $orderid)->where("userid", $user->id)->first();
+		if (!$order || $order->state != -3){
 			$newResponse = $response->withStatus(302)->withHeader('Location', '/portal/orders');
 			return $newResponse;
 		}
@@ -421,7 +422,7 @@ class Checkout extends BaseController
 			return $newResponse;
 		}
 		
-		$response->getBody()->write($this->view()
+		$response->getBody()->write(View::getSmarty()
 			->assign('order', $order)
 			->assign('package', $package)
 			->assign('orderid', $orderid)
@@ -439,7 +440,7 @@ class Checkout extends BaseController
 		$params = $request->getQueryParams();
 		$orderid = $params['orderid'];
 		
-		$order = Order::where("userid",$user->id)->where("order_id", $orderid)->first();
+		$order = Order::where("order_id", $orderid)->where("userid", $user->id)->first();
 		if (!$order || $order->state != 1){
 			$newResponse = $response->withStatus(302)->withHeader('Location', '/portal/orders');
 			return $newResponse;
@@ -451,7 +452,7 @@ class Checkout extends BaseController
 			return $newResponse;
 		}
 		
-		$response->getBody()->write($this->view()
+		$response->getBody()->write(View::getSmarty()
 			->assign('order', $order)
 			->assign('package', $package)
 			->assign('orderid', $orderid)
@@ -464,7 +465,7 @@ class Checkout extends BaseController
 		$user = Auth::getUser();
 		$params = $request->getQueryParams();
 		$orderid = $params['orderid'];
-		$order = TempOrder::where('userid', $user->id)->where("order_id", $orderid)->where("status",0)->first();
+		$order = TempOrder::where("order_id", $orderid)->where('userid', $user->id)->where("status",0)->first();
 		if (!$order){
 			$newResponse = $response->withStatus(302)->withHeader('Location', '/portal/packages');
 			return $newResponse;
@@ -472,7 +473,7 @@ class Checkout extends BaseController
 		
 		$package = Package::find($order->packageid);
 		
-		$response->getBody()->write($this->view()
+		$response->getBody()->write(View::getSmarty()
 			->assign('order', $order)
 			->assign('package', $package)
 	        ->fetch('include/paymethod/pay.tpl'));
@@ -484,11 +485,11 @@ class Checkout extends BaseController
 		$user = Auth::getUser();
 		$content = $request->getParsedBody();
 		$lang = new i18n();	
-		$orderId = $content['order_id'];
+		$orderid = $content['order_id'];
 		
-		$order = TempOrder::where('userid',"=", $user->id)->where("order_id", $orderId)->where("status", 0)->first();
+		$order = TempOrder::where("order_id", $orderid)->where('userid',"=", $user->id)->where("status", 0)->first();
         if ($order){
-            TempOrder::where("order_id",$orderId)->update(array("status" => -3));
+            TempOrder::where("order_id",$orderid)->update(array("status" => -3));
             
 			if($order->paymethod == 1 || $order->paymethod == 2){
 				TmpOrder::where("oid", $order->order_id)->delete();	
