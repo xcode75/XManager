@@ -1,63 +1,52 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
-gCcvj22tSm==
+<?php
+
+namespace App\Services\MailServices;
+use App\Handlers\Config;
+
+class SendGrid extends Base
+{
+    private $config;
+    private $sg;
+    private $sender;
+    private $name;
+
+    public function __construct()
+    {
+        $this->config = $this->getConfig();
+        $this->sg = new \SendGrid($this->config['key']);
+        $this->sender = $this->config['sender'];
+        $this->name = $this->config['name'];
+        $this->email = new \SendGrid\Mail\Mail();
+    }
+
+    public function getConfig()
+    {
+		$Config = new Config();
+        return [
+            'key' => $Config->getConfig('sendgrid_key'),
+            'sender' => $Config->getConfig('sendgrid_sender'),
+            'name' => $Config->getConfig('sendgrid_name')
+        ];
+    }
+
+    public function send($to_address, $subject_raw, $text, $files)
+    {
+        $this->email->setFrom($this->sender, $this->name);
+        $this->email->setSubject($subject_raw);
+        $this->email->addTo($to_address,null);
+        $this->email->addContent('text/html', $text);	
+		
+        foreach ($files as $file) {
+            $this->email->addAttachment(
+                base64_encode(file_get_contents($file)),
+                'application/octet-stream',
+                basename($file),
+                'attachment',
+                'backup'
+            );
+        }
+
+        $response = $this->sg->send($this->email);
+        echo $response->body();
+    }
+}

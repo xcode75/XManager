@@ -47,7 +47,7 @@ class PayPal extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -121,6 +121,7 @@ class PayPal extends BaseController
 	public function callback($request, $response, $args)
     {
 		$Config = new Config();
+		$user = Auth::getUser();
 		$paymentId = $_GET['paymentId'];
 		$payerId = $_GET['PayerID'];
         $gateway = $this->createPayPalGateway();
@@ -130,7 +131,7 @@ class PayPal extends BaseController
 		))->send();
 		try {
 	        if ($query->isSuccessful()){
-				$order = TempOrder::where("pay_id", '=', $paymentId)->first();
+				$order = TempOrder::where("pay_id", '=', $paymentId)->where('userid', $user->id)->first();
 				if($order){
 					(new Purchase())->update($order->order_id);
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);

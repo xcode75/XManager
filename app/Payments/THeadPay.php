@@ -34,7 +34,7 @@ class THeadPay extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -147,19 +147,20 @@ class THeadPay extends BaseController
 	public function callback($request, $response, $args)
     {
 		$Config = new Config();
+		$user = Auth::getUser();
 		ini_set('memory_limit', '-1');
         $inputString = file_get_contents('php://input', 'r');
         $inputStripped = str_replace(array("\r", "\n", "\t", "\v"), '', $inputString);
         $params = json_decode($inputStripped, true); //convert JSON into array
 		$pid = $params['out_trade_no'];	
-		$order = TempOrder::where("order_id", '=', $pid)->first();
+		$order = TempOrder::where("order_id", '=', $pid)->where('userid', $user->id)->first();
 		if ($this->verify($params)) {
 			if ($pid) {
 				if($order){
 					(new Purchase())->update($pid);
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pid);
 				}else{
-					$orders = Order::where("order_id", '=', $pid)->first();
+					$orders = Order::where("order_id", '=', $pid)->where('userid', $user->id)->first();
 					if($orders->state == 1 || $orders->state == "1"){
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pid);
 					}else{

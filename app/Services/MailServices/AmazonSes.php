@@ -1,56 +1,74 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+namespace App\Services\MailServices;
+
+use App\Handlers\Config;
+use Aws\Sdk;
+use Aws\Ses\SesClient; 
+use Aws\Exception\AwsException;
+use Aws\Credentials\Credentials;
+
+
+class AmazonSes extends Base
+{
+    
+	private $config;
+    private $SesClient;
+    private $sender;
+	
+    public function __construct()
+    {
+        $this->config = $this->getConfig();
+		
+		$credentials = new Credentials(
+			$this->config['aws_key'], 
+			$this->config['aws_secret']
+		);
+		$this->sender = $this->config['aws_sender'];
+		
+        $this->SesClient = new Aws\Ses\SesClient([
+			'version' => 'latest',
+			'region' => $this->config['aws_region'],
+			'credentials' => $credentials
+		]);
+        
+    }
+	
+    public function getConfig()
+    {
+		$Config = new Config();
+        return [
+            'aws_key' => $Config->getConfig('aws_key'),
+			'aws_secret' => $Config->getConfig('aws_secret'),
+            'aws_sender' => $Config->getConfig('aws_sender'),
+			'aws_region' => $Config->getConfig('aws_region')
+        ];
+    }
+
+    public function send($to_address, $subject, $text)
+    {
+		$this->SesClient->sendEmail([
+			'Destination' => [
+				'ToAddresses' => [$to_address],
+			],
+			'Source' => $this->sender,
+			'Message' => [
+				'Body' => [
+					'Html' => [
+						'Charset' => 'UTF-8',
+						'Data' => $text,
+					],
+					'Text' => [
+						'Charset' => 'UTF-8',
+						'Data' => $text,
+					],
+				],
+				'Subject' => [
+					'Charset' => 'UTF-8',
+					'Data' => $subject,
+				],
+			],
+		]);	
+	}
+}
+ 

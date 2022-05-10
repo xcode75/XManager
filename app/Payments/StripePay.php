@@ -44,7 +44,7 @@ class StripePay extends BaseController
 		$order_id  = $content['order_id'];
 		$type  = $content['type'];
 		
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		if(!$item){	
 			$res['ret'] = 0;			
 			$res['msg'] = $lang->get('pack_not_found');
@@ -149,76 +149,78 @@ class StripePay extends BaseController
     {	
 	    ini_set('memory_limit', '-1');
 		$Config = new Config();
+		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		$id = "";
 		if(isset($content['TradeNo'])){
 			$id = $content['TradeNo'];
 		}
-		$order = Order::where("order_id", '=', $id)->where('state', 1)->first();
+		$order = Order::where("order_id", '=', $id)->where('userid', $user->id)->where('state', 1)->first();
+		
 		if($order){
 			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$id);
 		}else{
-		\Stripe\Stripe::setApiKey($Config->getConfig('stripe_key'));
-		
-        $endpoint_secret = $Config->getConfig('stripe_webhook');
-		$input = @file_get_contents('php://input');
-		$sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
-		$event = null;
-		
-        try {
-            $event = \Stripe\Webhook::constructEvent(
-				$input,
-				$sig_header,
-				$endpoint_secret
-            );       
-			$stripe = new \Stripe\StripeClient($Config->getConfig('stripe_key'));
+			\Stripe\Stripe::setApiKey($Config->getConfig('stripe_key'));
 			
-			switch ($event->type) {
-				case 'source.chargeable':
-					$source = $event->data->object;
-					$session = $stripe->charges->retrieve($source['id'], []);
-					if ($session['status'] == 'succeeded' && $session['paid'] == true) {
-						$order = TempOrder::where("pay_id", '=',  $source['id'])->first();
-						if($order){
-							(new Purchase())->update($order->order_id);
-							return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);
-							exit;
+			$endpoint_secret = $Config->getConfig('stripe_webhook');
+			$input = file_get_contents('php://input');
+			$sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
+			$event = null;
+			
+			try {
+				$event = \Stripe\Webhook::constructEvent(
+					$input,
+					$sig_header,
+					$endpoint_secret
+				);       
+				$stripe = new \Stripe\StripeClient($Config->getConfig('stripe_key'));
+				
+				switch ($event->type) {
+					case 'source.chargeable':
+						$source = $event->data->object;
+						$session = $stripe->charges->retrieve($source['id'], []);
+						if ($session['status'] == 'succeeded' && $session['paid'] == true) {
+							$order = TempOrder::where("pay_id", '=',  $source['id'])->where('userid', $user->id)->first();
+							if($order){
+								(new Purchase())->update($order->order_id);
+								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);
+								exit;
+							}else{
+								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+								exit;
+							}
 						}else{
 							return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
 							exit;
 						}
-					}else{
-						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-						exit;
-					}
-					break;
-				case 'checkout.session.completed':
-					$sessions = $event->data->object;
-					$session = $stripe->checkout->sessions->retrieve($sessions['id'], []);
-					if ($session->payment_status == 'paid') {	
-						$order = TempOrder::where("pay_id", '=',  $sessions['id'])->first();
-						if($order){
-							(new Purchase())->update($order->order_id);
-							return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);	
-							exit;							
+						break;
+					case 'checkout.session.completed':
+						$sessions = $event->data->object;
+						$session = $stripe->checkout->sessions->retrieve($sessions['id'], []);
+						if ($session->payment_status == 'paid') {	
+							$order = TempOrder::where("pay_id", '=',  $sessions['id'])->where('userid', $user->id)->first();
+							if($order){
+								(new Purchase())->update($order->order_id);
+								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);	
+								exit;							
+							}else{
+								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+								exit;
+							}
 						}else{
 							return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
 							exit;
-						}
-					}else{
-						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-						exit;
-					}	
-				 break;	
-			}
-			die();
-		} catch(\UnexpectedValueException $e) {
-			$response->getBody()->write($e->getMessage());
-			return $response;
-		} catch (\Stripe\Error\SignatureVerification $e) {
-            $response->getBody()->write($e->getMessage());
-			return $response;
-        } 
+						}	
+					 break;	
+				}
+				die();
+			} catch(\UnexpectedValueException $e) {
+				$response->getBody()->write($e->getMessage());
+				return $response;
+			} catch (\Stripe\Error\SignatureVerification $e) {
+				$response->getBody()->write($e->getMessage());
+				return $response;
+			} 
 		}
 		$response->getBody()->write("");
 		return $response;
@@ -227,8 +229,9 @@ class StripePay extends BaseController
     public function checkorder($request, $response, $args)
     {
 		$content = $request->getParsedBody();
+		$user = Auth::getUser();
 		$Config = new Config();
-        $res = Order::where("order_id", $content['order_id'])->first();
+        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
         if (!$res){
 			$rs['result']   = 0;
 			$response->getBody()->write(json_encode($rs));

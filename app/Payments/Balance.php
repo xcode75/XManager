@@ -23,7 +23,7 @@ class Balance extends BaseController
 		$content = $request->getParsedBody();
 
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			

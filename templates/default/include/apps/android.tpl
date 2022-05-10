@@ -35,8 +35,8 @@
 						   </p>
 						   <p>
 							  {$lang->get('ConfigLink')}  
-							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(1)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')} </a>
-							  <a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="clash://install-config?url={urlencode($Config["sub_addr"])}{urlencode($sub_token)}?{urlencode($app->getAppLink(1))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
+							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(1)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')} </a>
+							  <a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="clash://install-config?url={urlencode($sub)}{urlencode($app->getAppLink(1))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
 						   </p>
 						</div>
 						
@@ -52,7 +52,7 @@
 						   </p>
 						   <p>
 							 {$lang->get('ConfigLink')}    
-							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(2)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(2)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						   </p>
 						</div>
 						{/if}
@@ -68,7 +68,7 @@
 						   </p>
 						   <p>
 							  {$lang->get('ConfigLink')}  
-							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(3)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(3)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						   </p>
 						</div>
 						{/if}
@@ -84,8 +84,8 @@
 						   </p>
 						   <p>
 							  {$lang->get('ConfigLink')}  
-							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(4)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
-						      <a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="surfboard:///install-config?url={urlencode($Config["sub_addr"])}{urlencode($sub_token)}?{urlencode($app->getAppLink(4))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
+							  <a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(4)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+						      <a  class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  href="surfboard:///install-config?url={urlencode($sub)}{urlencode($app->getAppLink(4))}"><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')}</a>
 						   </p>
 						</div>
 						{/if}

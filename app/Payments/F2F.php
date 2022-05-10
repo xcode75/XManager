@@ -46,7 +46,7 @@ class F2F extends BaseController
 		$content = $request->getParsedBody();
 				
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		if(!$item){	
 			$res['ret'] = 0;			
 			$res['msg'] = $lang->get('pack_not_found');
@@ -123,6 +123,7 @@ class F2F extends BaseController
 	public function query($orderid)
     {
 		ini_set('memory_limit', '-1');
+		$user = Auth::getUser();
 		$Config = new Config();
         $gateway = $this->createGateway();
         $request = $gateway->completePurchase();
@@ -137,7 +138,7 @@ class F2F extends BaseController
 			)->send();
 			$result = $aliResponse->getTradeStatus();
 			if ($result == 'TRADE_SUCCESS' || $result == 'TRADE_FINISHED'){
-				$order = TempOrder::where("order_id", '=', $orderid)->first();
+				$order = TempOrder::where("order_id", '=', $orderid)->where('userid', $user->id)->first();
 				if($order){
 					(new Purchase())->update($orderid);
 				}
@@ -151,13 +152,14 @@ class F2F extends BaseController
     {
 		ini_set('memory_limit', '-1');
 		$Config = new Config();
+		$user = Auth::getUser();
         $gateway = $this->createGateway();
         $request = $gateway->completePurchase();
         $request->setParams($_POST);
 		try {
 			$aliResponse = $request->send();
 			if ($aliResponse->isPaid() && $aliResponse->data('out_trade_no')) {	
-				$order = TempOrder::where("order_id", '=', $aliResponse->data('out_trade_no'))->first();
+				$order = TempOrder::where("order_id", '=', $aliResponse->data('out_trade_no'))->where('userid', $user->id)->first();
 				if($order){
 					$this->query($aliResponse->data('out_trade_no'));
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$aliResponse->data('out_trade_no'));
@@ -182,7 +184,8 @@ class F2F extends BaseController
     {
 		$content = $request->getParsedBody();
 		$Config = new Config();
-        $res = Order::where("order_id", $content['order_id'])->first();
+		$user = Auth::getUser();
+        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
         if (!$res){
 			$rs['result']   = 0;
 			$response->getBody()->write(json_encode($rs));
@@ -201,7 +204,7 @@ class F2F extends BaseController
 		$Config = new Config();
 		$lang = new i18n();	
 		$content = $request->getParsedBody();
-		
+		$user = Auth::getUser();
         $gateway = $this->createGateway();
         $re = $gateway->completePurchase();
         $re->setParams($_POST);
@@ -215,7 +218,7 @@ class F2F extends BaseController
 			)->send();
 			$result = $aliResponse->getTradeStatus();
 			if ($result == 'TRADE_SUCCESS' || $result == 'TRADE_FINISHED'){
-				$order = Order::where("order_id", '=', $content['order_id'])->first();
+				$order = Order::where("order_id", '=', $content['order_id'])->where('userid', $user->id)->first();
 				if($order){
 					(new Purchase())->updateQuery($content['order_id']);
 				}

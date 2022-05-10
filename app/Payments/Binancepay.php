@@ -81,7 +81,7 @@ class Binancepay extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -146,8 +146,9 @@ class Binancepay extends BaseController
     public function checkorder($request, $response, $args)
     {
 		$content = $request->getParsedBody();
+		$user = Auth::getUser();
 		$Config = new Config();
-        $res = Order::where("order_id", $content['order_id'])->first();
+        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
         if (!$res){
 			$rs['result']   = 0;
 			$response->getBody()->write(json_encode($rs));
@@ -198,17 +199,18 @@ class Binancepay extends BaseController
     public function callback($request, $response, $args)
     {		
 	    ini_set('memory_limit', '-1');
+		$user = Auth::getUser();
 		$Config = new Config();
 		$content = $request->getParsedBody();
 		if(isset($ret['bizStatus']) && $content["bizStatus"] == "PAY_SUCCESS"){
 			$ret = json_decode($this->verify($content["data"]['merchantTradeNo']),true);
 			if (isset($ret['status']) && $ret['status'] == "SUCCESS") {
-			  $order = TempOrder::where("order_id", '=', $content["data"]['merchantTradeNo'])->first();
+			  $order = TempOrder::where("order_id", '=', $content["data"]['merchantTradeNo'])->where('userid', $user->id)->first();
 			  if($order->exrate == $content["data"]['totalFee']){
 				(new Purchase())->update($content["data"]['merchantTradeNo']);
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content["data"]['merchantTradeNo']);
 			  } else {
-				$orders = Order::where("order_id", '=', $content["data"]['merchantTradeNo'])->first();
+				$orders = Order::where("order_id", '=', $content["data"]['merchantTradeNo'])->where('userid', $user->id)->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content["data"]['merchantTradeNo']);
 				}else{
@@ -219,7 +221,7 @@ class Binancepay extends BaseController
 		}else{
 			$content = $request->getQueryParams();
 			if(isset($content['merchantTradeNo'])){
-				$order = TempOrder::where("order_id", '=', $content['merchantTradeNo'])->where('status', 0)->first();
+				$order = TempOrder::where("order_id", '=', $content['merchantTradeNo'])->where('userid', $user->id)->where('status', 0)->first();
 				if($order){
 					(new Purchase())->cancel($request, $response,  $order->order_id); 
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/canceled?orderid='.$content['merchantTradeNo']);

@@ -78,7 +78,7 @@ class MGatepay extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -147,15 +147,16 @@ class MGatepay extends BaseController
     public function callback($request, $response, $args)
     {
 		$Config = new Config();
+		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		if ($this->verify($request->getQueryParams(), $content['sign'])) {
-			$order = TempOrder::where("order_id", '=', $content['out_trade_no'])->first();
+			$order = TempOrder::where("order_id", '=', $content['out_trade_no'])->where('userid', $user->id)->first();
 			if ($order){
 				(new Purchase())->update($content['out_trade_no']);
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['out_trade_no']);
 				exit;
 			} else {
-				$orders = Order::where("order_id", '=', $content['out_trade_no'])->first();
+				$orders = Order::where("order_id", '=', $content['out_trade_no'])->where('userid', $user->id)->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['out_trade_no']);
 				}else{

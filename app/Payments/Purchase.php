@@ -14,6 +14,8 @@ use App\Http\Models\Commission;
 use App\Services\TelegramServices\Telegram;
 use App\Services\MailServices\Mail;
 use App\Handlers\AuthHandler\Auth;
+use Exception;
+
 
 class Purchase 
 {
@@ -23,7 +25,9 @@ class Purchase
 			$user = User::find($trade->userid);	
 			$lang = new i18n();
 			$Config = new Config();
-						
+			
+			$Content = (new \App\Http\Controllers\Admin\TemplatesController())->getContent(3);
+			
 			$package = Package::where("id", $trade->packageid)->where("status", 1)->first();
 			
 			if ($package->type == 1) {
@@ -180,17 +184,58 @@ class Purchase
 				$subject = $Config->getConfig('appName') . '-'. $lang->get('Invoice');
 				
 				try {
-					Mail::send($user->email, $subject, 'invoice.tpl', [
-						'orderID' 	=> $trade->order_id,
-						'Username' 	=> $user->user_name,
-						'orderDate' => date('Y-m-d H:i:s', $close_date),
-						'itemDes' 	=> $Config->getConfig('appName') . ' - '. $package->bandwidth.' GB '. $package->name,
-						'itemPrice' => $Config->getConfig('default_currency_symbol').' ' . $trade->price,
-						'disPrice' 	=> $Config->getConfig('default_currency_symbol').' ' .  ($trade->discount ? $trade->discount : "0.00"),
-						'TotalPrice' => $Config->getConfig('default_currency_symbol').' ' . $trade->total
-					], []);
+					Mail::send(
+						$user->email, 
+						$subject, 
+						str_replace(
+							[
+								'%app_color%',
+								'/%baseUrl%',
+								'%appName%',
+								'%UserName%',
+								'%Lang_order1%',
+								'%orderID%',
+								'%Lang_order2%',
+								'%Lang_order5%',
+								'%Lang_Description%',
+								'%Lang_OrderAmount%',
+								'%Lang_AcBalance%',
+								'%Lang_discount%',
+								'%itemDes%',
+								'%itemPrice%',
+								'%usermoney%',
+								'%disPrice%',
+								'%orderDate%',
+								'%Lang_TotalPrice%',
+								'%TotalPrice%',
+							],
+							[
+								$Config->getConfig('app_color'),
+								$Config->getConfig('baseUrl'), 
+								strtoupper($Config->getConfig('appName')),
+								$user->user_name,
+								$lang->get('order1'),
+								$trade->order_id,
+								$lang->getLang('order2'), 
+								$lang->getLang('order5'), 
+								$lang->getLang('Description'),
+								$lang->getLang('OrderAmount'),
+								$lang->getLang('AcBalance'),
+								$lang->getLang('discount'),
+								$Config->getConfig('appName') . ' - '. $package->bandwidth.' GB '. $package->name,
+								$Config->getConfig('default_currency_symbol').' ' . $trade->price,
+								$user->money,
+								$Config->getConfig('default_currency_symbol').' ' .  ($trade->discount ? $trade->discount : "0.00"),
+								date('Y-m-d H:i:s', $close_date),
+								$lang->getLang('TotalPrice'),
+								$Config->getConfig('default_currency_symbol').' ' . $trade->total,
+							], $Content
+						),
+						[], 
+						[]
+					);
 				} catch (Exception $e) {
-					echo "";
+					echo $e->getMessage();
 				}
 			}
 			
@@ -202,7 +247,7 @@ class Purchase
 		$Config = new Config();
 		$user = Auth::getUser();
 		$lang = new i18n();	
-		$order = TempOrder::where('userid', $user->id)->where("order_id", $orderid)->first();		
+		$order = TempOrder::where("order_id", $orderid)->where('userid', $user->id)->first();		
 		if ($order){
 			$user = User::find($order->userid);	
 			
@@ -261,7 +306,7 @@ class Purchase
 			$user = User::find($trade->userid);	
 			$lang = new i18n();
 			$Config = new Config();
-						
+			$Content = (new \App\Http\Controllers\Admin\TemplatesController())->getContent(3);			
 			$package = Package::where("id", $trade->packageid)->where("status", 1)->first();
 			
 			if ($package->type == 1) {
@@ -384,27 +429,60 @@ class Purchase
 				$Config->getConfig('send_order_email')== 1 &&
 				$user->notification == 1 
 			){
-				$GoogleToken = -1;
-				if($Config->getConfig('mailDriver') == 3  && $Config->getConfig('smtp_method') == 1 ){
-					$GoogleToken = (new GoogleToken())->refreshGoogleToken();
-				}
-				
-				$subject = $Config->getConfig('appName') . '-'. $lang->get('Invoice');
-				if($GoogleToken != 0){
+					$subject = $Config->getConfig('appName') . '-'. $lang->get('Invoice');
 					try {
-						Mail::send($user->email, $subject, 'invoice.tpl', [
-							'orderID' 	=> $trade->order_id,
-							'Username' 	=> $user->user_name,
-							'orderDate' => date('Y-m-d H:i:s', $close_date),
-							'itemDes' 	=> $Config->getConfig('appName') . ' - '. $package->bandwidth.' GB '. $package->name,
-							'itemPrice' => $Config->getConfig('default_currency_symbol').' ' . $trade->total,
-							'disPrice' 	=> $Config->getConfig('default_currency_symbol').' ' .  ($trade->discount ? $trade->discount : "0.00"),
-							'TotalPrice' => $Config->getConfig('default_currency_symbol').' ' . $trade->really_price
-						], []);
+						Mail::send($user->email, $subject, 
+						str_replace(
+							[
+								'%app_color%',
+								'/%baseUrl%',
+								'%appName%',
+								'%UserName%',
+								'%Lang_order1%',
+								'%orderID%',
+								'%Lang_order2%',
+								'%Lang_order5%',
+								'%Lang_Description%',
+								'%Lang_OrderAmount%',
+								'%Lang_AcBalance%',
+								'%Lang_discount%',
+								'%itemDes%',
+								'%itemPrice%',
+								'%usermoney%',
+								'%disPrice%',
+								'%orderDate%',
+								'%Lang_TotalPrice%',
+								'%TotalPrice%',
+							],
+							[
+								$Config->getConfig('app_color'),
+								$Config->getConfig('baseUrl'), 
+								strtoupper($Config->getConfig('appName')),
+								$user->user_name,
+								$lang->get('order1'),
+								$trade->order_id,
+								$lang->getLang('order2'), 
+								$lang->getLang('order5'), 
+								$lang->getLang('Description'),
+								$lang->getLang('OrderAmount'),
+								$lang->getLang('AcBalance'),
+								$lang->getLang('discount'),
+								$Config->getConfig('appName') . ' - '. $package->bandwidth.' GB '. $package->name,
+								$Config->getConfig('default_currency_symbol').' ' . $trade->price,
+								$user->money,
+								$Config->getConfig('default_currency_symbol').' ' .  ($trade->discount ? $trade->discount : "0.00"),
+								date('Y-m-d H:i:s', $close_date),
+								$lang->getLang('TotalPrice'),
+								$Config->getConfig('default_currency_symbol').' ' . $trade->total,
+							], $Content
+						), 
+						[], 
+						[]
+						);
 					} catch (Exception $e) {
-						echo "";
+						echo $e->getMessage();
 					}
-				}
+				
 			}
 	}	
 }		

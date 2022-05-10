@@ -35,8 +35,8 @@
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')}  
-							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(9)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
-							<a class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  onclick=AddSub("{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(9)}","shadowrocket://add/sub://")><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')} </a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(9)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a class="btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  onclick=AddSub("{$sub}{$app->getAppLink(9)}","shadowrocket://add/sub://")><i class="fad fa-paper-plane mr-50"></i> {$lang->get('ToApp')} </a>
 						 </p>
 					  </div>
 					  {/if}
@@ -68,7 +68,7 @@
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')} 
-							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(11)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(11)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						 </p>
 					  </div>
 					  {/if}
@@ -84,7 +84,7 @@
 						 </p>
 						 <p>
 							{$lang->get('ConfigLink')}  
-							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{if $Config["sub_addr"] != ""}{$Config["sub_addr"]}{else}{$Config["subUrl"]}{/if}{$sub_token}?{$app->getAppLink(12)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
+							<a  class="copy-text btn-dl btn btn-sm btn-relief-primary" style="background-color:{$Config['app_color']};color:white"  data-clipboard-text="{$sub}{$app->getAppLink(12)}"><i class="fad fa-paper-plane mr-50"></i>  {$lang->get('CopyLink')}</a>
 						 </p>
 					  </div>
 					  {/if}

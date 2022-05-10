@@ -71,7 +71,7 @@ class Paystack extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -161,15 +161,16 @@ class Paystack extends BaseController
     public function callback($request, $response, $args)
     {		
 		$Config = new Config();
+		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		$ret = json_decode($this->Verify($content['trxref']),true);
-		$order = TempOrder::where("order_id", '=', $content['trxref'])->first();
+		$order = TempOrder::where("order_id", '=', $content['trxref'])->where('userid', $user->id)->first();
 		if (isset($ret['status']) && $ret['status'] == true) {
 		  if($order){
 			(new Purchase())->update($content['trxref']);
 			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['trxref']);
 		  } else {
-			    $orders = Order::where("order_id", '=', $content['trxref'])->first();
+			    $orders = Order::where("order_id", '=', $content['trxref'])->where('userid', $user->id)->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['trxref']);
 				}else{

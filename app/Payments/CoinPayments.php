@@ -150,7 +150,7 @@ class CoinPayments extends BaseController
 		$content = $request->getParsedBody();
 				
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		if(!$item){	
 			$res['ret'] = 0;			
 			$res['msg'] = $lang->get('pack_not_found');
@@ -231,7 +231,7 @@ class CoinPayments extends BaseController
     public function callback($request, $response, $args)
     {		
 		$Config = new Config();
-		
+		$user = Auth::getUser();
 		$cp_merchant_id = $Config->getConfig('cp_merchant_id');
 		$cp_ipn_secret = $Config->getConfig('cp_ipn_secret');
 		
@@ -260,12 +260,12 @@ class CoinPayments extends BaseController
 		$status = intval($_POST['status']);
 		
 		if ($status >= 100 || $status == 2 || $status == 1){
-			$order = TempOrder::where("order_id", '=', $_POST['txn_id'])->first();			
+			$order = TempOrder::where("order_id", '=', $_POST['txn_id'])->where('userid', $user->id)->first();			
 			if ($order){
 				(new Purchase())->update($_POST['txn_id']);
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$_POST['txn_id']);
 			}else{
-				$orders = Order::where("order_id", '=', $_POST['txn_id'])->first();
+				$orders = Order::where("order_id", '=', $_POST['txn_id'])->where('userid', $user->id)->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$_POST['txn_id']);
 				}else{
@@ -286,7 +286,8 @@ class CoinPayments extends BaseController
     {
 		$content = $request->getParsedBody();
 		$Config = new Config();
-        $res = Order::where("order_id", $content['order_id'])->first();
+		$user = Auth::getUser();
+        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
         if (!$res){
 			$rs['result']   = 0;
 			$response->getBody()->write(json_encode($rs));

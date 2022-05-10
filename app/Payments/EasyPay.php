@@ -29,7 +29,7 @@ class EasyPay extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -168,17 +168,18 @@ class EasyPay extends BaseController
     {		
 		ini_set('memory_limit', '-1');
 		$Config = new Config();
+		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		if ($this->verifyNotify()) {
 			$Config = new Config();
 			$result   = json_decode(self::query($content['out_trade_no']), true);
 			if($result['status'] == 1 || $result['status'] == "1"){
-				$order = TempOrder::where("order_id", '=', $content['out_trade_no'])->first();
+				$order = TempOrder::where("order_id", '=', $content['out_trade_no'])->where('userid', $user->id)->first();
 				if($order){
 					(new Purchase())->update($content['out_trade_no']);
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['out_trade_no']);
 				}else{
-					$orders = Order::where("order_id", '=', $content['out_trade_no'])->first();
+					$orders = Order::where("order_id", '=', $content['out_trade_no'])->where('userid', $user->id)->first();
 					if($orders->state == 1 || $orders->state == "1"){
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['out_trade_no']);
 					}else{

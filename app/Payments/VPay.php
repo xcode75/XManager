@@ -34,7 +34,7 @@ class VPay extends BaseController
 		$content = $request->getParsedBody();
 				
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -155,8 +155,9 @@ class VPay extends BaseController
     public function checkorder($request, $response, $args)
     {
 		$Config = new Config();
+		$user = Auth::getUser();
 		$content = $request->getParsedBody();
-        $res = Order::where("order_id", $content['order_id'])->first();
+        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
         if (!$res){
 			$rs['result']   = 0;
 			$rs['status']   = 0;
@@ -196,6 +197,7 @@ class VPay extends BaseController
     public function appPush($request, $response, $args)
 	{
 		$Config = new Config();
+		$user = Auth::getUser();
 		$lang = new i18n();
         $key 	= $Config->getConfig('api_key');
         $t 		= $_GET['t'];
@@ -208,7 +210,7 @@ class VPay extends BaseController
 			return $response;
         }
 		
-        $res = TempOrder::where("exrate",$price)->where("type", $type)->where("status", 0)->first();  
+        $res = TempOrder::where("exrate",$price)->where("type", $type)->where('userid', $user->id)->where("status", 0)->first();  
 		if ($res){
 			(new Purchase())->update($res->order_id);
 			$oid = $res->order_id;

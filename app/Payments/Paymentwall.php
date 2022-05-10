@@ -38,7 +38,7 @@ class Paymentwall extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -136,6 +136,7 @@ class Paymentwall extends BaseController
     public function callback($request, $response, $args)
     {		
 		$Config = new Config();
+		$user = Auth::getUser();
 		Paymentwall_Config::getInstance()->set(array(
 			'api_type' => Paymentwall_Config::API_GOODS,
 			'public_key' => $Config->getConfig('paymentwall_key'),
@@ -160,13 +161,13 @@ class Paymentwall extends BaseController
 			// 
 		  }
 		  
-		  $order = TempOrder::where("order_id", '=', $pingback->getProductId)->first();
+		  $order = TempOrder::where("order_id", '=', $pingback->getProductId)->where('userid', $user->id)->first();
 		  if($order){
 			(new Purchase())->update($pingback->getProductId);
 			echo 'OK';
 			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pingback->getProductId);
 		  } else {
-				$orders = Order::where("order_id", '=', $pingback->getProductId)->first();
+				$orders = Order::where("order_id", '=', $pingback->getProductId)->where('userid', $user->id)->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pingback->getProductId);
 				}else{

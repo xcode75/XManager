@@ -30,7 +30,13 @@ class Checkout
             return $response->withStatus(302)->withHeader('Location', '/login');
         }
 		
-				
+		if(isset($content['disable_pending']) && $content['disable_pending'] == 1){
+			$pendings = TempOrder::where("userid", $user->id)->get();
+			foreach ($pendings as $p){
+				$p->delete();
+			}
+		}		
+		
 		$Pending = TempOrder::where("userid", $user->id)->where("status","-1")->orwhere("status", "0")->count();
 		
 		if($Pending > 0){

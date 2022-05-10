@@ -15,9 +15,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(1)}
+			{$getContentEn_1}
 		   {else}
-			{$app->getContentCn(1)}
+			{$getContentCn_1}
 		   {/if}
          </div>
       </div>
@@ -34,9 +34,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(2)}
+			{$getContentEn_2}
 		   {else}
-			{$app->getContentCn(2)}
+			{$getContentCn_2}
 		   {/if}
          </div>
       </div>
@@ -53,9 +53,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(3)}
+			{$getContentEn_3}
 		   {else}
-			{$app->getContentCn(3)}
+			{$getContentCn_3}
 		   {/if}
          </div>
       </div>
@@ -72,9 +72,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(4)}
+			{$getContentEn_4}
 		   {else}
-			{$app->getContentCn(4)}
+			{$getContentCn_4}
 		   {/if}
          </div>
       </div>
@@ -92,9 +92,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(5)}
+			{$getContentEn_5}
 		   {else}
-			{$app->getContentCn(5)}
+			{$getContentCn_5}
 		   {/if}
          </div>
       </div>
@@ -112,9 +112,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(6)}
+			{$getContentEn_6}
 		   {else}
-			{$app->getContentCn(6)}
+			{$getContentCn_6}
 		   {/if}
          </div>
       </div>
@@ -131,9 +131,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(7)}
+			{$getContentEn_7}
 		   {else}
-			{$app->getContentCn(7)}
+			{$getContentCn_7}
 		   {/if}
          </div>
       </div>
@@ -150,9 +150,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(8)}
+			{$getContentEn_8}
 		   {else}
-			{$app->getContentCn(8)}
+			{$getContentCn_8}
 		   {/if}
          </div>
       </div>
@@ -169,9 +169,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(9)}
+			{$getContentEn_9}
 		   {else}
-			{$app->getContentCn(9)}
+			{$getContentCn_9}
 		   {/if}
          </div>
       </div>
@@ -188,9 +188,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(10)}
+			{$getContentEn_10}
 		   {else}
-			{$app->getContentCn(10)}
+			{$getContentCn_10}
 		   {/if}
          </div>
       </div>
@@ -207,9 +207,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(11)}
+			{$getContentEn_11}
 		   {else}
-			{$app->getContentCn(11)}
+			{$getContentCn_11}
 		   {/if}
          </div>
       </div>
@@ -226,9 +226,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(12)}
+			{$getContentEn_12}
 		   {else}
-			{$app->getContentCn(12)}
+			{$getContentCn_12}
 		   {/if}
          </div>
       </div>
@@ -245,9 +245,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(13)}
+			{$getContentEn_13}
 		   {else}
-			{$app->getContentCn(13)}
+			{$getContentCn_13}
 		   {/if}
          </div>
       </div>
@@ -264,9 +264,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(14)}
+			{$getContentEn_14}
 		   {else}
-			{$app->getContentCn(14)}
+			{$getContentCn_14}
 		   {/if}
          </div>
       </div>
@@ -283,9 +283,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(15)}
+			{$getContentEn_15}
 		   {else}
-			{$app->getContentCn(15)}
+			{$getContentCn_15}
 		   {/if}
          </div>
       </div>
@@ -302,9 +302,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(16)}
+			{$getContentEn_16}
 		   {else}
-			{$app->getContentCn(16)}
+			{$getContentCn_16}
 		   {/if}
          </div>
       </div>
@@ -321,9 +321,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(17)}
+			{$getContentEn_17}
 		   {else}
-			{$app->getContentCn(17)}
+			{$getContentCn_17}
 		   {/if}
          </div>
       </div>
@@ -340,9 +340,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(18)}
+			{$getContentEn_18}
 		   {else}
-			{$app->getContentCn(18)}
+			{$getContentCn_18}
 		   {/if}
          </div>
       </div>
@@ -359,9 +359,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(19)}
+			{$getContentEn_19}
 		   {else}
-			{$app->getContentCn(19)}
+			{$getContentCn_19}
 		   {/if}
          </div>
       </div>
@@ -378,9 +378,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(20)}
+			{$getContentEn_20}
 		   {else}
-			{$app->getContentCn(20)}
+			{$getContentCn_20}
 		   {/if}
          </div>
       </div>
@@ -397,9 +397,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(21)}
+			{$getContentEn_21}
 		   {else}
-			{$app->getContentCn(21)}
+			{$getContentCn_21}
 		   {/if}
          </div>
       </div>
@@ -416,9 +416,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(22)}
+			{$getContentEn_22}
 		   {else}
-			{$app->getContentCn(22)}
+			{$getContentCn_22}
 		   {/if}
          </div>
       </div>
@@ -435,9 +435,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(23)}
+			{$getContentEn_23}
 		   {else}
-			{$app->getContentCn(23)}
+			{$getContentCn_23}
 		   {/if}
          </div>
       </div>
@@ -454,9 +454,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(24)}
+			{$getContentEn_24}
 		   {else}
-			{$app->getContentCn(24)}
+			{$getContentCn_24}
 		   {/if}
          </div>
       </div>
@@ -473,9 +473,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(25)}
+			{$getContentEn_25}
 		   {else}
-			{$app->getContentCn(25)}
+			{$getContentCn_25}
 		   {/if}
          </div>
       </div>
@@ -492,9 +492,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(26)}
+			{$getContentEn_26}
 		   {else}
-			{$app->getContentCn(26)}
+			{$getContentCn_26}
 		   {/if}
          </div>
       </div>
@@ -511,9 +511,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(27)}
+			{$getContentEn_27}
 		   {else}
-			{$app->getContentCn(27)}
+			{$getContentCn_27}
 		   {/if}
          </div>
       </div>
@@ -530,9 +530,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(28)}
+			{$getContentEn_28}
 		   {else}
-			{$app->getContentCn(28)}
+			{$getContentCn_28}
 		   {/if}
          </div>
       </div>
@@ -549,9 +549,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(29)}
+			{$getContentEn_29}
 		   {else}
-			{$app->getContentCn(29)}
+			{$getContentCn_29}
 		   {/if}
          </div>
       </div>
@@ -568,9 +568,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(30)}
+			{$getContentEn_30}
 		   {else}
-			{$app->getContentCn(30)}
+			{$getContentCn_30}
 		   {/if}
          </div>
       </div>
@@ -587,9 +587,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(31)}
+			{$getContentEn_31}
 		   {else}
-			{$app->getContentCn(31)}
+			{$getContentCn_31}
 		   {/if}
          </div>
       </div>
@@ -606,9 +606,9 @@
          </div>
          <div class="modal-body">
 		   {if $lang_cookie == "en"}	
-			{$app->getContentEn(32)}
+			{$getContentEn_32}
 		   {else}
-			{$app->getContentCn(32)}
+			{$getContentCn_32}
 		   {/if}
          </div>
       </div>

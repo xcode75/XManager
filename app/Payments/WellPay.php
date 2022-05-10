@@ -113,7 +113,7 @@ class WellPay extends BaseController
 		$lang = new i18n();
 		$content = $request->getParsedBody();
 		$order_id  = $content['order_id'];
-		$item = TempOrder::where('userid', $user->id)->where("order_id", $order_id)->first();
+		$item = TempOrder::where("order_id", $order_id)->where('userid', $user->id)->first();
 		
 		if(!$item){	
 			$res['ret'] = 0;			
@@ -206,10 +206,10 @@ class WellPay extends BaseController
     {	
 		ini_set('memory_limit', '-1');
 		$params = $_POST;
-		
+		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		if(isset($content['wid'])){
-			$orders = Order::where("order_id", '=', $content['wid'])->first();
+			$orders = Order::where("order_id", '=', $content['wid'])->where('userid', $user->id)->first();
 			if($orders->state == 1 || $orders->state == "1"){
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['wid']);
 			}else{
@@ -219,14 +219,14 @@ class WellPay extends BaseController
 			if (!self::verify($params, $params['sign'])) {
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
 			}else{
-				$order = TempOrder::where("order_id", '=', $params['orderno'])->first();
+				$order = TempOrder::where("order_id", '=', $params['orderno'])->where('userid', $user->id)->first();
 				if ($order){
 					(new Purchase())->update($params['orderno']);
 					echo 'success';
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$params['orderno']);
 					exit;
 				}else{
-					$orders = Order::where("order_id", '=', $params['orderno'])->first();
+					$orders = Order::where("order_id", '=', $params['orderno'])->where('userid', $user->id)->first();
 					if($orders->state == 1 || $orders->state == "1"){
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$params['orderno']);
 					}else{
