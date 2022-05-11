@@ -20,14 +20,14 @@ use Exception;
 class Purchase 
 {
 	public function update($orderid)
-	{	
-			$trade = TempOrder::where("order_id", $orderid)->first();
-			$user = User::find($trade->userid);	
+	{	    
+			$user = Auth::getUser();
 			$lang = new i18n();
 			$Config = new Config();
-			
 			$Content = (new \App\Http\Controllers\Admin\TemplatesController())->getContent(3);
 			
+			$trade = TempOrder::where("order_id", $orderid)->where('userid', $user->id)->first();
+				
 			$package = Package::where("id", $trade->packageid)->where("status", 1)->first();
 			
 			if ($package->type == 1) {
@@ -178,8 +178,7 @@ class Purchase
 			
 			if ($Config->getConfig('mailDriver') != 0 && 
 				$Config->getConfig('enable_notification')== 1 && 
-				$Config->getConfig('send_order_email')== 1 &&
-				$user->notification == 1 
+				$Config->getConfig('send_order_email')== 1
 			){
 				$subject = $Config->getConfig('appName') . '-'. $lang->get('Invoice');
 				
@@ -192,7 +191,7 @@ class Purchase
 								'%app_color%',
 								'/%baseUrl%',
 								'%appName%',
-								'%UserName%',
+								'%Username%',
 								'%Lang_order1%',
 								'%orderID%',
 								'%Lang_order2%',
@@ -249,8 +248,6 @@ class Purchase
 		$lang = new i18n();	
 		$order = TempOrder::where("order_id", $orderid)->where('userid', $user->id)->first();		
 		if ($order){
-			$user = User::find($order->userid);	
-			
 			if($order->paymethod == 1 || $order->paymethod == 2){
 				TmpOrder::where("oid", $order->order_id)->delete();	
 			}
@@ -302,8 +299,8 @@ class Purchase
 
 	public function updateQuery($orderid)
 	{	
-			$trade = Order::where("order_id", $orderid)->first();
-			$user = User::find($trade->userid);	
+			$user = Auth::getUser();
+			$trade = Order::where("order_id", $orderid)->where('userid', $user->id)->first();
 			$lang = new i18n();
 			$Config = new Config();
 			$Content = (new \App\Http\Controllers\Admin\TemplatesController())->getContent(3);			
@@ -426,8 +423,7 @@ class Purchase
 			
 			if ($Config->getConfig('mailDriver') != 0 && 
 				$Config->getConfig('enable_notification')== 1 && 
-				$Config->getConfig('send_order_email')== 1 &&
-				$user->notification == 1 
+				$Config->getConfig('send_order_email')== 1
 			){
 					$subject = $Config->getConfig('appName') . '-'. $lang->get('Invoice');
 					try {
@@ -437,7 +433,7 @@ class Purchase
 								'%app_color%',
 								'/%baseUrl%',
 								'%appName%',
-								'%UserName%',
+								'%Username%',
 								'%Lang_order1%',
 								'%orderID%',
 								'%Lang_order2%',

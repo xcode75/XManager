@@ -124,7 +124,10 @@ class StripePay extends BaseController
 						"client" => "web"
 					],
 				],
-				'success_url' => $item->notify_url."?TradeNo=".$item->order_id,
+				"metadata" => [
+					"order_id" => $item->order_id,
+				],
+				'success_url' => $item->notify_url,
 				'cancel_url'  => (new Checkout())->Url().'/portal/order?id='.$item->order_id,
 			]);
 				
@@ -150,97 +153,70 @@ class StripePay extends BaseController
 	    ini_set('memory_limit', '-1');
 		$Config = new Config();
 		$user = Auth::getUser();
-		$content = $request->getQueryParams();
-		$id = "";
-		if(isset($content['TradeNo'])){
-			$id = $content['TradeNo'];
-		}
-		$order = Order::where("order_id", '=', $id)->where('userid', $user->id)->where('state', 1)->first();
 		
-		if($order){
-			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$id);
-		}else{
-			\Stripe\Stripe::setApiKey($Config->getConfig('stripe_key'));
+		\Stripe\Stripe::setApiKey($Config->getConfig('stripe_key'));		
+		
+		$payload = @file_get_contents('php://input');
+		$endpoint_secret = $Config->getConfig('stripe_webhook');
+		$sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
+		$event = null;
 			
-			$endpoint_secret = $Config->getConfig('stripe_webhook');
-			$input = file_get_contents('php://input');
-			$sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'];
-			$event = null;
-			
-			try {
-				$event = \Stripe\Webhook::constructEvent(
-					$input,
-					$sig_header,
-					$endpoint_secret
-				);       
-				$stripe = new \Stripe\StripeClient($Config->getConfig('stripe_key'));
-				
-				switch ($event->type) {
-					case 'source.chargeable':
-						$source = $event->data->object;
-						$session = $stripe->charges->retrieve($source['id'], []);
-						if ($session['status'] == 'succeeded' && $session['paid'] == true) {
-							$order = TempOrder::where("pay_id", '=',  $source['id'])->where('userid', $user->id)->first();
-							if($order){
-								(new Purchase())->update($order->order_id);
-								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);
-								exit;
-							}else{
-								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-								exit;
-							}
-						}else{
-							return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-							exit;
-						}
-						break;
-					case 'checkout.session.completed':
-						$sessions = $event->data->object;
-						$session = $stripe->checkout->sessions->retrieve($sessions['id'], []);
-						if ($session->payment_status == 'paid') {	
-							$order = TempOrder::where("pay_id", '=',  $sessions['id'])->where('userid', $user->id)->first();
-							if($order){
-								(new Purchase())->update($order->order_id);
-								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);	
-								exit;							
-							}else{
-								return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-								exit;
-							}
-						}else{
-							return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-							exit;
-						}	
-					 break;	
+		try {
+			$event = \Stripe\Webhook::constructEvent(
+				$payload,
+				$sig_header,
+				$endpoint_secret
+			); 
+		} catch(\UnexpectedValueException $e) {
+				$response->getBody()->write($e->getMessage());
+				return $response;
+		} catch (\Stripe\Exception\SignatureVerificationException $e) {
+				$response->getBody()->write($e->getMessage());
+				return $response;
+		} 
+		
+		$stripe = new \Stripe\StripeClient($Config->getConfig('stripe_key'));
+		switch ($event->type) {
+			case 'source.chargeable':
+			$source = $event->data->object;
+			$session = $stripe->charges->retrieve($source['id'], []);
+			if ($session['status'] == 'succeeded' && $session['paid'] == true) {
+				$order = TempOrder::where("order_id", '=',  $source['metadata']['order_id'])->where('userid', $user->id)->first();
+				if($order){
+					(new Purchase())->update($order->order_id);
+					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);
+					exit;
+				}else{
+					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+					exit;
 				}
-				die();
-			} catch(\UnexpectedValueException $e) {
-				$response->getBody()->write($e->getMessage());
-				return $response;
-			} catch (\Stripe\Error\SignatureVerification $e) {
-				$response->getBody()->write($e->getMessage());
-				return $response;
-			} 
+			}else{
+				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+				exit;
+			}
+			break;
+			case 'checkout.session.completed':
+				$sessions = $event->data->object;
+				$session = $stripe->checkout->sessions->retrieve($sessions['id'], []);
+				if ($session->payment_status == 'paid') {	
+					$order = TempOrder::where("order_id", '=',  $sessions['metadata']['order_id'])->where('userid', $user->id)->first();
+					if($order){
+						(new Purchase())->update($sessions['metadata']['order_id']);
+						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);	
+						exit;							
+					}else{
+						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+						exit;
+					}
+				}else{
+					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
+					exit;
+				}	
+			break;	
 		}
+		die();
+				
 		$response->getBody()->write("");
 		return $response;
-	}
-	
-    public function checkorder($request, $response, $args)
-    {
-		$content = $request->getParsedBody();
-		$user = Auth::getUser();
-		$Config = new Config();
-        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
-        if (!$res){
-			$rs['result']   = 0;
-			$response->getBody()->write(json_encode($rs));
-		    return $response;						
-        }else{
-			$rs['result']   = 1;
-			$rs['url']   = (new Checkout())->Url().'/portal/success?orderid='.$res->order_id;
-			$response->getBody()->write(json_encode($rs));
-		    return $response;	
-		}
-    }	
+	}	
 }

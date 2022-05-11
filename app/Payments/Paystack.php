@@ -100,22 +100,22 @@ class Paystack extends BaseController
 		
 
 		if($type == "card"){
-			$currency = $Config->getConfig('paystack_currency_code') ? $Config->getConfig('paystack_currency_code') : "USD";
+			$C = $Config->getConfig('paystack_currency_code') ? $Config->getConfig('paystack_currency_code') : "USD";
 		}else{
-			$currency = $Config->getConfig('paystack_mobile_currency_code') ? $Config->getConfig('paystack_mobile_currency_code') : "GHS";
+			$C = $Config->getConfig('paystack_mobile_currency_code') ? $Config->getConfig('paystack_mobile_currency_code') : "GHS";
 		}
 		
-		$rate = $Currency->getRate($currency);
+		$rate = $Currency->getRate($C);
 		
 		$item->status 		= 0;
 		$item->create_date 	= time();
 		$item->expdate 		= (time() + 600);
-		$item->exrate		= bcmul($price,$rate, 2);
+		$item->exrate		= bcmul($price, $rate, 2);
         $item->notify_url 	= (new Checkout())->Callback()."/notify/paystack";
         $item->type		    = 19;
 		$item->save();
 
-		$ret = json_decode($this->_curlPost($item->exrate, $content['type'], $item->order_id, $item->notify_url),true);
+		$ret = json_decode($this->_curlPost((int)$item->exrate, $content['type'], $item->order_id, $item->notify_url),true);
 		
 		if (isset($ret['status']) && $ret['status'] == true) {
 			$item = TempOrder::where("id", '=', $item->id)->where('status', 0)->first();

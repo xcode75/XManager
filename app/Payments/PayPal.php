@@ -91,7 +91,7 @@ class PayPal extends BaseController
 				'transactionId' => $item->order_id,
 				'currency'      => $Config->getConfig('paypal_currency_code'),
 				'description'   => $Config->getConfig('appName').' - Invoice #'.$paypal->id,
-				'returnUrl' 	=> (new Checkout())->Url()."/paypal_callback",
+				'returnUrl' 	=> $item->notify_url,
                 'cancelUrl' 	=> (new Checkout())->Url()."/portal/checkout?id=".$package->id
 			));
 			$data = $transaction->getData();
@@ -125,10 +125,12 @@ class PayPal extends BaseController
 		$paymentId = $_GET['paymentId'];
 		$payerId = $_GET['PayerID'];
         $gateway = $this->createPayPalGateway();
+		
         $query = $gateway->completePurchase(array(
 			"transactionReference" => $paymentId,
 			"payerId" => $payerId
 		))->send();
+		
 		try {
 	        if ($query->isSuccessful()){
 				$order = TempOrder::where("pay_id", '=', $paymentId)->where('userid', $user->id)->first();
