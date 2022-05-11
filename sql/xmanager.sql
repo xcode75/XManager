@@ -194,7 +194,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v5.43'),
+('latesversion', 'v5.46'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -303,7 +303,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
 ('user_verify_email', '0'),
-('version', 'v5.43'),
+('version', 'v5.46'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -1068,7 +1068,7 @@ CREATE TABLE `temp_order` (
   `pay_qrcode` longtext  DEFAULT NULL,
   `deeplink` longtext  DEFAULT NULL,
   `status` int(5) NOT NULL DEFAULT -1,
-  `pay_id` longtext  NOT NULL,
+  `pay_id` longtext  DEFAULT NULL,
   `amount` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

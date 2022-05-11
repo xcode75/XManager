@@ -21,13 +21,14 @@ class Purchase
 {
 	public function update($orderid)
 	{	    
-			$user = Auth::getUser();
+			
 			$lang = new i18n();
 			$Config = new Config();
 			$Content = (new \App\Http\Controllers\Admin\TemplatesController())->getContent(3);
 			
-			$trade = TempOrder::where("order_id", $orderid)->where('userid', $user->id)->first();
-				
+			$trade = TempOrder::where("order_id", $orderid)->first();
+			$user = User::find($trade->userid);	
+			
 			$package = Package::where("id", $trade->packageid)->where("status", 1)->first();
 			
 			if ($package->type == 1) {
@@ -299,10 +300,12 @@ class Purchase
 
 	public function updateQuery($orderid)
 	{	
-			$user = Auth::getUser();
-			$trade = Order::where("order_id", $orderid)->where('userid', $user->id)->first();
 			$lang = new i18n();
 			$Config = new Config();
+			
+			$trade = Order::where("order_id", $orderid)->first();
+			$user = User::find($trade->userid);	
+			
 			$Content = (new \App\Http\Controllers\Admin\TemplatesController())->getContent(3);			
 			$package = Package::where("id", $trade->packageid)->where("status", 1)->first();
 			

@@ -150,21 +150,21 @@ class F2F extends BaseController
 	public function callback($request, $response, $args)
     {
 		ini_set('memory_limit', '-1');
-		$user = Auth::getUser();
 		$Config = new Config();
         $gateway = $this->createGateway();
         $request = $gateway->completePurchase();
         $request->setParams($_POST);
 		
 		try {
+			
 			$aliResponse = $request->send();
 			if ($aliResponse->isPaid() && $aliResponse->data('out_trade_no')) {	
-				$order = TempOrder::where("order_id",  $aliResponse->data('out_trade_no'))->where('userid', $user->id)->first();
+				$order = TempOrder::where("order_id",  $aliResponse->data('out_trade_no'))->first();
 				if($order){
-					(new Purchase())->update($aliResponse->data('out_trade_no'));
+					self::query($aliResponse->data('out_trade_no'));
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$aliResponse->data('out_trade_no'));
 				}else{
-					$orders = Order::where("order_id", '=', $aliResponse->data('out_trade_no'))->first();
+					$orders = Order::where("order_id", $aliResponse->data('out_trade_no'))->first();
 					if($orders->state == 1 || $orders->state == "1"){
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$aliResponse->data('out_trade_no'));
 					}else{
@@ -184,8 +184,7 @@ class F2F extends BaseController
     {
 		$content = $request->getParsedBody();
 		$Config = new Config();
-		$user = Auth::getUser();
-        $res = Order::where("order_id", $content['order_id'])->where('userid', $user->id)->first();
+        $res = Order::where("order_id", $content['order_id'])->first();
         if (!$res){
 			$rs['result']   = 0;
 			$response->getBody()->write(json_encode($rs));
@@ -203,10 +202,9 @@ class F2F extends BaseController
 		ini_set('memory_limit', '-1');
 		$Config = new Config();
 		$lang = new i18n();	
-		$content = $request->getParsedBody();
         $gateway = $this->createGateway();
-        $re = $gateway->completePurchase();
-        $re->setParams($_POST);
+        $request = $gateway->completePurchase();
+        $request->setParams($_POST);
 		try {
 			$aliResponse = $gateway->query(
 				[
