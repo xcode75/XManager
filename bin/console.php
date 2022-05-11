@@ -1,38 +1,20 @@
-<?php //004fb
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo("Site error: the ".(php_sapi_name()=='cli'?'ionCube':'<a href="http://www.ioncube.com">ionCube</a>')." PHP Loader needs to be installed. This is a widely used PHP extension for running ionCube protected PHP code, website security and malware blocking.\n\nPlease visit ".(php_sapi_name()=='cli'?'get-loader.ioncube.com':'<a href="http://get-loader.ioncube.com">get-loader.ioncube.com</a>')." for install assistance.\n\n");exit(199);
-?>
-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
+<?php
+
+use Psr\Container\ContainerInterface;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+use App\XManager;
+
+
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . "/../config/config.php";
+require_once __DIR__ . "/../locale/i18n.php";
+
+XManager::boot();
+
+/** @var ContainerInterface $container */
+$container = (require __DIR__ . '/../slim/bootstrap.php')->getContainer();
+
+$application = $container->get(Application::class);
+
+$application->run();
