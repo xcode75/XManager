@@ -161,16 +161,15 @@ class Paystack extends BaseController
     public function callback($request, $response, $args)
     {		
 		$Config = new Config();
-		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		$ret = json_decode($this->Verify($content['trxref']),true);
-		$order = TempOrder::where("order_id", '=', $content['trxref'])->where('userid', $user->id)->first();
+		$order = TempOrder::where("order_id", '=', $content['trxref'])->first();
 		if (isset($ret['status']) && $ret['status'] == true) {
 		  if($order){
 			(new Purchase())->update($content['trxref']);
 			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['trxref']);
 		  } else {
-			    $orders = Order::where("order_id", '=', $content['trxref'])->where('userid', $user->id)->first();
+			    $orders = Order::where("order_id", '=', $content['trxref'])->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['trxref']);
 				}else{

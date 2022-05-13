@@ -152,8 +152,6 @@ class StripePay extends BaseController
     {	
 	    ini_set('memory_limit', '-1');
 		$Config = new Config();
-		$user = Auth::getUser();
-		
 		\Stripe\Stripe::setApiKey($Config->getConfig('stripe_key'));		
 		
 		$payload = @file_get_contents('php://input');
@@ -181,7 +179,7 @@ class StripePay extends BaseController
 			$source = $event->data->object;
 			$session = $stripe->charges->retrieve($source['id'], []);
 			if ($session['status'] == 'succeeded' && $session['paid'] == true) {
-				$order = TempOrder::where("order_id", '=',  $source['metadata']['order_id'])->where('userid', $user->id)->first();
+				$order = TempOrder::where("order_id", '=',  $source['metadata']['order_id'])->first();
 				if($order){
 					(new Purchase())->update($order->order_id);
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);
@@ -199,7 +197,7 @@ class StripePay extends BaseController
 				$sessions = $event->data->object;
 				$session = $stripe->checkout->sessions->retrieve($sessions['id'], []);
 				if ($session->payment_status == 'paid') {	
-					$order = TempOrder::where("order_id", '=',  $sessions['metadata']['order_id'])->where('userid', $user->id)->first();
+					$order = TempOrder::where("order_id", '=',  $sessions['metadata']['order_id'])->first();
 					if($order){
 						(new Purchase())->update($sessions['metadata']['order_id']);
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);	

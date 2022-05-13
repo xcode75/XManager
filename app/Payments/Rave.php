@@ -168,16 +168,15 @@ class Rave extends BaseController
     public function callback($request, $response, $args)
     {		
 		$Config = new Config();
-		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		$ret = json_decode($this->Verify($content['transaction_id']),true);
-		$order = TempOrder::where("order_id", '=', $content['tx_ref'])->where('userid', $user->id)->first();
+		$order = TempOrder::where("order_id", '=', $content['tx_ref'])->first();
 		if (isset($ret['status']) && $ret['status'] == "success") {
 		  if($order){
 			(new Purchase())->update($content['tx_ref']);
 			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['tx_ref']);
 		  } else {
-			    $orders = Order::where("order_id", '=', $content['tx_ref'])->where('userid', $user->id)->first();
+			    $orders = Order::where("order_id", '=', $content['tx_ref'])->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['tx_ref']);
 				}else{

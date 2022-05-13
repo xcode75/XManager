@@ -161,7 +161,7 @@ class F2F extends BaseController
 			if ($aliResponse->isPaid() && $aliResponse->data('out_trade_no')) {	
 				$order = TempOrder::where("order_id",  $aliResponse->data('out_trade_no'))->first();
 				if($order){
-					self::query($aliResponse->data('out_trade_no'));
+					(new Purchase())->update($aliResponse->data('out_trade_no'));
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$aliResponse->data('out_trade_no'));
 				}else{
 					$orders = Order::where("order_id", $aliResponse->data('out_trade_no'))->first();

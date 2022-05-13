@@ -121,7 +121,6 @@ class PayPal extends BaseController
 	public function callback($request, $response, $args)
     {
 		$Config = new Config();
-		$user = Auth::getUser();
 		$paymentId = $_GET['paymentId'];
 		$payerId = $_GET['PayerID'];
         $gateway = $this->createPayPalGateway();
@@ -133,7 +132,7 @@ class PayPal extends BaseController
 		
 		try {
 	        if ($query->isSuccessful()){
-				$order = TempOrder::where("pay_id", '=', $paymentId)->where('userid', $user->id)->first();
+				$order = TempOrder::where("pay_id", '=', $paymentId)->first();
 				if($order){
 					(new Purchase())->update($order->order_id);
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$order->order_id);

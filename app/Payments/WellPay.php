@@ -206,10 +206,9 @@ class WellPay extends BaseController
     {	
 		ini_set('memory_limit', '-1');
 		$params = $_POST;
-		$user = Auth::getUser();
 		$content = $request->getQueryParams();
 		if(isset($content['wid'])){
-			$orders = Order::where("order_id", '=', $content['wid'])->where('userid', $user->id)->first();
+			$orders = Order::where("order_id", '=', $content['wid'])->first();
 			if($orders->state == 1 || $orders->state == "1"){
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['wid']);
 			}else{
@@ -219,14 +218,14 @@ class WellPay extends BaseController
 			if (!self::verify($params, $params['sign'])) {
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
 			}else{
-				$order = TempOrder::where("order_id", '=', $params['orderno'])->where('userid', $user->id)->first();
+				$order = TempOrder::where("order_id", '=', $params['orderno'])->first();
 				if ($order){
 					(new Purchase())->update($params['orderno']);
 					echo 'success';
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$params['orderno']);
 					exit;
 				}else{
-					$orders = Order::where("order_id", '=', $params['orderno'])->where('userid', $user->id)->first();
+					$orders = Order::where("order_id", '=', $params['orderno'])->first();
 					if($orders->state == 1 || $orders->state == "1"){
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$params['orderno']);
 					}else{

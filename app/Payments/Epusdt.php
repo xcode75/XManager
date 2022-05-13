@@ -168,9 +168,8 @@ class Epusdt extends BaseController
     public function callback($request, $response, $args)
     {
 		$Config = new Config();
-		$user = Auth::getUser();
 		$content = $request->getParsedBody();
-		$order = TempOrder::where("order_id", '=', $content['order_id'])->where('userid', $user->id)->first();
+		$order = TempOrder::where("order_id", '=', $content['order_id'])->first();
 		$parameters = [
 			"order_id " 	=> $content['order_id'],
 			"amount " 		=> $order->exrate,
@@ -184,7 +183,7 @@ class Epusdt extends BaseController
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['order_id']);
 					exit;
 			} else {
-				$orders = Order::where("order_id", '=', $content['order_id'])->where('userid', $user->id)->first();
+				$orders = Order::where("order_id", '=', $content['order_id'])->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$content['order_id']);
 				}else{

@@ -193,19 +193,18 @@ class Token188 extends BaseController
     {	
 	    ini_set('memory_limit', '-1');
 		$Config = new Config();
-		$user = Auth::getUser();
 		$content = file_get_contents('php://input');
         $params = json_decode($content, true); //convert JSON into array
 
         if ($this->verify($params)) {
-			$order = TempOrder::where("order_id", '=', $params['outTradeNo'])->where('userid', $user->id)->first();
+			$order = TempOrder::where("order_id", '=', $params['outTradeNo'])->first();
 			if ($order){
 				(new Purchase())->update($params['outTradeNo']);
 				echo 'success';
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$params['outTradeNo']);
 				exit;
 			}else{
-				$orders = Order::where("order_id", '=', $params['outTradeNo'])->where('userid', $user->id)->first();
+				$orders = Order::where("order_id", '=', $params['outTradeNo'])->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$params['outTradeNo']);
 				}else{

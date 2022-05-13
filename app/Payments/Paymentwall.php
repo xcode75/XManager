@@ -136,7 +136,6 @@ class Paymentwall extends BaseController
     public function callback($request, $response, $args)
     {		
 		$Config = new Config();
-		$user = Auth::getUser();
 		Paymentwall_Config::getInstance()->set(array(
 			'api_type' => Paymentwall_Config::API_GOODS,
 			'public_key' => $Config->getConfig('paymentwall_key'),
@@ -161,13 +160,13 @@ class Paymentwall extends BaseController
 			// 
 		  }
 		  
-		  $order = TempOrder::where("order_id", '=', $pingback->getProductId)->where('userid', $user->id)->first();
+		  $order = TempOrder::where("order_id", '=', $pingback->getProductId)->first();
 		  if($order){
 			(new Purchase())->update($pingback->getProductId);
 			echo 'OK';
 			return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pingback->getProductId);
 		  } else {
-				$orders = Order::where("order_id", '=', $pingback->getProductId)->where('userid', $user->id)->first();
+				$orders = Order::where("order_id", '=', $pingback->getProductId)->first();
 				if($orders->state == 1 || $orders->state == "1"){
 					return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/success?orderid='.$pingback->getProductId);
 				}else{
