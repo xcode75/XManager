@@ -45,9 +45,11 @@ class Balance extends BaseController
 		}
 		
 		$price = bcadd($amount,0,2);
-			
-		$user->money = bcsub($user->money, $price, 2);        
-		$user->save();
+		
+		if($user->money > $price && $price != 0){	
+			$user->money = bcsub($user->money, $price, 2);        
+			$user->save();
+		}
 		
 		$item->create_date 	= time();
 		$item->exrate	= $price;

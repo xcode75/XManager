@@ -22,60 +22,82 @@ class WellPay extends BaseController
 	
 	public function __construct()
     {
-       $this->gatewayUri = 'https://api.crossz.pro/v1/service/payment'; 
+       $this->gatewayUri = 'https://check.bbapk.xyz/api/Wellpay/create'; 
+    }
+	
+    public function prepareSign($data)
+    {
+        ksort($data);
+        return http_build_query($data);
+    }
+
+    public function sign($data)
+    {
+        return strtolower(md5($data . $this->appSecret));
+    }
+
+    public function verify($context_arr, $signature)
+    {
+		$Config = new Config();
+        $s_key = $Config->getConfig('wellpay_app_secret');
+        $return_arr_forsort=array();
+        foreach ($context_arr as $key => $val) {
+            if($key!='sign'&&$key!='sign_type'&&$key!='data'&&$val!=null&&$val!='')
+                $return_arr_forsort[$key]=$val;
+                
+                if($key=='data')
+                {
+                    foreach($val as $key1=>$val1)
+                    {
+                        if($val1!=null&&$val1!='')
+                            $return_arr_forsort[$key1]=$val1;
+                    }
+                }
+        }
+       ksort($return_arr_forsort);
+        $signStr = htmlspecialchars(http_build_query($return_arr_forsort));
+        $sign2 = strtolower(md5($signStr . $s_key));
+        return $sign2 === $signature;
     }
     
-    public function post($data)
+	public function post($url,$data)
     {
-        if (is_array($data))
+		if (is_array($data))
         {
-            $data = http_build_query($data);
+            $data = http_build_query($data, null, '&');
         }
+		
         $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, $this->gatewayUri);
-        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HEADER, 0);       
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($curl, CURLOPT_POST, 1);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
         curl_setopt($curl, CURLOPT_HTTPHEADER,  array(
-            "Content-Type: application/x-www-form-urlencoded") );
+            "Content-Type: application/x-www-form-urlencoded"
+		));
+            
         $data = curl_exec($curl);
-        // $data = curl_getinfo($curl,CURLINFO_EFFECTIVE_URL);
         curl_close($curl);
         return $data;
     }
 	
-    public function prepareSign($data)
-    {
-        ksort($data);
-        return htmlspecialchars(http_build_query($data));
-    }
-
-    public function verify(array $data)
-    {
-        $sign = $data['sign'] ?? null;
-        return $sign === $this->sign($data);
-    }
-
-    private function sign(array $data)
-    {
-		$Config = new Config();
-        $str = urldecode(http_build_query($this->argSorts($this->paraFilters($data))));
-        return md5($str . "&app_secret=" . $Config->getConfig('wellpay_app_secret'));
-    }
-    private function paraFilters(array $para)
-    {
-        return array_filter($para, function ($item, $key) {
-            if ($key != "sign" && !empty($item)) return true;
-        }, ARRAY_FILTER_USE_BOTH);
-    }
-    private function argSorts(array $para)
-    {
-        ksort($para);
-        reset($para);
-        return $para;
+    function http_post_data($url, $data_string) {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Content-Type: application/x-www-form-urlencoded "
+		) );
+        ob_start();
+        curl_exec($ch);
+        $return_content = ob_get_contents();
+        ob_end_clean();
+        $return_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        return $return_content;
     }
 	
     public function wellpay($request, $response, $args)
@@ -129,7 +151,16 @@ class WellPay extends BaseController
 		$item->save();
 		
 		$appid = $Config->getConfig('wellpay_app_id');
-
+        $nonce_str = md5(time());
+        $ip = $this->getip();
+		
+        $business = array(
+            'request_time' => time(),
+            'version' =>'1.01',
+            'ip'=> $ip,
+            'remark'=>""
+        );
+		
 		$notify_url = $item->notify_url;
         $return_url = $item->notify_url;
         $price = sprintf("%.2f",$item->exrate);
@@ -138,12 +169,7 @@ class WellPay extends BaseController
             'appid'=> $appid,
             'orderno' => $item->order_id,
             'totalfee'=> $price,
-            'server_id'=> $Config->getConfig('wellpay_serverid'),//
-            'panel'=> 'ssp-newfeat',//
-            'ver'=> '101',//
-            'request_time'=> time(),//
-            'remark'=> '',//
-            'notifyurl' => $notify_url,//	异步通知地址
+            'notifyurl' => $notify_url,
             'returnurl' => $item->notify_url.'?wid='.$item->order_id,
         );
 		
@@ -152,25 +178,24 @@ class WellPay extends BaseController
         $sign1 = htmlspecialchars(http_build_query($data));
       
         $sign = strtolower(md5($sign1 . $appkey));
-        $data["sign"] = $sign;
+        $business["sign"] = $sign;
+        $business["data"] = $data;
+   
+        $json_return_content= $this->post( $this->gatewayUri, $business);
+		$context_arr = json_decode($json_return_content, true);
 		
-        $data['sign'] = $this->sign($data);
-        $resdata = $this->post($data);
-        $result = json_decode($resdata,true);
-		
-		
-		if(isset($result['data']['payUrl'])){
+		if(isset($context_arr['data']['waterid']) && isset($context_arr['data']['url'])){
 			$item = TempOrder::where("id", '=', $item->id)->where('status', 0)->first();
-			$item->pay_url 	= $result['data']['payUrl'];
+			$item->pay_url 	= $context_arr['data']['url'];
 			$item->save();	
 				
 			$res['ret'] 	= 1;
-			$res['url'] 	= $result['data']['payUrl'];
+			$res['url'] 	= $context_arr['data']['url'];
 			$response->getBody()->write(json_encode($res));
 			return $response;
 		}else  {
 			$res['ret'] 	= 0;
-			$res['msg'] 	= '创建支付订单错误: 处理支付网关失败';
+			$res['msg'] 	= '创建支付订单错误'.$context_arr['msg'];
 			$response->getBody()->write(json_encode($res));
 			return $response;
         }
@@ -180,9 +205,7 @@ class WellPay extends BaseController
     public function callback($request, $response, $args)
     {	
 		ini_set('memory_limit', '-1');
-		//$params = $_POST;
-		$params = json_decode(@file_get_contents("php://input"),true);
-		
+		$params = $_POST;
 		$content = $request->getQueryParams();
 		if(isset($content['wid'])){
 			$orders = Order::where("order_id", '=', $content['wid'])->first();
@@ -191,11 +214,10 @@ class WellPay extends BaseController
 			}else{
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
 			}
-		}
-		
-		if (!self::verify($params)) {
+		}else{	
+			if (!self::verify($params, $params['sign'])) {
 				return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
-		}else{
+			}else{
 				$order = TempOrder::where("order_id", '=', $params['orderno'])->first();
 				if ($order){
 					(new Purchase())->update($params['orderno']);
@@ -210,8 +232,8 @@ class WellPay extends BaseController
 						return $response->withStatus(302)->withHeader('Location', (new Checkout())->Url().'/portal/orders');
 					}
 				}
+			}
 		}
-		
 		$response->getBody()->write("Order verification failed");
 		return $response;
 	}

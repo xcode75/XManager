@@ -194,7 +194,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('jkstate', '1'),
 ('lastheart', NULL),
 ('lastpay', NULL),
-('latesversion', 'v5.47'),
+('latesversion', 'v5.48'),
 ('latesversioncontent', ''),
 ('LoginLogs', '1'),
 ('loginverify', '0'),
@@ -303,7 +303,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('user_currecy_switch', '0'),
 ('user_language_select', '1'),
 ('user_verify_email', '0'),
-('version', 'v5.47'),
+('version', 'v5.48'),
 ('ViewLogs', '0'),
 ('vpay_currency_code', 'CNY'),
 ('vpay_order_exp', '10'),
@@ -311,6 +311,7 @@ INSERT INTO `config` (`name`, `value`) VALUES
 ('wechat_url', ''),
 ('wellpay_app_id', ''),
 ('wellpay_app_secret', ''),
+('wellpay_serverid', ''),
 ('wellpay_currency_code', 'CNY');
 
 -- --------------------------------------------------------

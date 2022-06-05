@@ -1,4 +1,8 @@
 <?php
+$i18n['wellpay_serverid'] = array(
+    'en' => 'Wellpay ServerID',
+    'zh-cn' => "Wellpay节点ID"
+);
 $i18n['EditTemplates'] = array(
     'en' => 'Edit Templates',
     'zh-cn' => "编辑模板"
